@@ -1,3 +1,9 @@
+commit ff11fb2a9ca5655e7d5c721a02c778dbcc9d53bf
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Tue Oct 26 16:39:54 2021 +1000
+
+    updated gitlog and added index.html and style.css
+
 commit 770fff57ded841b28e37d2610cfbd6e8bf6dc876
 Author: jwsandeman <jw.sandeman@gmail.com>
 Date:   Tue Oct 26 16:29:08 2021 +1000
