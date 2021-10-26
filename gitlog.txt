@@ -1,0 +1,5 @@
+commit a27d08a4a3cccce5353df8ecf52e5d86d3b2e3d0
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Tue Oct 26 13:56:19 2021 +1000
+
+    initial commit, added README/gitlog/sitemap, added project description and sitemap to README
