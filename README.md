@@ -51,9 +51,9 @@ Now that the wireframe is done it might actually be time to intitialise the proj
 
 1. Make a new directory for the project and move into that directory
 
-    `mkdir {project_name}`
+    `mkdir JasonSandeman_T1A2`
 
-    `cd {project_name}`
+    `cd JasonSandeman_T1A2`
 
 2. now let's initialise git in the project. Document control is essential - even when working on your own.
     `git init`
@@ -76,9 +76,19 @@ Now that the wireframe is done it might actually be time to intitialise the proj
 
     `git commit -m "initial commit, added README/gitlog/sitemap, added project description and sitemap to README"`
 
-5. Once thats done we can open the folder in VS code using the following command
+5. Create a new repository in GitHub
+
+6. Follow GitHubs commands to link your local directory with your remote GitHub repository
+
+    `git remote add origin git@github.com:jwsandeman/JasonSandeman_T1A2.git`
+
+    `git branch -M main`
+
+    `git push -u origin main`
+
+7. Once thats done we can open the folder in VS code using the following command
 
     `code .`
 
-6. Lets code! I'll start with the HTML pages first and then move onto the CSS. For the sake of time ill use some progress screenshots rather than explaining every step of the process. ALso i'll be sure to make regular commits and save my work!
+8. Lets code! I'll start with the HTML pages first and then move onto the CSS. For the sake of time ill use some progress screenshots rather than explaining every step of the process. ALso i'll be sure to make regular commits and save my work!
 
