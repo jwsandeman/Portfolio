@@ -1,3 +1,15 @@
+commit 770fff57ded841b28e37d2610cfbd6e8bf6dc876
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Tue Oct 26 16:29:08 2021 +1000
+
+    added GitHub remote commands to README
+
+commit 4b49ffdb452ac03de4ab06928452690a978e4495
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Tue Oct 26 16:19:50 2021 +1000
+
+    added sketch and wireframe images to README
+
 commit a27d08a4a3cccce5353df8ecf52e5d86d3b2e3d0
 Author: jwsandeman <jw.sandeman@gmail.com>
 Date:   Tue Oct 26 13:56:19 2021 +1000
