@@ -1,3 +1,15 @@
+commit 7297e1fa779e355d72527dcfa89b88a0b84f299b
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Sat Oct 30 10:10:41 2021 +1000
+
+    added about blog and projects pages. added styling for home and about pages.added background banner for about page. added 4 navigation buttons.
+
+commit aaf0db7a3a390da474116eccecfc8f96213f71c7
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Tue Oct 26 16:50:17 2021 +1000
+
+    updated gitlog.txt
+
 commit ff11fb2a9ca5655e7d5c721a02c778dbcc9d53bf
 Author: jwsandeman <jw.sandeman@gmail.com>
 Date:   Tue Oct 26 16:39:54 2021 +1000
