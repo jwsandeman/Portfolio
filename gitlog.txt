@@ -1,3 +1,15 @@
+commit ec7e0318945bfbb08202ba2f341a6db42ce4371a
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Sat Oct 30 13:28:59 2021 +1000
+
+    added font styling to home page
+
+commit ee1620c1a4b6995f793086f4487beae839855b62
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Sat Oct 30 10:11:53 2021 +1000
+
+    updated gitlog.txt
+
 commit 7297e1fa779e355d72527dcfa89b88a0b84f299b
 Author: jwsandeman <jw.sandeman@gmail.com>
 Date:   Sat Oct 30 10:10:41 2021 +1000
