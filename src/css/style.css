@@ -17,6 +17,7 @@ h6 {
 p {
   font-family: "Lusitana", serif;
   line-height: 1.5;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 * {
@@ -52,6 +53,7 @@ body {
     rgba(252, 70, 107, 1) 100%
   );
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   /* z-index: -99999; */
   /* background-repeat: repeat-x; */
@@ -60,7 +62,7 @@ body {
   margin-left: 24px;
 }
 
-/* Navigation Buttons */
+/* ------------------------  Navigation Buttons and Link Styling ------------------------ */
 
 nav {
   background: rgb(0, 247, 255);
@@ -157,17 +159,21 @@ a:active {
   -o-border-radius: 50%;
 }
 
+/* ------------------------ Main Card Styling ------------------------ */
+
+
 .card {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  /* justify-content: center; */
-  /* flex-direction: column; */
+  /*justify-content: center;
+  */ /*flex-direction: column;
+  */
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 2px 5px 0 rgba(28, 91, 133, 0.425);
-  width: 70vw !important;
-  height: 70vh !important;
+  width: 70%;
+  height: 70%;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
@@ -184,7 +190,7 @@ a:active {
   -o-transform: translate3d(5px, -5px, -5px);
 }
 
-/* Home Page */
+/* ------------------------ Home Page ------------------------ */
 
 .home_card {
   display: flex;
@@ -223,6 +229,7 @@ a:active {
 .home_description {
   display: flex;
   text-align: center;
+  justify-content: center;
   font-size: 18px;
   width: 75%;
   margin: 8px;
@@ -237,7 +244,8 @@ a:active {
   /* border: 2px solid green; */
 }
 
-/* About Page */
+/* ------------------------  About Page ------------------------ */
+
 .about_card {
   display: flex;
   flex-direction: row;
@@ -247,25 +255,25 @@ a:active {
   padding-bottom: 8px;
 }
 
-@media (max-width: 400px) {
+/* @media (max-width: 400px) {
   .about_card {
     display: block;
   }
-}
+} */
 
 .tile {
   display: flex;
-  /* flex: 1; */
+  flex-direction: column;
   width: 20%;
   margin: 0 2px;
   height: 25%;
-  background-color: grey;
-  /* border: 2px solid green; */
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
+  contain: content;
+  box-shadow: 0 2px 5px 0 rgba(28, 91, 133, 0.425);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 
 .tile_img {
@@ -273,21 +281,85 @@ a:active {
   height: 25%;
   background: url(../img/jasonprofilepic.jpeg);
   background-size: cover;
+  box-shadow: 0 2px 5px 0 rgba(28, 91, 133, 0.425);
 }
 
 .triple_tile {
   display: flex;
-  /* flex: 3; */
+  flex-direction: column;
+  contain: content;
   width: 68%;
-  margin: 8px 0 0 0;
+  margin: 0 2px 0 0;
   height: 25%;
-  background-color: grey;
+  justify-content: center;
+  box-shadow: 0 2px 5px 0 rgba(28, 91, 133, 0.425);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.about_title {
+  display: flex;
+  padding: 12px 24px 0 24px;
   /* border: 2px solid green; */
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
+}
+
+.about_description {
+  display: flex;
+  padding: 0 24px 0 24px;
+  /* border: 2px solid green; */
+}
+
+.tile h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  margin: 24px 0 0 0;
+}
+
+.tile h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+
+  /* Fallback: Set a background color. */
+  background-color: rgb(0, 255, 221);
+
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+h1.looking {
+  /* Create the gradient. */
+  background-image: linear-gradient(45deg, #f3ec78, #42af9d);
+}
+
+h1.working {
+  /* Create the gradient. */
+  background-image: linear-gradient(45deg, #e578f3, #53d8d8);
+}
+
+h1.learning {
+  /* Create the gradient. */
+  background-image: linear-gradient(45deg, #b3f378, #4d42af);
+}
+
+h1.interests {
+  font-size: 16px;
+  /* Create the gradient. */
+  background-image: linear-gradient(45deg, #f3c278, #425faf);
 }
 
 /* Blog Page */
@@ -306,7 +378,6 @@ a:active {
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   text-decoration: none;
-  a
 }
 
 .blog_img {
@@ -355,7 +426,7 @@ a:active {
   width: 80%;
 }
 
-/* Projects Page */
+/* ------------------------ Projects Page ------------------------ */
 
 .projects_card {
   display: flex;
@@ -380,10 +451,6 @@ a:active {
   border-top-right-radius: 4px;
   background: url(../img/bloggingsite.png);
   background-size: cover;
-  -webkit-border-radius:;
-  -moz-border-radius:;
-  -ms-border-radius:;
-  -o-border-radius:;
 }
 
 .projects_info {
@@ -402,11 +469,11 @@ a:active {
 }
 
 .projects_title {
-  margin: 12px 0 0 12px;
+  margin: 24px 0 0 24px;
 }
 
 .projects_text {
-  margin: 0 12px;
+  margin: 0 24px;
 }
 
 .projects_tags {
