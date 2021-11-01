@@ -37,10 +37,10 @@ body {
 }
 
 .background_banner {
-  display: flex;
-  position: fixed;
+  /* display: flex;
+  position: fixed; */
   /* border: 1px solid green; */
-  width: 100vw;
+  /* width: 100vw;
   align-items: center;
   margin: 0 auto;
   font-size: 24px;
@@ -51,28 +51,18 @@ body {
     rgba(169, 170, 141, 1) 48%,
     rgba(201, 217, 112, 1) 78%,
     rgba(252, 70, 107, 1) 100%
-  );
-  -webkit-background-clip: text;
+  ); */
+  /* -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
   /* z-index: -99999; */
   /* background-repeat: repeat-x; */
-  flex-wrap: nowrap;
+  /* flex-wrap: nowrap;
   height: 24px;
-  margin-left: 24px;
+  margin-left: 24px; */
 }
 
-/* ------------------------  Navigation Buttons and Link Styling ------------------------ */
-
-nav {
-  background: rgb(0, 247, 255);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 247, 255, 1) 0%,
-    rgba(251, 217, 4, 1) 49%,
-    rgba(233, 0, 255, 1) 100%
-  );
-}
+/* ------------------------  Link Styling ------------------------ */
 
 a,
 a:hover,
@@ -80,87 +70,137 @@ a:link,
 a:visited,
 a:active {
   text-decoration: none;
-  color: #000;
+  color: inherit;
 }
 
-.home_button {
-  position: fixed;
+/* ------------------------  Icons ------------------------ */
+
+.icon i {
   display: flex;
+  margin: 8px;
   justify-content: center;
   align-items: center;
-  left: 30px;
-  top: 30px;
-  font-size: 24px;
-  width: 50px;
-  height: 50px;
-  /* border: 4px solid rgba(255, 255, 255, 0); */
+  font-size: 36px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  box-shadow: 0 2px 5px 0 pink;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
 
-.about_button {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  right: 30px;
-  top: 30px;
-  font-size: 24px;
-  width: 50px;
-  height: 50px;
-  /* border: 4px solid green; */
-  border-radius: 50%;
-  box-shadow: 0 2px 5px 0 pink;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+.fa-github {
+  box-shadow: 0 4px 4px 0 #fff1e6, 4px 0 4px 0 #fad2e1, 0 -4px 4px 0 #bee1e6,
+    -4px 0 4px 0 #cddafd;
+  background: -moz-linear-gradient(left, #fff1e6 0%, #fde2e4 100%);
+  background: -webkit-linear-gradient(left, #fff1e6 0%, #fde2e4 100%);
+  background: linear-gradient(to right, #fff1e6 0%, #fde2e4 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.blog_button {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  right: 30px;
-  bottom: 30px;
-  font-size: 24px;
-  width: 50px;
-  height: 50px;
-  /* border: 4px solid green; */
-  border-radius: 50%;
-  box-shadow: 0 2px 5px 0 pink;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+.fa-linkedin-in {
+  box-shadow: 0 4px 4px 0 #fff1e6, 4px 0 4px 0 #fad2e1, 0 -4px 4px 0 #bee1e6,
+    -4px 0 4px 0 #cddafd;
+  background: -moz-linear-gradient(left, #fad2e1 0%, #e2ece9 100%);
+  background: -webkit-linear-gradient(left, #fad2e1 0%, #e2ece9 100%);
+  background: linear-gradient(to right, #fad2e1 0%, #e2ece9 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.projects_button {
+.fa-twitter {
+  box-shadow: 0 4px 4px 0 #fff1e6, 4px 0 4px 0 #fad2e1, 0 -4px 4px 0 #bee1e6,
+    -4px 0 4px 0 #cddafd;
+  background: -moz-linear-gradient(left, #bee1e6 0%, #f0efeb 100%);
+  background: -webkit-linear-gradient(left, #bee1e6 0%, #f0efeb 100%);
+  background: linear-gradient(to right, #bee1e6 0%, #f0efeb 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-paper-plane {
+  box-shadow: 0 4px 4px 0 #fff1e6, 4px 0 4px 0 #fad2e1, 0 -4px 4px 0 #bee1e6,
+    -4px 0 4px 0 #cddafd;
+  background: -moz-linear-gradient(left, #f0efeb 0%, #dfe7fd 100%);
+  background: -webkit-linear-gradient(left, #f0efeb 0%, #dfe7fd 100%);
+  background: linear-gradient(to right, #f0efeb 0%, #dfe7fd 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-react {
+  box-shadow: 0 4px 4px 0 #fff1e6, 4px 0 4px 0 #fad2e1, 0 -4px 4px 0 #bee1e6,
+    -4px 0 4px 0 #cddafd;
+  background: -moz-linear-gradient(left, #f0efeb 0%, #dfe7fd 100%);
+  background: -webkit-linear-gradient(left, #f0efeb 0%, #dfe7fd 100%);
+  background: linear-gradient(to right, #f0efeb 0%, #dfe7fd 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-node-js {
+  box-shadow: 0 4px 4px 0 #fff1e6, 4px 0 4px 0 #fad2e1, 0 -4px 4px 0 #bee1e6,
+    -4px 0 4px 0 #cddafd;
+  background: -moz-linear-gradient(left, #f0efeb 0%, #dfe7fd 100%);
+  background: -webkit-linear-gradient(left, #f0efeb 0%, #dfe7fd 100%);
+  background: linear-gradient(to right, #f0efeb 0%, #dfe7fd 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ------------------------  Navigation Buttons ------------------------ */
+
+.fa-home {
   position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  left: 30px;
-  bottom: 30px;
-  font-size: 24px;
-  width: 50px;
-  height: 50px;
-  /* border: 4px solid green; */
-  border-radius: 50%;
-  box-shadow: 0 2px 5px 0 pink;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  left: 32px;
+  top: 32px;
+  box-shadow: 0 4px 4px 0 #fff1e6, 4px 0 4px 0 #fad2e1, 0 -4px 4px 0 #bee1e6,
+    -4px 0 4px 0 #cddafd;
+  color: #bee1e6;
+}
+
+.fa-info {
+  position: fixed;
+  right: 32px;
+  top: 32px;
+  box-shadow: 0 4px 4px 0 #fff1e6, 4px 0 4px 0 #fad2e1, 0 -4px 4px 0 #bee1e6,
+    -4px 0 4px 0 #cddafd;
+  color: #bee1e6;
+}
+
+.fa-pen {
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+  box-shadow: 0 4px 4px 0 #fff1e6, 4px 0 4px 0 #fad2e1, 0 -4px 4px 0 #bee1e6,
+    -4px 0 4px 0 #cddafd;
+  color: #bee1e6;
+}
+
+.fa-briefcase {
+  position: fixed;
+  left: 32px;
+  bottom: 32px;
+  box-shadow: 0 4px 4px 0 #fff1e6, 4px 0 4px 0 #fad2e1, 0 -4px 4px 0 #bee1e6,
+    -4px 0 4px 0 #cddafd;
+  color: #bee1e6;
 }
 
 /* ------------------------ Main Card Styling ------------------------ */
-
 
 .card {
   display: flex;
@@ -170,14 +210,16 @@ a:active {
   */ /*flex-direction: column;
   */
   background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px 0 rgba(28, 91, 133, 0.425);
+  border-radius: 24px;
+  box-shadow: 0 2px 32px 0 #bee1e6;
+  /*box-shadow: 0 8px 8px 0 #fff1e6, 8px 0 8px 0 #BEE1E6, 0 -8px 8px 0 #FAD2E1,    -8px 0 8px 0 #CDDAFD;
+  */
   width: 70%;
   height: 70%;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
   transition: all 0.25s ease;
   z-index: 100 !important;
 }
@@ -204,19 +246,22 @@ a:active {
 
 .home_img {
   /* border: 2px solid green; */
-  box-shadow: 0 2px 5px 0 pink;
-  height: 50%;
+  /* box-shadow: 0 2px 50px 0 #bee1e6; */
+  box-shadow: 0 8px 8px 0 #fff1e6, 8px 0 8px 0 #bee1e6, 0 -8px 8px 0 #fad2e1,
+    -8px 0 8px 0 #cddafd;
+  height: 40%;
   border-radius: 50%;
-  /* margin: 16px; */
+  margin: 16px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+  /* border: 2px solid green; */
 }
 
 .home_title {
   display: flex;
-  width: 80%;
+  width: 70%;
   text-align: center;
   font-size: 48px;
   font-weight: 800;
@@ -252,7 +297,8 @@ a:active {
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  padding-bottom: 8px;
+  /* Figured out i can use percentages which helps keep the card padding responsive */
+  padding: 2% 0;
 }
 
 /* @media (max-width: 400px) {
@@ -266,22 +312,21 @@ a:active {
   flex-direction: column;
   width: 20%;
   margin: 0 2px;
-  height: 25%;
+  height: 28%;
   contain: content;
-  box-shadow: 0 2px 5px 0 rgba(28, 91, 133, 0.425);
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
+  box-shadow: 0 2px 5px 0 #bee1e6;
+  /* box-shadow: 0 2px 32px 0 #BEE1E6; */
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
 }
 
 .tile_img {
-  margin-left: 6px;
-  height: 25%;
+  height: 28%;
   background: url(../img/jasonprofilepic.jpeg);
   background-size: cover;
-  box-shadow: 0 2px 5px 0 rgba(28, 91, 133, 0.425);
 }
 
 .triple_tile {
@@ -290,19 +335,19 @@ a:active {
   contain: content;
   width: 68%;
   margin: 0 2px 0 0;
-  height: 25%;
+  height: 28%;
   justify-content: center;
-  box-shadow: 0 2px 5px 0 rgba(28, 91, 133, 0.425);
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
+  box-shadow: 0 2px 5px 0 #bee1e6;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
 }
 
 .about_title {
   display: flex;
-  padding: 12px 24px 0 24px;
+  padding: 12px 24px 4px 24px;
   /* border: 2px solid green; */
 }
 
@@ -315,16 +360,20 @@ a:active {
 .tile h3 {
   display: flex;
   justify-content: center;
+  align-items: flex-end;
   font-size: 16px;
   margin: 24px 0 0 0;
+  height: 50%;
+  /* border: 2px solid green; */
 }
 
 .tile h1 {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   height: 100%;
   text-align: center;
+  /* border: 2px solid green; */
 
   /* Fallback: Set a background color. */
   background-color: rgb(0, 255, 221);
@@ -343,26 +392,39 @@ a:active {
 
 h1.looking {
   /* Create the gradient. */
-  background-image: linear-gradient(45deg, #f3ec78, #42af9d);
+  background-image: linear-gradient(45deg, #fff1e6, #fad2e1);
 }
 
 h1.working {
   /* Create the gradient. */
-  background-image: linear-gradient(45deg, #e578f3, #53d8d8);
+  background-image: linear-gradient(45deg, #fad2e1, #dfe7fd);
 }
 
 h1.learning {
   /* Create the gradient. */
-  background-image: linear-gradient(45deg, #b3f378, #4d42af);
+  background-image: linear-gradient(45deg, #eae4e9, #bee1e6);
 }
 
 h1.interests {
-  font-size: 16px;
+  font-size: 20px;
   /* Create the gradient. */
-  background-image: linear-gradient(45deg, #f3c278, #425faf);
+  background-image: linear-gradient(45deg, #bee1e6, #cddafd);
 }
 
-/* Blog Page */
+.stack {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  /* border: 2px solid green; */
+  height: 100%;
+}
+
+.tile i {
+  /* border: 2px solid green; */
+}
+
+/* ------------------------ Blog Page ------------------------ */
 
 .blog_card {
   display: flex;
@@ -372,11 +434,6 @@ h1.interests {
   justify-content: center;
   align-items: center;
   /* border: 2px solid green; */
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
   text-decoration: none;
 }
 
@@ -384,11 +441,8 @@ h1.interests {
   display: flex;
   width: 100%;
   height: 100%;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
 }
 
 .blog_peek {
@@ -431,24 +485,26 @@ h1.interests {
 .projects_card {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  /*justify-content: center;
+  */
   align-items: center;
-  /* border: 2px solid yellow; */
+  /*border: 2px solid yellow;
+  */
   width: 100%;
   height: 100%;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
 }
 
 .projects {
   display: flex;
   width: 100%;
   height: 80%;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
   background: url(../img/bloggingsite.png);
   background-size: cover;
 }

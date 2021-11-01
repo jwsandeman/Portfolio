@@ -12,28 +12,38 @@
       href="https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&family=Raleway:wght@200;300;400;800&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/3d60a3d1fe.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
       <nav class="nav">
-        <a href="./index.html"><i class="home_button">+</i></a>
-        <a href="./about.html"><i class="about_button">+</i></a>
-        <a href="./blog.html"><i class="blog_button">+</i></a>
-        <a href="./projects.html"><i class="projects_button">+</i></a>
+        <div class="icon">
+          <a href="./index.html"><i class="fas fa-home"></i></a>
+        </div>
+        <div class="icon">
+          <a href="./about.html"><i class="fas fa-info"></i></a>
+        </div>
+        <div class="icon">
+          <a href="./blog.html"><i class="fas fa-pen"></i></a>
+        </div>
+        <div class="icon">
+          <a href="./projects.html"><i class="fas fa-briefcase"></i></a>
+        </div>
       </nav>
     </header>
     <div class="background_banner">
-      <h4 class="about_banner">
-        ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT
-        ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT
-        ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT
-      </h4>
+      <h4 class="about_banner"></h4>
     </div>
     <main class="card">
       <div class="about_card">
         <div class="tile tile_img"></div>
         <div class="triple_tile">
-          <h3 class="about_title">I'm a Web Developer and avid learner from QLD, Australia.</h3>
+          <h3 class="about_title">
+            I'm a Web Developer and avid learner from QLD, Australia.
+          </h3>
           <p class="about_description">
             I'm currently enrolled in the Flex-Track Coding Bootcamp at
             @coderacademy doing a high diploma of IT. In my spare time i like to
@@ -61,10 +71,12 @@
           </h1>
         </div>
         <div class="tile">
-          <h3 class="stack">Favourite Stack:</h3>
-          <i class="react"></i>
-          <i class="next"></i>
-          <i class="tailwind"></i>
+          <h3>Favourite Stack:</h3>
+          <div class="stack">
+            <div class="icon"><i class="react fab fa-react"></i></div>
+            <div class="icon"><i class="node fab fa-node-js"></i></div>
+            <div class="icon"><i class="tailwind"></i></div>
+          </div>
         </div>
         <div class="tile">
           <h3 class="experience">Experience With:</h3>
@@ -75,14 +87,14 @@
           <i class="next"></i>
         </div>
         <div class="tile">
-          <h3 class="collaborate">Looking To Collaborate:</h3>
+          <h3 class="collaborate">Looking to Collaborate:</h3>
           <i class="react"></i>
           <i class="next"></i>
           <i class="xrpl"></i>
           <i class="blockchain"></i>
         </div>
         <div class="tile">
-          <h3 class="contact">Start A Conversation</h3>
+          <h3 class="contact">Start a Conversation:</h3>
           <div class="social_link">
             <a href="http://" target="_blank" rel="noopener noreferrer"></a>
           </div>
