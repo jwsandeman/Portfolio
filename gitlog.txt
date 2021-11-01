@@ -1,3 +1,9 @@
+commit 32c0f026c0eb4240b4358cfcf3df882106e35222
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Sat Oct 30 14:01:16 2021 +1000
+
+    added social icons to home page
+
 commit ec7e0318945bfbb08202ba2f341a6db42ce4371a
 Author: jwsandeman <jw.sandeman@gmail.com>
 Date:   Sat Oct 30 13:28:59 2021 +1000
