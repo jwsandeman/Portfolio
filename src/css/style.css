@@ -16,6 +16,7 @@ h6 {
 
 p {
   font-family: "Lusitana", serif;
+  line-height: 1.5;
 }
 
 * {
@@ -289,9 +290,6 @@ a:active {
   -o-border-radius: 4px;
 }
 
-.about_img {
-}
-
 /* Blog Page */
 
 .blog_card {
@@ -357,9 +355,77 @@ a:active {
   width: 80%;
 }
 
+/* Projects Page */
+
+.projects_card {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* border: 2px solid yellow; */
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.projects {
+  display: flex;
+  width: 100%;
+  height: 80%;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background: url(../img/bloggingsite.png);
+  background-size: cover;
+  -webkit-border-radius:;
+  -moz-border-radius:;
+  -ms-border-radius:;
+  -o-border-radius:;
+}
+
+.projects_info {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 20%;
+  /* border: 2px solid blue; */
+}
+
+.projects_description {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid blue; */
+  width: 50%;
+}
+
+.projects_title {
+  margin: 12px 0 0 12px;
+}
+
+.projects_text {
+  margin: 0 12px;
+}
+
+.projects_tags {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  /* border: 2px solid green; */
+  width: 50%;
+}
+
+.projects_text a:hover {
+  color: brown;
+}
+
+/* Tags */
 span {
   padding: 8px 24px;
-  margin: 0 8px 0 0;
+  margin: 0 12px 0 0;
   border-radius: 24px;
   -webkit-border-radius: 24px;
   -moz-border-radius: 24px;
@@ -377,6 +443,14 @@ span {
 
 .git_tag {
   border: 2px solid black;
+}
+
+.js_tag {
+  border: 2px solid yellow;
+}
+
+.api_tag {
+  border: 2px solid grey;
 }
 
 /* Footer */

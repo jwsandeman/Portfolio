@@ -1,3 +1,9 @@
+commit ed4d0856a1574b4c8dff9285a63b7d14c9ae0247
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Mon Nov 1 11:33:04 2021 +1000
+
+    added blog images to img folder. added html and css for blog page
+
 commit 32c0f026c0eb4240b4358cfcf3df882106e35222
 Author: jwsandeman <jw.sandeman@gmail.com>
 Date:   Sat Oct 30 14:01:16 2021 +1000
