@@ -1,3 +1,21 @@
+commit 93e10285f07a2b2a13344b261283480057341bf9
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Mon Nov 1 20:06:56 2021 +1000
+
+    added font awesome icons. added gradients to icons, added box shadows to cards and icons and home img. adjusted border radius across the site. updated README with colour palette.
+
+commit 5dcea22f067bbdc3e55ff8457fde150094a218f5
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Mon Nov 1 14:31:45 2021 +1000
+
+    added gradients to info tiles on about page. added some universal typography styling to paragraph tags. styled typography in about tile on about page.
+
+commit f4bb402cf0404f2feb1d45d1e64aed562c7f3b81
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Mon Nov 1 12:37:47 2021 +1000
+
+    added blogging site img to img folder. finished html and css for projects page card
+
 commit ed4d0856a1574b4c8dff9285a63b7d14c9ae0247
 Author: jwsandeman <jw.sandeman@gmail.com>
 Date:   Mon Nov 1 11:33:04 2021 +1000

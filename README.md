@@ -13,7 +13,7 @@ The purpose of the portfolio is website is to showcase my skills as a web profes
 
 Ive taken the simple single page approach (even though theres actually 5 seperate html documents) so as to give it the feel of never leaving the home page. This was achieved by using flexbox and CSS animation to create the effect. Users will be able to navigate around my website using buttons to navigate to my about me section, portfolio, blog and the home page.
 
-I have chosen to use raw CSS in a logical and efficient manner. I have also used a font combination of Raleway and Lusitana that i found on this [blog](https://inkbotdesign.com/font-combinations/). The Colour pallet i have chosen is as follows: ![Colour Palette](./docs/colourpalette.png).
+I have chosen to use SCSS to help with streamlining the styling in a logical and efficient manner. I have also used a font combination of Raleway and Lusitana that i found on this [blog](https://inkbotdesign.com/font-combinations/). The Colour pallet i have chosen is as follows: ![Colour Palette](./docs/colourpalette.png).
 
 My sitemap is as follows:
 
