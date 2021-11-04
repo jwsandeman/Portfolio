@@ -151,13 +151,17 @@ Now that we are clear on our project requirements and intended tech stack it is 
 
 ---
 
-## Components Used
+## Components and Features
+
+### Responsive Design
+
+- I designed this website with responsive layouts in mind. When the screen size changes, the layout and typography is optimised for the current screen size. I have used 3 main media breakpoints - Desktop, Tablet and Mobile.
 
 ### Site Navigation
 
 - Desktop - I have used 4 buttons placed in eah corner of the web page to allow users to navigate around my portfolio. When a user hovers over one of the buttons the icon will rotate and dislay the link description
 
-- Mobile - I have opted for the tradtional burger menu to diplay the navigation menu.
+- Mobile - I have opted for the tradtional burger menu at the top of the screen to diplay the navigation menu.
 
 ### Main Body Theme
 
@@ -183,9 +187,13 @@ Now that we are clear on our project requirements and intended tech stack it is 
 
 ### Portfolio Card
 
-- Desktop - I used vertical column layout so that you can see the screenshots preview of each website i have worked on. I also included a small horizontal information bar at the bottom.
+- Desktop - I used vertical column layout so that you can see the screenshots preview of each website i have worked on. I also included a small horizontal information bar at the bottom. This bottom bar has a link to the associated website.
 
 - Mobile - I used a smaller version of the card to give a preview of the website and the information bar. These previews are in a single vertical scrolling column layout.
+
+### Blog Post
+
+- Desktop/Mobile - I used a vertical scrolling column with an image as the post header. Then you have the post meta data and tags followed by the heading and publish date. After that the user can read the blog post by scrolling down the page.
 
 ---
 
@@ -205,7 +213,7 @@ Now that we are clear on our project requirements and intended tech stack it is 
 
 ### Images
 
-- Most of my images were created in Canva and my profile pic was taken by a friend of mine named James Stocks who gave me the image to use freely. His portflio can be found [here](https://jamesstocks.myportfolio.com/).
+- I created most of my images in Canva and my profile pic was taken by a friend of mine named James Stocks who gave me the image to use freely. His portflio can be found [here](https://jamesstocks.myportfolio.com/).
 
 ---
 
