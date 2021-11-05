@@ -1,10 +1,97 @@
-/* Fonts
-Headings:
-font-family: 'Raleway', sans-serif; 
-Everywhere Else:
-font-family: 'Lusitana', serif;
-*/
+/* This resets the page to my preferred starting point. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* This sets up the page for the single page effect */
+body {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  /* border: 4px solid yellow; */
+  height: 100vh;
+}
+
+/* ------------------------  $variables  ------------------------ */
+
+/* $primary-colour: #bee1e6; */
+
+/* ------------------------  @Mixins  ------------------------ */
+
+/* This styles icons */
+/* @mixin icon-style {
+  display: flex;
+  margin: 8px;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+} */
+
+/* This styles round icons */
+/* @mixin round-icon {
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+} */
+
+/* This styles the navigation buttons */
+/* @mixin nav-button-style {
+  position: fixed;
+  box-shadow: 0 4px 4px 0 #fff1e6, 4px 0 4px 0 #fad2e1, 0 -4px 4px 0 #bee1e6, -4px 0 4px 0 #cddafd;
+  transition: 1s;
+  transition-timing-function: ease-out;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+} */
+
+/* This shows the navigation text when hovering over the icon */
+/* @mixin hover-text {
+  display: flex;
+  opacity: 100%;
+  transition: opacity 1.5s;
+  transition-timing-function: ease-in;
+  -webkit-transition: opacity 1.5s;
+  -moz-transition: opacity 1.5s;
+  -ms-transition: opacity 1.5s;
+  -o-transition: opacity 1.5s;
+} */
+
+/* This is for text/icon gradients. It will show the gradient as a text color rather than element bg. */
+/* @mixin icon-clip {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+} */
+
+/* This is a flexbox row centred */
+/* @mixin row-centred {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+} */
+
+/* This is a flexbox colum centred */
+/* @mixin column-centred {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+
+/* ------------------------  Type-scale  ------------------------ */
+
+/* This is the typography scale i will be using */
 h1,
 h2,
 h3,
@@ -20,50 +107,9 @@ p {
   color: rgba(0, 0, 0, 0.6);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  display: flex;
-  /* flex-direction: column; */
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  /* border: 4px solid yellow; */
-  height: 100vh;
-}
-
-.background_banner {
-  /* display: flex;
-  position: fixed; */
-  /* border: 1px solid green; */
-  /* width: 100vw;
-  align-items: center;
-  margin: 0 auto;
-  font-size: 24px;
-  background: -webkit-radial-gradient(
-    circle,
-    rgba(63, 94, 251, 1) 0%,
-    rgba(88, 218, 198, 1) 23%,
-    rgba(169, 170, 141, 1) 48%,
-    rgba(201, 217, 112, 1) 78%,
-    rgba(252, 70, 107, 1) 100%
-  ); */
-  /* -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent; */
-  /* z-index: -99999; */
-  /* background-repeat: repeat-x; */
-  /* flex-wrap: nowrap;
-  height: 24px;
-  margin-left: 24px; */
-}
-
 /* ------------------------  Link Styling ------------------------ */
 
+/* This removes all link styling */
 a,
 a:hover,
 a:link,
@@ -77,15 +123,14 @@ a:active {
 
 /* This adds styling and a transition timer to all icons */
 .icon i {
-  /*make-@mixinicon-style*/
-  /*@includeicon-style();*/
+  /* @include icon-style (); */
   display: flex;
   margin: 8px;
   justify-content: center;
   align-items: center;
   font-size: 32px;
 
-  /* @mixin round-icon */
+  /* @include round-icon (); */
   height: 56px;
   width: 56px;
   border-radius: 50%;
@@ -113,15 +158,14 @@ a:active {
 
 /* This adds icon border styling to all navigation buttons in order to make the box-shadow transform correctly */
 .icon_border {
-  /*make-@mixinicon-style*/ /*@includeicon-style():;
-  */
+  /* @include icon-style ():; */
   display: flex;
   margin: 8px;
   justify-content: center;
   align-items: center;
   font-size: 32px;
 
-  /* @mixin round-icon */
+  /* @include round-icon (); */
   height: 56px;
   width: 56px;
   border-radius: 50%;
@@ -144,7 +188,7 @@ a:active {
 
 /* Adds the icon styling to the h1 text and hides it with opacity */
 .icon h1 {
-  /* @mixin - icon-style */
+  /* @include icon-style (); */
   display: flex;
   margin: 8px;
   justify-content: center;
@@ -154,7 +198,7 @@ a:active {
 
   /* Independant declarations */
   position: fixed;
-  color: #bee1e6;
+  color: #bee1e6; /* add $primary-colour */
   opacity: 0;
   transition: 1s;
   transition-timing-function: ease-in;
@@ -168,7 +212,7 @@ a:active {
 
 /* This positions the home button border, the box shadow and adds a transition timer */
 .icon_border.home {
-  /* @mixin nav-border-style */
+  /* @include nav-button-style (); */
   position: fixed;
   box-shadow: 0 4px 4px 0 #fff1e6, 4px 0 4px 0 #fad2e1, 0 -4px 4px 0 #bee1e6,
     -4px 0 4px 0 #cddafd;
@@ -195,7 +239,7 @@ a:active {
   position: fixed;
   left: 32px;
   top: 32px;
-  color: #bee1e6;
+  color: #bee1e6; /* add $primary-colour */
 }
 
 /* This positions the "HOME" text next to the home icon */
@@ -206,7 +250,7 @@ a:active {
 
 /* This unhides the "HOME" text when the user hovers over the icon using opacity */
 .home_wrapper:hover .home_txt {
-  /* @mixin hover-text */
+  /* @include hover-text (); */
   display: flex;
   opacity: 100%;
   transition: opacity 1.5s;
@@ -219,9 +263,9 @@ a:active {
 
 /* ------------------------  About Button ------------------------ */
 
-/* This positions the home button border, the box shadow and adds a transition timer */
+/* This positions the about button border, the box shadow and adds a transition timer */
 .icon_border.about {
-  /* @mixin nav-border-style */
+  /* @include nav-button-style (); */
   position: fixed;
   box-shadow: 0 4px 4px 0 #fff1e6, 4px 0 4px 0 #fad2e1, 0 -4px 4px 0 #bee1e6,
     -4px 0 4px 0 #cddafd;
@@ -242,16 +286,16 @@ a:active {
   padding: 16px 106px;
 }
 
-/* This positions the home icon */
+/* This positions the info icon */
 .fa-info {
   display: flex;
   position: fixed;
   right: 32px;
   top: 32px;
-  color: #bee1e6;
+  color: #bee1e6; /* add $primary-colour */
 }
 
-/* This positions the "ABOUT" text next to the home icon */
+/* This positions the "ABOUT" text next to the info icon */
 .about_txt {
   right: 88px;
   top: 32px;
@@ -259,7 +303,7 @@ a:active {
 
 /* This unhides the "ABOUT" text when the user hovers over the icon using opacity */
 .about_wrapper:hover .about_txt {
-  /* @mixin hover-text */
+  /* @include hover-text (); */
   display: flex;
   opacity: 100%;
   transition: opacity 1.5s;
@@ -272,9 +316,9 @@ a:active {
 
 /* ------------------------  Blog Button ------------------------ */
 
-/* This positions the home button border, the box shadow and adds a transition timer */
+/* This positions the blog button border, the box shadow and adds a transition timer */
 .icon_border.blog {
-  /* @mixin nav-border-style */
+  /* @include nav-button-style (); */
   position: fixed;
   box-shadow: 0 4px 4px 0 #fff1e6, 4px 0 4px 0 #fad2e1, 0 -4px 4px 0 #bee1e6,
     -4px 0 4px 0 #cddafd;
@@ -290,29 +334,29 @@ a:active {
   bottom: 32px;
 }
 
-/* This transforms the box shadow to wrap around the "HOME" navigation text */
+/* This transforms the box shadow to wrap around the "BLOG" navigation text */
 .icon_border.blog:hover {
   padding: 16px 92px;
 }
 
-/* This positions the home icon */
+/* This positions the pen icon */
 .fa-pen {
   display: flex;
   position: fixed;
   right: 32px;
   bottom: 32px;
-  color: #bee1e6;
+  color: #bee1e6; /* add $primary-colour */
 }
 
-/* This positions the "HOME" text next to the home icon */
+/* This positions the "BLOG" text next to the pen icon */
 .blog_txt {
   right: 88px;
   bottom: 32px;
 }
 
-/* This unhides the "HOME" text when the user hovers over the icon using opacity */
+/* This unhides the "BLOG" text when the user hovers over the icon using opacity */
 .blog_wrapper:hover .blog_txt {
-  /* @mixin hover-text */
+  /* @include hover-text (); */
   display: flex;
   opacity: 100%;
   transition: opacity 1.5s;
@@ -327,7 +371,7 @@ a:active {
 
 /* This positions the projects button border, the box shadow and adds a transition timer */
 .icon_border.projects_icon {
-  /* @mixin nav-border-style */
+  /* @include nav-button-style (); */
   position: fixed;
   box-shadow: 0 4px 4px 0 #fff1e6, 4px 0 4px 0 #fad2e1, 0 -4px 4px 0 #bee1e6,
     -4px 0 4px 0 #cddafd;
@@ -354,7 +398,7 @@ a:active {
   position: fixed;
   left: 32px;
   bottom: 32px;
-  color: #bee1e6;
+  color: #bee1e6; /* add $primary-colour */
 }
 
 /* This positions the "PROJECTS" text next to the briefcase icon */
@@ -365,7 +409,7 @@ a:active {
 
 /* This unhides the "PROJECTS" text when the user hovers over the icon using opacity */
 .projects_wrapper:hover .projects_txt {
-  /* @mixin hover-text */
+  /* @include hover-text (); */
   display: flex;
   opacity: 100%;
   transition: opacity 1.5s;
@@ -385,11 +429,13 @@ a:active {
   background: -webkit-linear-gradient(left, #fff1e6 0%, #fde2e4 100%);
   background: linear-gradient(to right, #fff1e6 0%, #fde2e4 100%);
 
-  /* @mixin icon-clip */
+  /* Use the text as a mask for the background. */
+  /* This is for text/icon gradients. This will show the gradient as a text color rather than element bg. */
+  background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .fa-linkedin-in {
@@ -399,11 +445,13 @@ a:active {
   background: -webkit-linear-gradient(left, #fad2e1 0%, #e2ece9 100%);
   background: linear-gradient(to right, #fad2e1 0%, #e2ece9 100%);
 
-  /* @mixin icon-clip */
+  /* Use the text as a mask for the background. */
+  /* This is for text/icon gradients. This will show the gradient as a text color rather than element bg. */
+  background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .fa-twitter {
@@ -413,11 +461,13 @@ a:active {
   background: -webkit-linear-gradient(left, #bee1e6 0%, #f0efeb 100%);
   background: linear-gradient(to right, #bee1e6 0%, #f0efeb 100%);
 
-  /* @mixin icon-clip */
+  /* Use the text as a mask for the background. */
+  /* This is for text/icon gradients. This will show the gradient as a text color rather than element bg. */
+  background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .fa-paper-plane {
@@ -427,11 +477,13 @@ a:active {
   background: -webkit-linear-gradient(left, #f0efeb 0%, #dfe7fd 100%);
   background: linear-gradient(to right, #f0efeb 0%, #dfe7fd 100%);
 
-  /* @mixin icon-clip */
+  /* Use the text as a mask for the background. */
+  /* This is for text/icon gradients. This will show the gradient as a text color rather than element bg. */
+  background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .fa-react {
@@ -441,11 +493,13 @@ a:active {
   background: -webkit-linear-gradient(left, #f0efeb 0%, #dfe7fd 100%);
   background: linear-gradient(to right, #f0efeb 0%, #dfe7fd 100%);
 
-  /* @mixin icon-clip */
+  /* Use the text as a mask for the background. */
+  /* This is for text/icon gradients. This will show the gradient as a text color rather than element bg. */
+  background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .fa-node-js {
@@ -455,388 +509,25 @@ a:active {
   background: -webkit-linear-gradient(left, #f0efeb 0%, #dfe7fd 100%);
   background: linear-gradient(to right, #f0efeb 0%, #dfe7fd 100%);
 
-  /* @mixin icon-clip */
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* ------------------------  Navigation Buttons ------------------------ */
-
-/* .fa-info {
-  position: fixed;
-  right: 32px;
-  top: 32px;
-  box-shadow: 0 4px 4px 0 #fff1e6, 4px 0 4px 0 #fad2e1, 0 -4px 4px 0 #bee1e6,
-    -4px 0 4px 0 #cddafd;
-  color: #bee1e6;
-} */
-
-/* .fa-pen {
-  position: fixed;
-  right: 32px;
-  bottom: 32px;
-  box-shadow: 0 4px 4px 0 #fff1e6, 4px 0 4px 0 #fad2e1, 0 -4px 4px 0 #bee1e6,
-    -4px 0 4px 0 #cddafd;
-  color: #bee1e6;
-} */
-
-/* .fa-briefcase {
-  position: fixed;
-  left: 32px;
-  bottom: 32px;
-  box-shadow: 0 4px 4px 0 #fff1e6, 4px 0 4px 0 #fad2e1, 0 -4px 4px 0 #bee1e6,
-    -4px 0 4px 0 #cddafd;
-  color: #bee1e6;
-} */
-
-/* ------------------------ Main Card Styling ------------------------ */
-
-.card {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  /*justify-content: center;
-  */ /*flex-direction: column;
-  */
-  background-color: white;
-  border-radius: 24px;
-  box-shadow: 0 2px 32px 0 #bee1e6;
-  /*box-shadow: 0 8px 8px 0 #fff1e6, 8px 0 8px 0 #BEE1E6, 0 -8px 8px 0 #FAD2E1,    -8px 0 8px 0 #CDDAFD;
-  */
-  width: 70%;
-  height: 70%;
-  -webkit-border-radius: 24px;
-  -moz-border-radius: 24px;
-  -ms-border-radius: 24px;
-  -o-border-radius: 24px;
-  transition: all 0.25s ease;
-  z-index: 100 !important;
-}
-
-.card:hover {
-  transform: translate3d(5px, -5px, -5px);
-  -webkit-transform: translate3d(5px, -5px, -5px);
-  -moz-transform: translate3d(5px, -5px, -5px);
-  -ms-transform: translate3d(5px, -5px, -5px);
-  -o-transform: translate3d(5px, -5px, -5px);
-}
-
-/* ------------------------ Home Page ------------------------ */
-
-.home_card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: space-between;
-  width: 100%;
-  /* border: 2px solid green; */
-}
-
-.home_img {
-  /* border: 2px solid green; */
-  /* box-shadow: 0 2px 50px 0 #bee1e6; */
-  box-shadow: 0 8px 8px 0 #fff1e6, 8px 0 8px 0 #bee1e6, 0 -8px 8px 0 #fad2e1,
-    -8px 0 8px 0 #cddafd;
-  height: 40%;
-  border-radius: 50%;
-  margin: 16px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  /* border: 2px solid green; */
-}
-
-.home_title {
-  display: flex;
-  width: 70%;
-  text-align: center;
-  font-size: 48px;
-  font-weight: 800;
-  letter-spacing: 4px;
-  margin: 8px;
-  /* border: 2px solid green; */
-  justify-content: center;
-}
-
-.home_description {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  font-size: 18px;
-  width: 75%;
-  margin: 8px;
-  line-height: 1.5;
-}
-
-.home_social {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  /* border: 2px solid green; */
-}
-
-/* ------------------------  About Page ------------------------ */
-
-.about_card {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-  /* Figured out i can use percentages which helps keep the card padding responsive */
-  padding: 2% 0;
-}
-
-/* @media (max-width: 400px) {
-  .about_card {
-    display: block;
-  }
-} */
-
-.tile {
-  display: flex;
-  flex-direction: column;
-  width: 20%;
-  margin: 0 2px;
-  height: 28%;
-  contain: content;
-  box-shadow: 0 2px 5px 0 #bee1e6;
-  /* box-shadow: 0 2px 32px 0 #BEE1E6; */
-  border-radius: 24px;
-  -webkit-border-radius: 24px;
-  -moz-border-radius: 24px;
-  -ms-border-radius: 24px;
-  -o-border-radius: 24px;
-}
-
-.tile_img {
-  height: 28%;
-  background: url(../img/jasonprofilepic.jpeg);
-  background-size: cover;
-}
-
-.triple_tile {
-  display: flex;
-  flex-direction: column;
-  contain: content;
-  width: 68%;
-  margin: 0 2px 0 0;
-  height: 28%;
-  justify-content: center;
-  box-shadow: 0 2px 5px 0 #bee1e6;
-  border-radius: 24px;
-  -webkit-border-radius: 24px;
-  -moz-border-radius: 24px;
-  -ms-border-radius: 24px;
-  -o-border-radius: 24px;
-}
-
-.about_title {
-  display: flex;
-  padding: 12px 24px 4px 24px;
-  /* border: 2px solid green; */
-}
-
-.about_description {
-  display: flex;
-  padding: 0 24px 0 24px;
-  /* border: 2px solid green; */
-}
-
-.tile h3 {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  font-size: 16px;
-  margin: 24px 0 0 0;
-  height: 50%;
-  /* border: 2px solid green; */
-}
-
-.tile h1 {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  height: 100%;
-  text-align: center;
-  /* border: 2px solid green; */
-
-  /* Fallback: Set a background color. */
-  background-color: rgb(0, 255, 221);
-
-  /* Set the background size and repeat properties. */
-  background-size: 100%;
-  background-repeat: repeat;
-
   /* Use the text as a mask for the background. */
-  /* This will show the gradient as a text color rather than element bg. */
+  /* This is for text/icon gradients. This will show the gradient as a text color rather than element bg. */
+  background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
 
-h1.looking {
-  /* Create the gradient. */
-  background-image: linear-gradient(45deg, #fff1e6, #fad2e1);
-}
+/* ------------------------ Tags ------------------------ */
 
-h1.working {
-  /* Create the gradient. */
-  background-image: linear-gradient(45deg, #fad2e1, #dfe7fd);
-}
-
-h1.learning {
-  /* Create the gradient. */
-  background-image: linear-gradient(45deg, #eae4e9, #bee1e6);
-}
-
-h1.interests {
-  font-size: 20px;
-  /* Create the gradient. */
-  background-image: linear-gradient(45deg, #bee1e6, #cddafd);
-}
-
-.stack {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  /* border: 2px solid green; */
-  height: 100%;
-}
-
-.tile i {
-  /* border: 2px solid green; */
-}
-
-/* ------------------------ Blog Page ------------------------ */
-
-.blog_card {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  /* border: 2px solid green; */
-  text-decoration: none;
-}
-
-.blog_img {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  border-top-left-radius: 24px;
-  border-bottom-left-radius: 24px;
-}
-
-.blog_peek {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  padding: 12px;
-}
-
-.blog_title {
-  font-size: 32px;
-  width: 80%;
-  line-height: 1.5;
-}
-
-.blog_description {
-  width: 80%;
-  line-height: 1.5;
-  margin-bottom: 24px;
-}
-
-.blog_published {
-  text-align: left;
-  margin: 12px;
-  width: 80%;
-  font-style: italic;
-  color: grey;
-}
-
+/* Set up consitent styling */
 .tags {
-  padding: 8px 0;
-  width: 80%;
-}
-
-/* ------------------------ Projects Page ------------------------ */
-
-.projects_card {
-  display: flex;
-  flex-direction: column;
-  /*justify-content: center;
-  */
-  align-items: center;
-  /*border: 2px solid yellow;
-  */
-  width: 100%;
-  height: 100%;
-  border-radius: 24px;
-  -webkit-border-radius: 24px;
-  -moz-border-radius: 24px;
-  -ms-border-radius: 24px;
-  -o-border-radius: 24px;
-}
-
-.projects {
-  display: flex;
-  width: 100%;
-  height: 80%;
-  border-top-left-radius: 24px;
-  border-top-right-radius: 24px;
-  background: url(../img/bloggingsite.png);
-  background-size: cover;
-}
-
-.projects_info {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  height: 20%;
-  /* border: 2px solid blue; */
-}
-
-.projects_description {
-  display: flex;
-  flex-direction: column;
-  /* border: 2px solid blue; */
-  width: 50%;
-}
-
-.projects_title {
-  margin: 24px 0 0 24px;
-}
-
-.projects_text {
-  margin: 0 24px;
-}
-
-.projects_tags {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
   align-items: center;
-  /* border: 2px solid green; */
-  width: 50%;
 }
 
-.projects_text a:hover {
-  color: brown;
-}
-
-/* Tags */
+/* Set up consistent spacing for each tag */
 span {
   padding: 8px 24px;
   margin: 0 12px 0 0;
@@ -867,8 +558,375 @@ span {
   border: 2px solid grey;
 }
 
-/* Footer */
 
+/* ------------------------ Main Card Styling ------------------------ */
+
+/* This styles the main 'busines card' card on each page */
+.card {
+  /* @include row-centred (); */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  background-color: white;
+  border-radius: 24px;
+  box-shadow: 0 2px 32px 0 #bee1e6; /* add $primary-colour */
+  width: 70%;
+  height: 70%;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+  transition: all 0.25s ease;
+  z-index: 100 !important;
+}
+
+.card:hover {
+  transform: translate3d(5px, -5px, -5px);
+  -webkit-transform: translate3d(5px, -5px, -5px);
+  -moz-transform: translate3d(5px, -5px, -5px);
+  -ms-transform: translate3d(5px, -5px, -5px);
+  -o-transform: translate3d(5px, -5px, -5px);
+}
+
+/* ------------------------ Home Page ------------------------ */
+
+/* Overlay card to style help children */
+.home_card {
+  /* @include column-centred (); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+  align-content: space-between;
+  width: 100%;
+}
+
+/* Centres image in card with box shadow */
+.home_img {
+  box-shadow: 0 8px 8px 0 #fff1e6, 8px 0 8px 0 #bee1e6, 0 -8px 8px 0 #fad2e1,
+    -8px 0 8px 0 #cddafd;
+  height: 40%;
+  border-radius: 50%;
+  margin: 16px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  /* border: 2px solid green; */
+}
+
+/* Positions title in the centre */
+.home_title {
+  /* @include row-centred (); */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  width: 70%;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  margin: 8px;
+}
+
+/* Positions description in the centre */
+.home_description {
+  /* @include row-centred (); */
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+
+  text-align: center;
+  font-size: 18px;
+  width: 75%;
+  margin: 8px;
+  line-height: 1.5;
+}
+
+/* Positions icons in the centre */
+.home_social {
+  /* @include row-centred (); */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  align-items: center;
+}
+
+/* ------------------------  About Page ------------------------ */
+
+/* Overlay card to help style the children */
+.about_card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  /* Figured out i can use percentages which helps keep the card padding responsive */
+  padding: 2% 0;
+}
+
+/* @media (max-width: 400px) {
+  .about_card {
+    display: block;
+  }
+} */
+
+/* Single column tile */
+.tile {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin: 0 2px;
+  height: 28%;
+  contain: content;
+  box-shadow: 0 2px 5px 0 #bee1e6; /* add $primary-colour */
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+}
+
+/* Styling for image to fit in a single column tile */
+.tile_img {
+  height: 28%;
+  background: url(../img/jasonprofilepic.jpeg);
+  background-size: cover;
+}
+
+/* Triple sized tile */
+.triple_tile {
+  /* @include column-centred (); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  contain: content;
+  width: 68%;
+  margin: 0 2px 0 0;
+  height: 28%;
+  box-shadow: 0 2px 5px 0 #bee1e6; /* add $primary-colour */
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+}
+
+/* Styling for triple tile title */
+.about_title {
+  display: flex;
+  padding: 12px 24px 4px 24px;
+}
+
+/* Styling for triple tile description */
+.about_description {
+  display: flex;
+  padding: 0 24px 0 24px;
+}
+
+/* Styling for single tile titles */
+.tile h3 {
+  /* @include row-centred (); */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  align-items: flex-end;
+  font-size: 16px;
+  margin: 24px 0 0 0;
+  height: 50%;
+}
+
+/* Styling for single tile gradient titles */
+.tile h1 {
+  /* @include row-centred (); */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  align-items: flex-start;
+  height: 100%;
+  text-align: center;
+
+  /* Fallback: Set a background color. */
+  background-color: #bee1e6; /* add $primary-colour */
+
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This is for text/icon gradients. This will show the gradient as a text color rather than element bg. */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+h1.looking {
+  /* Create the gradient. */
+  background-image: linear-gradient(45deg, #fff1e6, #fad2e1);
+}
+
+h1.working {
+  /* Create the gradient. */
+  background-image: linear-gradient(45deg, #fad2e1, #dfe7fd);
+}
+
+h1.learning {
+  /* Create the gradient. */
+  background-image: linear-gradient(45deg, #eae4e9, #bee1e6);
+}
+
+h1.interests {
+  font-size: 20px;
+  /* Create the gradient. */
+  background-image: linear-gradient(45deg, #bee1e6, #cddafd);
+}
+
+/* Icon positioning for stack tile */
+.stack {
+  /* @include row-centred (); */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  align-items: flex-start;
+  height: 100%;
+}
+
+/* ------------------------ Blog Page ------------------------ */
+
+/* Overlay card to help style the children */
+.blog_card {
+  /* @include row-centred (); */
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+/* position image to take up 100% of its container */
+.blog_img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+}
+
+/* card that provides a sneak peek of the blog */
+.blog_peek {
+  /* @include column-centred (); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  padding: 12px;
+}
+
+/* Styling for blog title */
+.blog_title {
+  font-size: 32px;
+  width: 80%;
+  line-height: 1.5;
+}
+
+/* Styling for blog description */
+.blog_description {
+  width: 80%;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+/* Styling for blog published date */
+.blog_published {
+  text-align: left;
+  margin: 12px;
+  width: 80%;
+  font-style: italic;
+  color: grey;
+}
+
+/* Position tags on left align */
+.blog_tags {
+  width: 80%;
+}
+
+/* ------------------------ Projects Page ------------------------ */
+
+/* Overlay card to help style the children */
+.projects_card {
+  /* @include column-centred (); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+}
+
+/* Image styling that takes up the top 80% of the card */
+.projects {
+  display: flex;
+  width: 100%;
+  height: 80%;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  background: url(../img/bloggingsite.png);
+  background-size: cover;
+}
+
+/* Project info that takes up thebottom 20% of the card. Children are in row format */
+.projects_info {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 20%;
+}
+
+/* Container for title and description text. takes up left hand side half of the info bar  */
+.projects_description {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.projects_title {
+  margin: 24px 0 0 24px;
+}
+
+.projects_text {
+  margin: 0 24px;
+}
+
+/* Container for tags. takes up right hand side half of the info bar  */
+.projects_tags {
+  justify-content: flex-end;
+  width: 50%;
+}
+
+/* ------------------------ Footer ------------------------ */
+
+/* Postion footer in the centre at the bottom */
 footer {
   display: flex;
   position: fixed;
