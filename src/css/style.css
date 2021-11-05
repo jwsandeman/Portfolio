@@ -75,20 +75,255 @@ a:active {
 
 /* ------------------------  Icons ------------------------ */
 
+/* This adds styling and a transition timer to all icons */
 .icon i {
+  /*make-@mixinicon-style*/
+  /*@includeicon-style();*/
   display: flex;
   margin: 8px;
   justify-content: center;
   align-items: center;
-  font-size: 36px;
-  width: 60px;
-  height: 60px;
+  font-size: 32px;
+
+  /* @mixin round-icon */
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+
+  /* Independant declarations */
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+/* This adds the rotate effect to the icons only */
+.icon i:hover {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}
+
+/* This adds icon border styling to all navigation buttons in order to make the box-shadow transform correctly */
+.icon_border {
+  /*make-@mixinicon-style*/ /*@includeicon-style():;
+  */
+  display: flex;
+  margin: 8px;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+
+  /* @mixin round-icon */
+  height: 56px;
+  width: 56px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
+
+/* This changes the border-radius on hover to all navigation icons */
+.icon_border:hover {
+  border-radius: 28px;
+  -webkit-border-radius: 28px;
+  -moz-border-radius: 28px;
+  -ms-border-radius: 28px;
+  -o-border-radius: 28px;
+}
+
+/* ------------------------  Navigation Button Text ------------------------ */
+
+/* Adds the icon styling to the h1 text and hides it with opacity */
+.icon h1 {
+  /* @mixin - icon-style */
+  display: flex;
+  margin: 8px;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  height: 56px;
+
+  /* Independant declarations */
+  position: fixed;
+  color: #bee1e6;
+  opacity: 0;
+  transition: 1s;
+  transition-timing-function: ease-in;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+/* ------------------------  Home Button ------------------------ */
+
+/* This positions the home button border, the box shadow and adds a transition timer */
+.icon_border.home {
+  /* @mixin nav-border-style */
+  position: fixed;
+  box-shadow: 0 4px 4px 0 #fff1e6, 4px 0 4px 0 #fad2e1, 0 -4px 4px 0 #bee1e6,
+    -4px 0 4px 0 #cddafd;
+  transition: 1s;
+  transition-timing-function: ease-out;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+
+  /* independant declarations */
+  left: 32px;
+  top: 32px;
+}
+
+/* This transforms the box shadow to wrap around the "HOME" navigation text */
+.icon_border.home:hover {
+  padding: 16px 96px;
+}
+
+/* This positions the home icon */
+.fa-home {
+  display: flex;
+  position: fixed;
+  left: 32px;
+  top: 32px;
+  color: #bee1e6;
+}
+
+/* This positions the "HOME" text next to the home icon */
+.home_txt {
+  left: 88px;
+  top: 32px;
+}
+
+/* This unhides the "HOME" text when the user hovers over the icon using opacity */
+.home_wrapper:hover .home_txt {
+  /* @mixin hover-text */
+  display: flex;
+  opacity: 100%;
+  transition: opacity 1.5s;
+  transition-timing-function: ease-in;
+  -webkit-transition: opacity 1.5s;
+  -moz-transition: opacity 1.5s;
+  -ms-transition: opacity 1.5s;
+  -o-transition: opacity 1.5s;
+}
+
+/* ------------------------  About Button ------------------------ */
+
+/* This positions the home button border, the box shadow and adds a transition timer */
+.icon_border.about {
+  /* @mixin nav-border-style */
+  position: fixed;
+  box-shadow: 0 4px 4px 0 #fff1e6, 4px 0 4px 0 #fad2e1, 0 -4px 4px 0 #bee1e6,
+    -4px 0 4px 0 #cddafd;
+  transition: 1s;
+  transition-timing-function: ease-out;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+
+  /* independant declarations */
+  right: 32px;
+  top: 32px;
+}
+
+/* This transforms the box shadow to wrap around the "ABOUT" navigation text */
+.icon_border.about:hover {
+  padding: 16px 106px;
+}
+
+/* This positions the home icon */
+.fa-info {
+  display: flex;
+  position: fixed;  
+  right: 32px;
+  top: 32px;
+  color: #bee1e6;
+}
+
+/* This positions the "ABOUT" text next to the home icon */
+.about_txt {
+  right: 88px;
+  top: 32px;
+}
+
+/* This unhides the "ABOUT" text when the user hovers over the icon using opacity */
+.about_wrapper:hover .about_txt {
+  /* @mixin hover-text */
+  display: flex;
+  opacity: 100%;
+  transition: opacity 1.5s;
+  transition-timing-function: ease-in;
+  -webkit-transition: opacity 1.5s;
+  -moz-transition: opacity 1.5s;
+  -ms-transition: opacity 1.5s;
+  -o-transition: opacity 1.5s;
+}
+
+/* ------------------------  Blog Button ------------------------ */
+
+/* This positions the home button border, the box shadow and adds a transition timer */
+.icon_border.blog {
+  /* @mixin nav-border-style */
+  position: fixed;
+  box-shadow: 0 4px 4px 0 #fff1e6, 4px 0 4px 0 #fad2e1, 0 -4px 4px 0 #bee1e6,
+    -4px 0 4px 0 #cddafd;
+  transition: 1s;
+  transition-timing-function: ease-out;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+
+  /* independant declarations */
+  right: 32px;
+  bottom: 32px;
+}
+
+/* This transforms the box shadow to wrap around the "HOME" navigation text */
+.icon_border.blog:hover {
+  padding: 16px 96px;
+}
+
+/* This positions the home icon */
+.fa-pen {
+  display: flex;
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+  color: #bee1e6;
+}
+
+/* This positions the "HOME" text next to the home icon */
+.blog_txt {
+  right: 88px;
+  bottom: 32px;
+}
+
+/* This unhides the "HOME" text when the user hovers over the icon using opacity */
+.blog_wrapper:hover .blog_txt {
+  /* @mixin hover-text */
+  display: flex;
+  opacity: 100%;
+  transition: opacity 1.5s;
+  transition-timing-function: ease-in;
+  -webkit-transition: opacity 1.5s;
+  -moz-transition: opacity 1.5s;
+  -ms-transition: opacity 1.5s;
+  -o-transition: opacity 1.5s;
+}
+
+/* ------------------------ Social Icons ------------------------ */
 
 .fa-github {
   box-shadow: 0 4px 4px 0 #fff1e6, 4px 0 4px 0 #fad2e1, 0 -4px 4px 0 #bee1e6,
@@ -164,32 +399,23 @@ a:active {
 
 /* ------------------------  Navigation Buttons ------------------------ */
 
-.fa-home {
-  position: fixed;
-  left: 32px;
-  top: 32px;
-  box-shadow: 0 4px 4px 0 #fff1e6, 4px 0 4px 0 #fad2e1, 0 -4px 4px 0 #bee1e6,
-    -4px 0 4px 0 #cddafd;
-  color: #bee1e6;
-}
-
-.fa-info {
+/* .fa-info {
   position: fixed;
   right: 32px;
   top: 32px;
   box-shadow: 0 4px 4px 0 #fff1e6, 4px 0 4px 0 #fad2e1, 0 -4px 4px 0 #bee1e6,
     -4px 0 4px 0 #cddafd;
   color: #bee1e6;
-}
+} */
 
-.fa-pen {
+/* .fa-pen {
   position: fixed;
   right: 32px;
   bottom: 32px;
   box-shadow: 0 4px 4px 0 #fff1e6, 4px 0 4px 0 #fad2e1, 0 -4px 4px 0 #bee1e6,
     -4px 0 4px 0 #cddafd;
   color: #bee1e6;
-}
+} */
 
 .fa-briefcase {
   position: fixed;
