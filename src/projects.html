@@ -54,18 +54,53 @@
         </div>
       </nav>
     </header>
-    <div class="background_banner">
-      <h4 class="projects_banner"></h4>
-    </div>
+
+    <!-- Main Card/Slideshow Container -->
     <main class="card">
-      <a href="http://" target="_blank" rel="noopener noreferrer">
+
+      <!-- Slide 1 -->
+      <a
+        href="http://"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="mySlides fade"
+      >
         <div class="projects_card">
           <div class="projects">
             <img src="" alt="" class="projects_img" />
           </div>
           <div class="projects_info">
             <div class="projects_description">
-              <h1 class="projects_title">Blogging Site</h1>
+              <h1 class="projects_title">React Expense App</h1>
+              <p class="projects_text">
+                This site uses React kvmlkdfvmfklvmklvmvlkmlkdfmvkldlkfmvdlfff
+              </p>
+            </div>
+            <div class="tags projects_tags">
+              <span class="git_tag">Git</span>
+              <span class="js_tag">Javascript</span>
+              <span class="html_tag">HTML</span>
+              <span class="css_tag">CSS</span>
+              <span class="api_tag">API</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Slide 2 -->
+      <a
+        href="http://"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="mySlides fade"
+      >
+        <div class="projects_card">
+          <div class="projects">
+            <img src="" alt="" class="projects_img" />
+          </div>
+          <div class="projects_info">
+            <div class="projects_description">
+              <h1 class="projects_title">Blackjack Site</h1>
               <p class="projects_text">
                 This blogging site was built using javascript, HTML and CSS. It
                 has full CRUD (create, read, update, delete) functionality. It
@@ -82,7 +117,85 @@
           </div>
         </div>
       </a>
+
+      <!-- Slide 3 -->
+      <a
+        href="http://"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="mySlides fade"
+      >
+        <div class="projects_card">
+          <div class="projects">
+            <img src="" alt="" class="projects_img" />
+          </div>
+          <div class="projects_info">
+            <div class="projects_description">
+              <h1 class="projects_title">OmniFood Site</h1>
+              <p class="projects_text">
+                This blogging site was built using javascript, HTML and CSS. It
+                has full CRUD (create, read, update, delete) functionality. It
+                is currently hosted on Netlify.
+              </p>
+            </div>
+            <div class="tags projects_tags">
+              <span class="git_tag">Git</span>
+              <span class="js_tag">Javascript</span>
+              <span class="html_tag">HTML</span>
+              <span class="css_tag">CSS</span>
+              <span class="api_tag">API</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Prev/Next buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </main>
+    <br />
+
+    <!-- Bottom bar pagination -->
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <!-- Slideshow Script -->
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
     <footer>
       &copy;2021 Made by Jason Sandeman | Icons By
       <a href="https://fontawesome.com/"> FontAwesome</a>

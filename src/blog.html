@@ -12,7 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&family=Raleway:wght@200;300;400;800&display=swap"
       rel="stylesheet"
     />
-    <script src="https://kit.fontawesome.com/3d60a3d1fe.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/3d60a3d1fe.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -51,12 +54,13 @@
         </div>
       </nav>
     </header>
-    <div class="background_banner">
-      <h4 class="blog_banner"></h4>
-    </div>
+
+    <!-- Main Card/Sideshow Container -->
     <main class="card">
-      <a href="http://"
-        ><div class="blog_card">
+
+      <!-- Slide 1 -->
+      <a href="http://" class="mySlides fade">
+        <div class="blog_card">
           <div class="blog_img">
             <img src="./img/htmlcss.png" alt="Blog 1" class="blog_img" />
           </div>
@@ -65,22 +69,15 @@
               How to build a portfolio page using only HTML and CSS.
             </h1>
             <p class="blog_published">Posted on 1st Nov 2021</p>
-            <p class="blog_description"> 
-              The purpose of the portfolio is website is to showcase
-              my skills as a web professional to prospective employer and
-              hopefully catch their attention long enough
-              that they stick around to learn more. <br><br> 
-              Ive taken the simple single
-              page approach (even though theres actually 5 seperate html
-              documents) so as to give it the feel of never leaving the home
-              page. This was achieved by using CSS animation and flexbox to
-              create the effect. <br><br> 
-              Users will be able to navigate around my
-              website using buttons to navigate to my about me section,
-              portfolio, blog and the home page. I have chosen to use SASS to
-              help streamline my styling in a logical and efficient manner. I
-              have also used a font combination of Raleway and Lusitana that i
-              found on this blog.
+            <p class="blog_description">
+              The purpose of the portfolio is website is to showcase my skills
+              as a web professional to prospective employer and hopefully catch
+              their attention long enough that they stick around to learn more.
+            </p>
+            <p class="blog_description">
+              Ive taken the simple single page approach (even though theres
+              actually 5 seperate html documents) so as to give it the feel of
+              never leaving the home page.
             </p>
             <div class="tags blog_tags">
               <span class="html_tag">HTML</span>
@@ -88,9 +85,116 @@
               <span class="git_tag">GIT</span>
             </div>
           </div>
-        </div></a
-      >
+        </div>
+      </a>
+
+      <!-- Slide 2 -->
+      <a href="http://" class="mySlides fade">
+        <div class="blog_card">
+          <div class="blog_img">
+            <img src="./img/htmlcss.png" alt="Blog 1" class="blog_img" />
+          </div>
+          <div class="blog_peek">
+            <h1 class="blog_title">
+              How to make a portfolio page using only HTML and CSS.
+            </h1>
+            <p class="blog_published">Posted on 1st Nov 2021</p>
+            <p class="blog_description">
+              The purpose of the portfolio is website is to showcase my skills
+              as a web professional to prospective employer and hopefully catch
+              their attention long enough that they stick around to learn more.
+            </p>
+            <p class="blog_description">
+              Ive taken the simple single page approach (even though theres
+              actually 5 seperate html documents) so as to give it the feel of
+              never leaving the home page.
+            </p>
+            <div class="tags blog_tags">
+              <span class="html_tag">HTML</span>
+              <span class="css_tag">CSS</span>
+              <span class="git_tag">GIT</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Slide 3 -->
+      <a href="http://" class="mySlides fade">
+        <div class="blog_card">
+          <div class="blog_img">
+            <img src="./img/htmlcss.png" alt="Blog 1" class="blog_img" />
+          </div>
+          <div class="blog_peek">
+            <h1 class="blog_title">
+              How to create a portfolio page using only HTML and CSS.
+            </h1>
+            <p class="blog_published">Posted on 1st Nov 2021</p>
+            <p class="blog_description">
+              The purpose of the portfolio is website is to showcase my skills
+              as a web professional to prospective employer and hopefully catch
+              their attention long enough that they stick around to learn more.
+            </p>
+            <p class="blog_description">
+              Ive taken the simple single page approach (even though theres
+              actually 5 seperate html documents) so as to give it the feel of
+              never leaving the home page.
+            </p>
+            <div class="tags blog_tags">
+              <span class="html_tag">HTML</span>
+              <span class="css_tag">CSS</span>
+              <span class="git_tag">GIT</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Prev/Next buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </main>
+    <br />
+
+    <!-- Bottom bar pagination -->
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <!-- Slideshow Script -->
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
     <footer>
       &copy;2021 Made by Jason Sandeman | Icons By
       <a href="https://fontawesome.com/"> FontAwesome</a>
