@@ -245,7 +245,7 @@ a:active {
 /* This positions the home icon */
 .fa-info {
   display: flex;
-  position: fixed;  
+  position: fixed;
   right: 32px;
   top: 32px;
   color: #bee1e6;
@@ -292,7 +292,7 @@ a:active {
 
 /* This transforms the box shadow to wrap around the "HOME" navigation text */
 .icon_border.blog:hover {
-  padding: 16px 96px;
+  padding: 16px 92px;
 }
 
 /* This positions the home icon */
@@ -312,6 +312,59 @@ a:active {
 
 /* This unhides the "HOME" text when the user hovers over the icon using opacity */
 .blog_wrapper:hover .blog_txt {
+  /* @mixin hover-text */
+  display: flex;
+  opacity: 100%;
+  transition: opacity 1.5s;
+  transition-timing-function: ease-in;
+  -webkit-transition: opacity 1.5s;
+  -moz-transition: opacity 1.5s;
+  -ms-transition: opacity 1.5s;
+  -o-transition: opacity 1.5s;
+}
+
+/* ------------------------  Home Button ------------------------ */
+
+/* This positions the projects button border, the box shadow and adds a transition timer */
+.icon_border.projects_icon {
+  /* @mixin nav-border-style */
+  position: fixed;
+  box-shadow: 0 4px 4px 0 #fff1e6, 4px 0 4px 0 #fad2e1, 0 -4px 4px 0 #bee1e6,
+    -4px 0 4px 0 #cddafd;
+  transition: 1s;
+  transition-timing-function: ease-out;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+
+  /* independant declarations */
+  left: 32px;
+  bottom: 32px;
+}
+
+/* This transforms the box shadow to wrap around the "PROJECTS" navigation text */
+.icon_border.projects_icon:hover {
+  padding: 16px 136px;
+}
+
+/* This positions the briefcase icon */
+.fa-briefcase {
+  display: flex;
+  position: fixed;
+  left: 32px;
+  bottom: 32px;
+  color: #bee1e6;
+}
+
+/* This positions the "PROJECTS" text next to the briefcase icon */
+.projects_txt {
+  left: 88px;
+  bottom: 32px;
+}
+
+/* This unhides the "PROJECTS" text when the user hovers over the icon using opacity */
+.projects_wrapper:hover .projects_txt {
   /* @mixin hover-text */
   display: flex;
   opacity: 100%;
@@ -417,14 +470,14 @@ a:active {
   color: #bee1e6;
 } */
 
-.fa-briefcase {
+/* .fa-briefcase {
   position: fixed;
   left: 32px;
   bottom: 32px;
   box-shadow: 0 4px 4px 0 #fff1e6, 4px 0 4px 0 #fad2e1, 0 -4px 4px 0 #bee1e6,
     -4px 0 4px 0 #cddafd;
   color: #bee1e6;
-}
+} */
 
 /* ------------------------ Main Card Styling ------------------------ */
 
