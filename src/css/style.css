@@ -323,7 +323,7 @@ a:active {
   -o-transition: opacity 1.5s;
 }
 
-/* ------------------------  Home Button ------------------------ */
+/* ------------------------  Project Button ------------------------ */
 
 /* This positions the projects button border, the box shadow and adds a transition timer */
 .icon_border.projects_icon {
@@ -384,6 +384,8 @@ a:active {
   background: -moz-linear-gradient(left, #fff1e6 0%, #fde2e4 100%);
   background: -webkit-linear-gradient(left, #fff1e6 0%, #fde2e4 100%);
   background: linear-gradient(to right, #fff1e6 0%, #fde2e4 100%);
+
+  /* @mixin icon-clip */
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
@@ -396,6 +398,8 @@ a:active {
   background: -moz-linear-gradient(left, #fad2e1 0%, #e2ece9 100%);
   background: -webkit-linear-gradient(left, #fad2e1 0%, #e2ece9 100%);
   background: linear-gradient(to right, #fad2e1 0%, #e2ece9 100%);
+
+  /* @mixin icon-clip */
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
@@ -408,6 +412,8 @@ a:active {
   background: -moz-linear-gradient(left, #bee1e6 0%, #f0efeb 100%);
   background: -webkit-linear-gradient(left, #bee1e6 0%, #f0efeb 100%);
   background: linear-gradient(to right, #bee1e6 0%, #f0efeb 100%);
+
+  /* @mixin icon-clip */
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
@@ -420,6 +426,8 @@ a:active {
   background: -moz-linear-gradient(left, #f0efeb 0%, #dfe7fd 100%);
   background: -webkit-linear-gradient(left, #f0efeb 0%, #dfe7fd 100%);
   background: linear-gradient(to right, #f0efeb 0%, #dfe7fd 100%);
+
+  /* @mixin icon-clip */
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
@@ -432,6 +440,8 @@ a:active {
   background: -moz-linear-gradient(left, #f0efeb 0%, #dfe7fd 100%);
   background: -webkit-linear-gradient(left, #f0efeb 0%, #dfe7fd 100%);
   background: linear-gradient(to right, #f0efeb 0%, #dfe7fd 100%);
+
+  /* @mixin icon-clip */
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
@@ -444,6 +454,8 @@ a:active {
   background: -moz-linear-gradient(left, #f0efeb 0%, #dfe7fd 100%);
   background: -webkit-linear-gradient(left, #f0efeb 0%, #dfe7fd 100%);
   background: linear-gradient(to right, #f0efeb 0%, #dfe7fd 100%);
+
+  /* @mixin icon-clip */
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
