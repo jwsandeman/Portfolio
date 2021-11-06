@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jason Sandeman</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&family=Raleway:wght@200;300;400;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/3d60a3d1fe.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Markdown file converter -->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"
+    ></script>
+    <style type="text/css">
+      body {
+        height: fit-content;
+      }
+      footer {
+        display: flex;
+        position: relative;
+        color: rgba(0, 0, 0, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="icon home_wrapper">
+          <div class="icon_border home">
+            <a href="./index.html">
+              <i class="fas fa-home"></i>
+              <h1 class="home_txt">HOME</h1>
+            </a>
+          </div>
+        </div>
+        <div class="icon about_wrapper">
+          <div class="icon_border about">
+            <a href="./about.html">
+              <i class="fas fa-info"></i>
+              <h1 class="about_txt">ABOUT</h1>
+            </a>
+          </div>
+        </div>
+        <div class="icon blog_wrapper">
+          <div class="icon_border blog">
+            <a href="./blog.html">
+              <i class="fas fa-pen"></i>
+              <h1 class="blog_txt">BLOG</h1>
+            </a>
+          </div>
+        </div>
+        <div class="icon projects_wrapper">
+          <div class="icon_border projects_icon">
+            <a href="./projects.html">
+              <i class="fas fa-briefcase"></i>
+              <h1 class="projects_txt">PROJECTS</h1>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main column layout for post -->
+    <main class="post_column">
+      <!-- Post container -->
+      <section class="post_container">
+        <div class="header_img"></div>
+        <summary class="metadata">
+          <div class="meta_img"></div>
+          <div class="meta_info">
+            <p class="name">Jason Sandeman</p>
+            <p class="blog_published">Posted on 1st Nov 2021</p>
+            <p class="read_time">
+              <i class="far fa-clock"></i>&nbsp;12 min read
+            </p>
+          </div>
+          <div class="meta_links">
+            <a href=""><i class="far fa-heart"></i></a>
+            <a href=""><i class="far fa-bookmark"></i></a>
+            <a href=""><i class="fas fa-share-alt"></i></a>
+          </div>
+        </summary>
+        <hr class="post" />
+        <section class="post">
+          <h1 class="post">
+            How i built my portfolio site using only HTML & CSS
+          </h1>
+          <div class="post_tags">
+            <span>#HTML</span>
+            <span>#CSS</span>
+            <span>#GIT</span>
+          </div>
+          <hr class="post" />
+          <article class="post">
+            <p class="post">
+              <zero-md src="./docs/portfolio_blog.md"></zero-md>
+            </p>
+          </article>
+        </section>
+      </section>
+    </main>
+    <footer>
+      &copy;2021 Made by Jason Sandeman | Icons By
+      <a href="https://fontawesome.com/">&nbsp;Font Awesome</a>
+    </footer>
+  </body>
+</html>

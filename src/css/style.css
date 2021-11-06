@@ -184,10 +184,6 @@ a:active {
   -ms-border-radius: 28px;
   -o-border-radius: 28px;
 }
-/* 
-.icon.social_icon {
-  font-size: 28px;
-} */
 
 /* ------------------------  Navigation Button Text ------------------------ */
 
@@ -992,17 +988,159 @@ h1.collaborate {
 
 /* ------------------------ Individual Blog Post ------------------------ */
 
-/* This sets up the background for the blog post column */
+/* This sets up the blog post column */
 .post_column {
   /* @include column-centred (); */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
 
-  width: 50%;
-  height: fit-content;
+  width: 60%;
+  margin: 48px 0;
   background-color: white;
   box-shadow: 0 2px 32px 0 #bee1e6; /* add $primary-color */
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+  /* z-index: 100 !important; */
+}
+
+/* This contains all of the blog post elements */
+.post_container {
+  /* @include column-centred (); */
+  /* I may not even need this div at all */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Blog post header image */
+.header_img {
+  background: url(../img/htmlcss.png);
+  background-size: cover;
+  height: 400px;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+.metadata {
+  /*@includerow-centred():;
+  */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  margin: 16px auto;
+  height: 100px;
+  /* border: 2px solid grey; */
+  border-radius: 52px;
+  -webkit-border-radius: 52px;
+  -moz-border-radius: 52px;
+  -ms-border-radius: 52px;
+  -o-border-radius: 52px;
+}
+
+.meta_img {
+  display: flex;
+  align-items: center;
+  background-image: url(../img/jasonprofilepic.jpeg);
+  background-size: contain;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.meta_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  padding: 8px;
+  height: max-content;
+  width: 40%;
+  /* border: 1px solid blue; */
+}
+
+.meta_info p.name {
+  display: flex;
+  margin-left: 0;
+  font-size: 24px;
+  font-weight: 800;
+  /* padding: 2px 0; */
+  /* border: 2px solid green; */
+}
+
+.meta_info p.blog_published {
+  display: flex;
+  margin-left: 0;
+  /* padding: 2px 0; */
+  /* border: 2px solid green; */
+}
+
+.meta_info p.read_time {
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+  /* padding: 2px 0; */
+  /* border: 2px solid green; */
+}
+
+.meta_links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 40%;
+  font-size: 24px;
+  /* border: 1px solid blue; */
+}
+
+.meta_links i {
+  padding: 12px;
+  color: #bee1e6;
+}
+
+a:active .fa-heart {
+  color: red;
+}
+
+a:active .fa-bookmark {
+  color: black;
+}
+
+hr.post {
+  width: 80%;
+  margin: 8px auto;
+  color: #bee1e6;
+}
+
+h1.post {
+  width: 80%;
+  margin: 8px auto;
+  font-size: 40px;
+}
+
+.post_tags {
+  display: flex;
+  color: #bee1e6;
+  width: 80%;
+  margin: 8px auto;
+}
+
+
+p.post {
+  margin: 24px auto;
+  width: 80%;
 }
 
 /* ------------------------ Projects Page Slides ------------------------ */

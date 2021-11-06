@@ -16,6 +16,22 @@
       src="https://kit.fontawesome.com/3d60a3d1fe.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Markdown file converter -->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"
+    ></script>
+    <style type="text/css">
+      body {
+        height: fit-content;
+      }
+      footer {
+        display: flex;
+        position: relative;
+        color: rgba(0, 0, 0, 0.5);
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -59,64 +75,72 @@
     <main class="post_column">
       <!-- Post container -->
       <section class="post_container">
-        <img src="" alt="" class="header_img" />
+        <div class="header_img"></div>
         <summary class="metadata">
-            <div class="meta_img"></div>
-            <div class="meta_info"></div>
-            <div class="meta_links"></div>
+          <div class="meta_img"></div>
+          <div class="meta_info">
+            <p class="name">Jason Sandeman</p>
+            <p class="blog_published">Posted on 1st Nov 2021</p>
+            <p class="read_time">
+              <i class="far fa-clock"></i>&nbsp;12 min read
+            </p>
+          </div>
+          <div class="meta_links">
+            <a href=""><i class="far fa-heart"></i></a>
+            <a href=""><i class="far fa-bookmark"></i></a>
+            <a href=""><i class="fas fa-share-alt"></i></a>
+          </div>
         </summary>
+        <hr class="post" />
         <section class="post">
-          <h1 class="post"></h1>
-          <p class="blog_published"></p>
+          <h1 class="post">
+            How i built my portfolio site using only HTML & CSS
+          </h1>
+          <div class="post_tags">
+            <span>#HTML</span>
+            <span>#CSS</span>
+            <span>#GIT</span>
+          </div>
+          <hr class="post" />
           <article class="post">
-            <p class="post"></p>
-            <p class="post"></p>
-            <p class="post"></p>
-            <p class="post"></p>
-            <p class="post"></p>
-            <p class="post"></p>
-            <img src="" alt="" class="post_img" />
-            <p class="post"></p>
-            <p class="post"></p>
-            <p class="post"></p>
-            <img src="" alt="" class="post_img" />
-            <p class="post"></p>
-            <p class="post"></p>
+            <p class="post">
+              <zero-md src="./docs/portfolio_blog.md"></zero-md>
+            </p>
           </article>
         </section>
         <section class="related">
-            <div class="related_card">
-                <div class="related_img"></div>
-                <div class="related_title"></div>
-            </div>
-            <div class="related_card">
-                <div class="related_img"></div>
-                <div class="related_title"></div>
-            </div>
-            <div class="related_card">
-                <div class="related_img"></div>
-                <div class="related_title"></div>
-            </div>
+          <div class="related_card">
+            <div class="related_img"></div>
+            <div class="related_title"></div>
+          </div>
+          <div class="related_card">
+            <div class="related_img"></div>
+            <div class="related_title"></div>
+          </div>
+          <div class="related_card">
+            <div class="related_img"></div>
+            <div class="related_title"></div>
+          </div>
         </section>
         <section class="discussion">
-            <div class="comment_container">
-                <div class="name"></div>
-                <div class="comment"></div>
-            </div>
-            <div class="comment_container">
-                <div class="name"></div>
-                <div class="comment"></div>
-            </div>
-            <div class="comment_container">
-                <div class="name"></div>
-                <div class="comment"></div>
-            </div>
+          <div class="comment_container">
+            <div class="name"></div>
+            <div class="comment"></div>
+          </div>
+          <div class="comment_container">
+            <div class="name"></div>
+            <div class="comment"></div>
+          </div>
+          <div class="comment_container">
+            <div class="name"></div>
+            <div class="comment"></div>
+          </div>
         </section>
       </section>
     </main>
     <footer>
       &copy;2021 Made by Jason Sandeman | Icons By
-      <a href="https://fontawesome.com/"> FontAwesome</a>
+      <a href="https://fontawesome.com/">&nbsp;Font Awesome</a>
     </footer>
   </body>
 </html>
