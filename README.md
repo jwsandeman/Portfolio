@@ -2,9 +2,9 @@
 
 ## Links
 
-View the Website [here]().
+View the Website [here](https://festive-aryabhata-690f3c.netlify.app/index.html).
 
-View the source code on GitHub [here]().
+View the source code on GitHub [here](https://github.com/jwsandeman/JasonSandeman_T1A2).
 
 ---
 
@@ -54,7 +54,7 @@ The purpose of the portfolio is website is to showcase my skills as a web profes
 
 ### Wireframe
 
-- Once you crawl out of the catacombs of the internet and have closed all of your tabs on all of your screens its time to start on the wireframe. This can be a simple(low-fidelity) or complicated(high-fidelity) approach, its up to you. I prefer to keep it simple at first by sketching it out roughly on the ipad and then ill move to a more concrete wirframe when im happy with the overall design. ![Sketch](./docs/sketch.png) ![wireframe](./docs/wireframe.png)
+- Once you crawl out of the catacombs of the internet and have closed all of your tabs on all of your screens its time to start on the wireframe. This can be a simple(low-fidelity) or complicated(high-fidelity) approach, its up to you. I prefer to keep it simple at first by sketching it out roughly on the ipad and then ill move to a more concrete wirframe when im happy with the overall design. You can access my wireframes [here](https://whimsical.com/portfolio-wireframe-FrwWza12S3iqTH7YrLgS8G@3CRerdhrAw8V6w9PrpoRpqSq). ![Sketch](./docs/sketch.png) ![Wireframes](./docs/wireframes.png) ![Desktop Wireframe](./docs/desktopwireframe.png) ![Tablet Wireframe](./docs/tabletwireframe.png) ![Mobile wireframe](./docs/mobilewireframe.png)
 
 ---
 
@@ -145,13 +145,15 @@ Now that we are clear on our project requirements and intended tech stack it is 
 
 8. Lets code! I'll start with the HTML pages first and then move onto the CSS. For the sake of time ill use some progress screenshots rather than explaining every step of the process. Also be sure to make regular commits and save your work!
 
-- Desktop halfway progress shots: ![Home Page](./docs/homepageprogress.png)![About Page](./docs/aboutpageprogress.png)![Blog Page](./docs/blogpageprogress.png)![Portfolio Page](./docs/portfoliopageprogress.png)
+Heres a few of the screenshots. The rest are in the docs folder.
+
+- Desktop halfway progress shots: ![About Page](./docs/daboutpageprogress.png)![Blog Page](./docs/dblogpageprogress.png)
 
 - Mobile halfway progress shots:
 
 - Tablet halfway progress shots:
 
-- Desktop completed:
+- Desktop completed: - Desktop completed: ![About Page](./docs/daboutcompleted.png)![Blog Page](./docs/dblogcompleted.png)
 
 - Mobile completed:
 
