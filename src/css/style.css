@@ -609,7 +609,7 @@ span {
   box-shadow: 0 8px 8px 0 #fff1e6, 8px 0 8px 0 #bee1e6, 0 -8px 8px 0 #fad2e1,
     -8px 0 8px 0 #cddafd;
   height: 30%;
-  margin: 16px;
+  margin: 4px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -627,7 +627,7 @@ span {
 
   width: 70%;
   text-align: center;
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 800;
   letter-spacing: 4px;
   margin: 8px;
