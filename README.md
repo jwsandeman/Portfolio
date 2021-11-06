@@ -215,6 +215,28 @@ Now that we are clear on our project requirements and intended tech stack it is 
 
 - I created most of my images in Canva and my profile pic was taken by a friend of mine named James Stocks who gave me the image to use freely. His portflio can be found [here](https://jamesstocks.myportfolio.com/).
 
+### Markdown -> HTML converter
+
+- I used a markdown converter script in the header to insert my markdown file directly into this blog post. This saved me a ton of time as i already had a correctly formatted markdown file with my blog post written on it. If your reading the markdown file instead of the website, you can see the end result [here](https://festive-aryabhata-690f3c.netlify.app/post1.html).
+
+  Here is the ISC License attribution:
+
+  ISC License
+
+  Copyright (c) 2021, [Jason Lee](jason@zerodevx.com) (jason@zerodevx.com)
+
+  Permission to use, copy, modify, and/or distribute this software for any
+  purpose with or without fee is hereby granted, provided that the above
+  copyright notice and this permission notice appear in all copies.
+
+  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
 ---
 
 Thankyou for taking the time to read this. I put a lot of effort into it an i hope it has helped you in some way.
