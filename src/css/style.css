@@ -18,7 +18,8 @@ body {
 
 /* ------------------------  $variables  ------------------------ */
 
-/* $primary-colour: #bee1e6; */
+/* $primary-color: #bee1e6; */
+/* $secondary-color: #E2ECE9; */
 
 /* ------------------------  @Mixins  ------------------------ */
 
@@ -202,7 +203,7 @@ a:active {
 
   /* Independant declarations */
   position: fixed;
-  color: #bee1e6; /* add $primary-colour */
+  color: #bee1e6; /* add $primary-color */
   opacity: 0;
   transition: 1s;
   transition-timing-function: ease-in;
@@ -243,7 +244,7 @@ a:active {
   position: fixed;
   left: 32px;
   top: 32px;
-  color: #bee1e6; /* add $primary-colour */
+  color: #bee1e6; /* add $primary-color */
 }
 
 /* This positions the "HOME" text next to the home icon */
@@ -296,7 +297,7 @@ a:active {
   position: fixed;
   right: 32px;
   top: 32px;
-  color: #bee1e6; /* add $primary-colour */
+  color: #bee1e6; /* add $primary-color */
 }
 
 /* This positions the "ABOUT" text next to the info icon */
@@ -349,7 +350,7 @@ a:active {
   position: fixed;
   right: 32px;
   bottom: 32px;
-  color: #bee1e6; /* add $primary-colour */
+  color: #bee1e6; /* add $primary-color */
 }
 
 /* This positions the "BLOG" text next to the pen icon */
@@ -402,7 +403,7 @@ a:active {
   position: fixed;
   left: 32px;
   bottom: 32px;
-  color: #bee1e6; /* add $primary-colour */
+  color: #bee1e6; /* add $primary-color */
 }
 
 /* This positions the "PROJECTS" text next to the briefcase icon */
@@ -543,23 +544,23 @@ span {
 }
 
 .html_tag {
-  border: 2px solid red;
+  border: 2px solid #fad2e1;
 }
 
 .css_tag {
-  border: 2px solid blue;
+  border: 2px solid #cddafd;
 }
 
 .git_tag {
-  border: 2px solid black;
+  border: 2px solid #eae4e9;
 }
 
 .js_tag {
-  border: 2px solid yellow;
+  border: 2px solid #fff1e6;
 }
 
 .api_tag {
-  border: 2px solid grey;
+  border: 2px solid #f0efeb;
 }
 
 /* ------------------------ Main Card Styling ------------------------ */
@@ -573,7 +574,7 @@ span {
 
   background-color: white;
   border-radius: 24px;
-  box-shadow: 0 2px 32px 0 #bee1e6; /* add $primary-colour */
+  box-shadow: 0 2px 32px 0 #bee1e6; /* add $primary-color */
   width: 70%;
   height: 70%;
   -webkit-border-radius: 24px;
@@ -608,7 +609,8 @@ span {
 
 /* Centres image in card with box shadow */
 .home_img {
-  box-shadow: 0 8px 8px 0 #fff1e6, 8px 0 8px 0 #bee1e6, 0 -8px 8px 0 #fad2e1,    -8px 0 8px 0 #cddafd;
+  box-shadow: 0 8px 8px 0 #fff1e6, 8px 0 8px 0 #bee1e6, 0 -8px 8px 0 #fad2e1,
+    -8px 0 8px 0 #cddafd;
   height: 30%;
   margin: 16px;
   border-radius: 50%;
@@ -687,7 +689,7 @@ span {
   margin: 0 2px;
   height: 28%;
   contain: content;
-  box-shadow: 0 2px 5px 0 #bee1e6; /* add $primary-colour */
+  box-shadow: 0 2px 5px 0 #bee1e6; /* add $primary-color */
   border-radius: 24px;
   -webkit-border-radius: 24px;
   -moz-border-radius: 24px;
@@ -713,7 +715,7 @@ span {
   width: 68%;
   margin: 0 2px 0 0;
   height: 28%;
-  box-shadow: 0 2px 5px 0 #bee1e6; /* add $primary-colour */
+  box-shadow: 0 2px 5px 0 #bee1e6; /* add $primary-color */
   border-radius: 24px;
   -webkit-border-radius: 24px;
   -moz-border-radius: 24px;
@@ -767,7 +769,7 @@ h3.contact {
   /* border: 2px solid green; */
 
   /* Fallback: Set a background color. */
-  background-color: #bee1e6; /* add $primary-colour */
+  background-color: #bee1e6; /* add $primary-color */
 
   /* Set the background size and repeat properties. */
   background-size: 100%;
@@ -831,7 +833,9 @@ h1.collaborate {
 /* ------------------------ Blog Page Slides ------------------------ */
 
 /* This hides the slides so the script can work properly */
-.mySlides {display: none}
+.mySlides {
+  display: none;
+}
 
 /* Slideshow container */
 .blog_card {
@@ -847,14 +851,15 @@ h1.collaborate {
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: fixed;
   top: 50%;
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: #bee1e6;; /* $primary-colour: #bee1e6; */
+  color: #bee1e6; /* $primary-color: #bee1e6; */
   font-weight: bold;
   font-size: 24px;
   transition: 0.6s ease;
@@ -875,8 +880,9 @@ h1.collaborate {
 }
 
 /* On hover, add a background color with a little opacity */
-.prev:hover, .next:hover {
-  background-color: #BEE1E6;
+.prev:hover,
+.next:hover {
+  background-color: #bee1e6; /* $primary-color: #bee1e6; */
   opacity: 0.5;
 }
 
@@ -886,14 +892,15 @@ h1.collaborate {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #E2ECE9;
+  background-color: #e2ece9; /* $secondary-color: #E2ECE9; */
   /* border-radius: 50%; */
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
-  background-color: #BEE1E6;
+.active,
+.dot:hover {
+  background-color: #bee1e6; /* $primary-color: #bee1e6; */
 }
 
 /* Fading animation */
@@ -905,18 +912,30 @@ h1.collaborate {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
 }
 
 /* ------------------------ Blog Page ------------------------ */
@@ -971,10 +990,27 @@ h1.collaborate {
   width: 80%;
 }
 
+/* ------------------------ Individual Blog Post ------------------------ */
+
+/* This sets up the background for the blog post column */
+.post_column {
+  /* @include column-centred (); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 50%;
+  height: fit-content;
+  background-color: white;
+  box-shadow: 0 2px 32px 0 #bee1e6; /* add $primary-color */
+}
+
 /* ------------------------ Projects Page Slides ------------------------ */
 
 /* This hides the slides so the script can work properly */
-.mySlides {display: none}
+.mySlides {
+  display: none;
+}
 
 /* Slideshow container */
 .projects_card {
@@ -994,14 +1030,15 @@ h1.collaborate {
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: fixed;
   top: 50%;
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: #bee1e6;; /* $primary-colour: #bee1e6; */
+  color: #bee1e6; /* $primary-color: #bee1e6; */
   font-weight: bold;
   font-size: 24px;
   transition: 0.6s ease;
@@ -1022,8 +1059,9 @@ h1.collaborate {
 }
 
 /* On hover, add a background color with a little opacity */
-.prev:hover, .next:hover {
-  background-color: #BEE1E6;
+.prev:hover,
+.next:hover {
+  background-color: #bee1e6; /* $primary-color: #bee1e6; */
   opacity: 0.5;
 }
 
@@ -1033,14 +1071,15 @@ h1.collaborate {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #E2ECE9;
+  background-color: #e2ece9;
   /* border-radius: 50%; */
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
-  background-color: #BEE1E6;
+.active,
+.dot:hover {
+  background-color: #bee1e6; /* $primary-color: #bee1e6; */
 }
 
 /* Fading animation */
@@ -1052,18 +1091,30 @@ h1.collaborate {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
 }
 
 /* ------------------------ Individual Project Card ------------------------ */
