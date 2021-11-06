@@ -149,9 +149,19 @@ Now that we are clear on our project requirements and intended tech stack it is 
 
 - Mobile halfway progress shots:
 
+- Tablet halfway progress shots:
+
+- Desktop completed:
+
+- Mobile completed:
+
+- Tablet completed:
+
 ---
 
 ## Components and Features
+
+Now lets talk about what components and features i used in my design.
 
 ### Responsive Design
 
@@ -223,7 +233,7 @@ Now that we are clear on our project requirements and intended tech stack it is 
 
   ISC License
 
-  Copyright (c) 2021, [Jason Lee](jason@zerodevx.com) (jason@zerodevx.com)
+  Copyright (c) 2021, Jason Lee <jason@zerodevx.com> (jason@zerodevx.com)
 
   Permission to use, copy, modify, and/or distribute this software for any
   purpose with or without fee is hereby granted, provided that the above

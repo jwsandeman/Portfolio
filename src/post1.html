@@ -5,23 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jason Sandeman</title>
+
+    <!-- Stylesheet link -->
     <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Google fonts link -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&family=Raleway:wght@200;300;400;800&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Font awesome icons link -->
     <script
       src="https://kit.fontawesome.com/3d60a3d1fe.js"
       crossorigin="anonymous"
     ></script>
 
-    <!-- Markdown file converter -->
+    <!-- Markdown -> HTML file converter -->
     <script
       type="module"
       src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"
     ></script>
+
+    <!-- Styling to remove body and footer rules from stylesheet for this page only -->
     <style type="text/css">
       body {
         height: fit-content;
@@ -35,7 +43,9 @@
   </head>
   <body>
     <header>
+      <!-- Navigation buttons -->
       <nav class="nav">
+        <!-- Border and icon styling -->
         <div class="icon home_wrapper">
           <div class="icon_border home">
             <a href="./index.html">
@@ -44,6 +54,7 @@
             </a>
           </div>
         </div>
+        <!-- Border and icon styling -->
         <div class="icon about_wrapper">
           <div class="icon_border about">
             <a href="./about.html">
@@ -52,6 +63,7 @@
             </a>
           </div>
         </div>
+        <!-- Border and icon styling -->
         <div class="icon blog_wrapper">
           <div class="icon_border blog">
             <a href="./blog.html">
@@ -60,6 +72,7 @@
             </a>
           </div>
         </div>
+        <!-- Border and icon styling -->
         <div class="icon projects_wrapper">
           <div class="icon_border projects_icon">
             <a href="./projects.html">
@@ -75,9 +88,14 @@
     <main class="post_column">
       <!-- Post container -->
       <section class="post_container">
-        <div class="header_img"></div>
+        <div class="header_img">
+          <img src="./img/htmlcss.png" alt="post 1 header image" />
+        </div>
+        <!-- Info bar containing post meta data -->
         <summary class="metadata">
+          <!-- Profile image -->
           <div class="meta_img"></div>
+          <!-- Post info -->
           <div class="meta_info">
             <p class="name">Jason Sandeman</p>
             <p class="blog_published">Posted on 1st Nov 2021</p>
@@ -85,6 +103,7 @@
               <i class="far fa-clock"></i>&nbsp;12 min read
             </p>
           </div>
+          <!-- Like /save / share buttons -->
           <div class="meta_links">
             <a href=""><i class="far fa-heart"></i></a>
             <a href=""><i class="far fa-bookmark"></i></a>
@@ -92,6 +111,7 @@
           </div>
         </summary>
         <hr class="post" />
+        <!-- Title and tags section -->
         <section class="post">
           <h1 class="post">
             How i built my portfolio site using only HTML & CSS
@@ -102,6 +122,13 @@
             <span class="git_tag">GIT</span>
           </div>
           <hr class="post" />
+          <!-- Back link to blog -->
+          <a href="./blog.html"
+            ><p class="back_link">
+              <i class="fas fa-arrow-left"></i>&nbsp; Back to blog
+            </p></a
+          >
+          <!-- Blog post -->
           <article class="post">
             <p class="post">
               <!-- I used a markdown converter script in the header to insert my markdown file directly into the html below. This saved me a ton of time as i already had a correctly formatted markdown file with my blog post written on it. Here is the ISC License attribution.
@@ -124,8 +151,15 @@
               <zero-md src="./docs/portfolio_blog.md"></zero-md>
             </p>
           </article>
+          <!-- Back link to blog -->
+          <a href="./blog.html"
+            ><p class="back_link">
+              <i class="fas fa-arrow-left"></i>&nbsp; Back to blog
+            </p></a
+          >
         </section>
-        <section class="related">
+        <!-- Time permitting -->
+        <!-- <section class="related">
           <div class="related_card">
             <div class="related_img"></div>
             <div class="related_title"></div>
@@ -152,7 +186,7 @@
             <div class="name"></div>
             <div class="comment"></div>
           </div>
-        </section>
+        </section> -->
       </section>
     </main>
     <footer>

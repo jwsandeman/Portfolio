@@ -1,3 +1,75 @@
+commit 8202d66df1ee510d5257b4123933bbcd9f5df2cc
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Sat Nov 6 14:13:02 2021 +1000
+
+    updated readme and portfolio_blog.md. changed tag styling in post1.html.
+
+commit 9c404f41aac25279f4a2ae79b803ec0258f671ba
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Sat Nov 6 13:44:10 2021 +1000
+
+    Added images and portfolio_blog.md to docs folder in scr folder. finished html and css for post1.html . adjusted footer to include non breaking space on all pages.
+
+commit 1c95feadf18d4339d0c7164dfadc0a275e84613a
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Sat Nov 6 10:53:12 2021 +1000
+
+    added column styling for post. added html structure for post1.html . added semantic html to blog and projects page.
+
+commit bd08153190383816ead286a81544183291a060de
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Sat Nov 6 09:53:59 2021 +1000
+
+    finished styling about page and adjusted html tags as necessary. Added html comments to projects page slideshow section. Added resume download link to about page and added resume pdf file to new folder inside src directory named docs.
+
+commit 4e3583e2468adb5e7b129cb287d7768ff9437e5a
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Fri Nov 5 22:01:19 2021 +1000
+
+    added slideshow styling to blog and projects page. removed banner styling from about, blog and projects page.
+
+commit 9fa75332f1a199a716ae164d0fe4c45728c5ec29
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Fri Nov 5 18:31:44 2021 +1000
+
+    updated index, about, blog, projects pages to include new style tags. commented style.css and set up variables and mixins in preperation for scss conversion.
+
+commit adaa1c7cfd98111c92ed2750e4f0ca41da9cd278
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Fri Nov 5 15:54:24 2021 +1000
+
+    fixed bug with home button text showing up when other navigation buttons are hovered.
+
+commit 876eb03e7ae950ef31741a096a0e4b7f2c21a284
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Fri Nov 5 15:28:02 2021 +1000
+
+    added navigation button styling to blog and projects button.
+
+commit 01322d523bf8b9975992592d52c04a30d05e07aa
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Fri Nov 5 15:00:19 2021 +1000
+
+    added classes to index for navigations button styling. added styling to navigation buttons in css.
+
+commit bffb567cf71fae27df1a86158c4a41ca0c616f3f
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Thu Nov 4 21:47:13 2021 +1000
+
+    updated title and footer on all html documents. updated readme.
+
+commit 8c716329eeea1e61464e2e4d0002d71cbe26ddb0
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Thu Nov 4 16:04:27 2021 +1000
+
+    finished README structure and finished most of the document, just need to add progress screenshots now.
+
+commit b36d812474cb240b0a490e2e8911551298da23fe
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Thu Nov 4 09:59:58 2021 +1000
+
+    updated README and fixed missing sketch file
+
 commit 93e10285f07a2b2a13344b261283480057341bf9
 Author: jwsandeman <jw.sandeman@gmail.com>
 Date:   Mon Nov 1 20:06:56 2021 +1000

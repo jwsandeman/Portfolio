@@ -5,23 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jason Sandeman</title>
+
+    <!-- Stylesheet link -->
     <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Google fonts link -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&family=Raleway:wght@200;300;400;800&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Font awesome icons link -->
     <script
       src="https://kit.fontawesome.com/3d60a3d1fe.js"
       crossorigin="anonymous"
     ></script>
 
-    <!-- Markdown file converter -->
-    <script
-      type="module"
-      src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"
-    ></script>
+    <!-- Styling to remove body and footer rules from stylesheet for this page only -->
     <style type="text/css">
       body {
         height: fit-content;
@@ -35,7 +37,9 @@
   </head>
   <body>
     <header>
+      <!-- Navigation buttons -->
       <nav class="nav">
+        <!-- Border and icon styling -->
         <div class="icon home_wrapper">
           <div class="icon_border home">
             <a href="./index.html">
@@ -44,6 +48,7 @@
             </a>
           </div>
         </div>
+        <!-- Border and icon styling -->
         <div class="icon about_wrapper">
           <div class="icon_border about">
             <a href="./about.html">
@@ -52,6 +57,7 @@
             </a>
           </div>
         </div>
+        <!-- Border and icon styling -->
         <div class="icon blog_wrapper">
           <div class="icon_border blog">
             <a href="./blog.html">
@@ -60,6 +66,7 @@
             </a>
           </div>
         </div>
+        <!-- Border and icon styling -->
         <div class="icon projects_wrapper">
           <div class="icon_border projects_icon">
             <a href="./projects.html">
@@ -75,16 +82,22 @@
     <main class="post_column">
       <!-- Post container -->
       <section class="post_container">
-        <div class="header_img"></div>
+        <div class="header_img">
+          <img src="./img/htmlcss.png" alt="post 4 header image" />
+        </div>
+        <!-- Info bar containing post meta data -->
         <summary class="metadata">
+          <!-- Profile image -->
           <div class="meta_img"></div>
+          <!-- Post info -->
           <div class="meta_info">
             <p class="name">Jason Sandeman</p>
-            <p class="blog_published">Posted on 1st Nov 2021</p>
+            <p class="blog_published">Posted on 25th Oct 2021</p>
             <p class="read_time">
-              <i class="far fa-clock"></i>&nbsp;12 min read
+              <i class="far fa-clock"></i>&nbsp;2 min read
             </p>
           </div>
+          <!-- Like /save / share buttons -->
           <div class="meta_links">
             <a href=""><i class="far fa-heart"></i></a>
             <a href=""><i class="far fa-bookmark"></i></a>
@@ -92,21 +105,75 @@
           </div>
         </summary>
         <hr class="post" />
+        <!-- Title and tags section -->
         <section class="post">
-          <h1 class="post">
-            How i built my portfolio site using only HTML & CSS
-          </h1>
-          <div class="post_tags">
-            <span>#HTML</span>
-            <span>#CSS</span>
-            <span>#GIT</span>
+          <h1 class="post">Lorem Ipsum is the way</h1>
+          <div class="tags post_tags">
+            <span class="html_tag">HTML</span>
+            <span class="css_tag">CSS</span>
+            <span class="git_tag">GIT</span>
           </div>
           <hr class="post" />
+          <!-- Back link to blog -->
+          <a href="./blog.html"
+            ><p class="back_link">
+              <i class="fas fa-arrow-left"></i>&nbsp; Back to blog
+            </p></a
+          >
+          <!-- Blog post -->
           <article class="post">
+            <h2 class="post">Lorem Ipsum</h2>
             <p class="post">
-              <zero-md src="./docs/portfolio_blog.md"></zero-md>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Provident voluptatibus corporis consequuntur quas rem soluta ab
+              vitae et eaque, mollitia maiores excepturi tenetur blanditiis sint
+              delectus ex deserunt sapiente officiis!
+            </p>
+            <ul class="post">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              molestiae sapiente autem temporibus id praesentium. Illo fugiat
+              voluptas explicabo nulla obcaecati reiciendis quia. Suscipit
+              veritatis cumque alias ex illum quo.
+            </ul>
+            <ul class="post">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores eveniet qui nulla officia voluptatibus, inventore alias
+              architecto facere nisi maxime, dolorem unde voluptates quas sit
+              laborum aspernatur, quisquam ut ullam!
+            </ul>
+            <p class="post">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+              quisquam iure itaque nesciunt, error est pariatur, quo aliquid
+              ipsam sint tenetur. Quasi nemo veritatis ut omnis numquam enim
+              fugit recusandae.
+            </p>
+            <img class="post" src="./img/htmlcss.png" alt="placeholder image" />
+            <p class="post">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptatem, voluptas ad explicabo expedita pariatur ab ex et,
+              soluta quod necessitatibus laudantium corrupti blanditiis veniam
+              aperiam impedit sed magni dolorum iure.
+            </p>
+            <ul class="post">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Recusandae veritatis dicta aspernatur, corrupti eveniet,
+              voluptatem dolorem fugit quod enim aliquid cumque tempore
+              accusantium? Error harum voluptate eveniet minus delectus
+              voluptatem.
+            </ul>
+            <p class="post">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+              voluptatum, vitae ab, voluptate rerum vel quasi cum maiores
+              dolores laborum omnis error. Deleniti ipsam autem natus eos quae.
+              Harum, facere.
             </p>
           </article>
+          <!-- Back link to blog -->
+          <a href="./blog.html"
+            ><p class="back_link">
+              <i class="fas fa-arrow-left"></i>&nbsp; Back to blog
+            </p></a
+          >
         </section>
       </section>
     </main>
