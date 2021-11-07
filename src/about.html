@@ -22,11 +22,25 @@
       src="https://kit.fontawesome.com/3d60a3d1fe.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Styling to remove body and footer rules from stylesheet for this page only -->
+    <style type="text/css">
+      @media (max-width: 1200px) {
+        body {
+          height: fit-content;
+        }
+        footer {
+          display: flex;
+          position: relative;
+          color: rgba(0, 0, 0, 0.5);
+        }
+      }
+    </style>
   </head>
   <body>
     <header>
       <!-- Navigation buttons -->
-      <nav class="nav">
+      <nav class="desktop_nav">
         <!-- Border and icon styling -->
         <div class="icon home_wrapper">
           <div class="icon_border home">
@@ -64,13 +78,27 @@
           </div>
         </div>
       </nav>
+
+      <!-- Mobile navigation bar -->
+      <nav class="mobile_nav">
+        <input type="checkbox" id="checkbox1" />
+        <label for="checkbox1">
+          <ul class="menu first">
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li><a href="./blog.html">BLOG</a></li>
+            <li><a href="./projects.html">PROJECTS</a></li>
+          </ul>
+          <span class="toggle">☰</span>
+        </label>
+      </nav>
     </header>
 
     <!-- Main card styling and animation -->
-    <main class="card animate">
-      <section class="about_card">
+    <main class="card animate mobile_card">
+      <section class="about_card mobile_about_card">
         <!-- Profil photo contained in tile -->
-        <div class="tile tile_img"></div>
+        <div class="tile tile_img mobile_tile"></div>
         <!-- Main about description in a triple width tile -->
         <article class="triple_tile">
           <h3 class="about_title">
@@ -151,8 +179,7 @@
       </section>
     </main>
     <footer>
-      &copy;2021 Made by Jason Sandeman | Icons By
-      <a href="https://fontawesome.com/">&nbsp;Font Awesome</a>
+      &copy;2021 Made by Jason Sandeman | <a href="./post1.html#attribution">&nbsp; Attribution</a>
     </footer>
   </body>
 </html>

@@ -26,7 +26,7 @@
   <body>
     <header>
       <!-- Navigation buttons -->
-      <nav class="nav">
+      <nav class="desktop_nav">
         <!-- Border and icon styling -->
         <div class="icon home_wrapper">
           <div class="icon_border home">
@@ -64,10 +64,24 @@
           </div>
         </div>
       </nav>
+
+      <!-- Mobile navigation bar -->
+      <nav class="mobile_nav">
+        <input type="checkbox" id="checkbox1" />
+        <label for="checkbox1">
+          <ul class="menu first">
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li><a href="./blog.html">BLOG</a></li>
+            <li><a href="./projects.html">PROJECTS</a></li>
+          </ul>
+          <span class="toggle">☰</span>
+        </label>
+      </nav>
     </header>
 
     <!-- Main Card/Slideshow Container -->
-    <main class="card">
+    <main class="card mobile_card">
       <!-- Slide 1 -->
       <a
         href="http://"
@@ -77,15 +91,14 @@
       >
         <div class="projects_card">
           <!-- Main image preview -->
-          <section class="projects"></section>
+          <section class="projects_img"></section>
           <!-- Info bar at the bottom of card -->
           <section class="projects_info">
             <div class="projects_description">
-              <h1 class="projects_title">React Expense App</h1>
+              <h1 class="projects_title mobile_projects_title">React Expense App</h1>
               <p class="projects_text">
                 This blogging site was built using javascript, HTML and CSS. It
-                has full CRUD (create, read, update, delete) functionality. It
-                is currently hosted on Netlify.
+                has full CRUD (create, read, update, delete) functionality.
               </p>
             </div>
             <!-- Project tags -->
@@ -109,7 +122,7 @@
       >
         <div class="projects_card">
           <!-- Main image preview -->
-          <section class="projects"></section>
+          <section class="projects_img"></section>
           <!-- Info bar at the bottom of card -->
           <section class="projects_info">
             <div class="projects_description">
@@ -141,7 +154,7 @@
       >
         <div class="projects_card">
           <!-- Main image preview -->
-          <section class="projects"></section>
+          <section class="projects_img"></section>
           <!-- Info bar at the bottom of card -->
           <section class="projects_info">
             <div class="projects_description">
@@ -211,9 +224,8 @@
       }
     </script>
 
-    <footer>
-      &copy;2021 Made by Jason Sandeman | Icons By
-      <a href="https://fontawesome.com/">&nbsp;Font Awesome</a>
-    </footer>
+<footer>
+  &copy;2021 Made by Jason Sandeman | <a href="./post1.html#attribution">&nbsp; Attribution</a>
+</footer>
   </body>
 </html>

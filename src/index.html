@@ -25,8 +25,8 @@
   </head>
   <body>
     <header>
-      <!-- Navigation buttons -->
-      <nav class="nav">
+      <!-- Desktop navigation buttons -->
+      <nav class="desktop_nav">
         <!-- Border and icon styling -->
         <div class="icon home_wrapper">
           <div class="icon_border home">
@@ -64,10 +64,25 @@
           </div>
         </div>
       </nav>
+
+      <!-- Mobile navigation bar -->
+      <nav class="mobile_nav">
+        <input type="checkbox" id="checkbox1" />
+        <label for="checkbox1">
+          <ul class="menu first">
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li><a href="./blog.html">BLOG</a></li>
+            <li><a href="./projects.html">PROJECTS</a></li>
+          </ul>
+          <span class="toggle">☰</span>
+        </label>
+      </nav>
     </header>
+
     <!-- Main card styling and animation -->
-    <main class="card animate">
-      <section class="home_card">
+    <main class="card animate mobile_card">
+      <section class="home_card mobile_home_card">
         <!-- Profile photo -->
         <img
           src="./img/jasonprofilepic.jpeg"
@@ -119,9 +134,9 @@
         </section>
       </section>
     </main>
+
     <footer>
-      &copy;2021 Made by Jason Sandeman | Icons By
-      <a href="https://fontawesome.com/">&nbsp;Font Awesome</a>
+      &copy;2021 Made by Jason Sandeman | <a href="./post1.html#attribution">&nbsp; Attribution</a>
     </footer>
   </body>
 </html>

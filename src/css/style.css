@@ -14,6 +14,20 @@ body {
   flex-wrap: nowrap;
   /* border: 4px solid yellow; */
   height: 100vh;
+  width: 100vw;
+}
+
+@media (max-device-width: 1200px) {
+  body {
+    /* display: flex; */
+    /* margin-top: -25%; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* flex-wrap: nowrap; */
+    /* border: 4px solid yellow; */
+    /* height: 100%; */
+  }
 }
 
 /* ------------------------  $variables  ------------------------ */
@@ -186,7 +200,139 @@ a:active {
   -o-border-radius: 28px;
 }
 
-/* ------------------------  Navigation Button Text ------------------------ */
+/* ------------------------  Mobile Navigation Bar ------------------------ */
+@media screen and (max-device-width: 1200px) {
+  .desktop_nav {
+    display: none;
+  }
+}
+
+/* Style the normal horizontal nav menu. */
+.mobile_nav {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-bottom: 16px;
+  max-width: 700px;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  border: 2px solid green;
+}
+@media screen and (min-device-width: 1200px) {
+  .mobile_nav {
+    display: none;
+  }
+}
+
+#checkbox1,
+.toggle {
+  display: none;
+}
+
+.menu {
+  padding: 0;
+  margin: 0;
+  max-width: 700px;
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+
+.menu li a {
+  text-decoration: none;
+  align-self: center;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 10px 15px;
+  transition: background 0.2s linear;
+}
+
+/* Style the hamburger menu on small screens. */
+@media screen and (max-width: 600px) {
+  header {
+    position: relative;
+    top: 0;
+    width: 100%;
+  }
+  .menu li a {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .toggle {
+    clear: both;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    line-height: 40px;
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    color: #595959;
+    background: #dbdbdb;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: all 0.1s linear;
+  }
+  .toggle:hover {
+    background: #cecece;
+  }
+
+  #checkbox1:checked + label .first li {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.7s linear;
+  }
+
+  #checkbox1:checked + label .first {
+    height: 200px;
+  }
+  .menu {
+    border-radius: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 0px;
+    transition: height 0.3s linear;
+  }
+  .menu li {
+    display: flex;
+    /* magic */
+    align-self: center;
+    width: 95%;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .menu li a {
+    width: 95%;
+    text-align: center;
+    align-self: center;
+    align-content: center;
+  }
+
+  .first {
+    background: #625b60;
+  }
+
+  .first li a {
+    color: #fff;
+  }
+
+  .first li a:hover {
+    background: #6d6268;
+  }
+}
+
+/* ------------------------  Desktop Navigation Button Text ------------------------ */
 
 /* Adds the icon styling to the h1 text and hides it with opacity */
 .icon h1 {
@@ -581,6 +727,20 @@ span {
   transition: all 0.25s ease;
   z-index: 100 !important;
 }
+@media screen and (max-device-width: 1200px) {
+  .card {
+    display: none;
+  }
+  .mobile_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    box-shadow: none;
+    border: 2px solid pink;
+  }
+}
 
 .card.animate:hover {
   transform: translate3d(5px, -5px, -5px);
@@ -603,6 +763,18 @@ span {
   align-content: space-between;
   width: 100%;
 }
+@media screen and (max-device-width: 1200px) {
+  .mobile_home_card {
+    /* @include column-centred (); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+    height: 100%;
+    /* border: 1px solid green; */
+  }
+}
 
 /* Centres image in card with box shadow */
 .home_img {
@@ -616,6 +788,14 @@ span {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   /* border: 2px solid green; */
+}
+@media screen and (max-device-width: 1200px) {
+  .home_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 40%;
+  }
 }
 
 /* Positions title in the centre */
@@ -631,6 +811,13 @@ span {
   font-weight: 800;
   letter-spacing: 4px;
   margin: 8px;
+}
+@media screen and (max-device-width: 1200px) {
+  .home_title {
+    font-size: 24px;
+    width: 90%;
+    margin: 16px 0;
+  }
 }
 
 /* Positions description in the centre */
@@ -669,12 +856,17 @@ span {
   /* Figured out i can use percentages which helps keep the card padding responsive */
   padding: 2% 0;
 }
+@media screen and (max-device-width: 1200px) {
+  .mobile_about_card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
-/* @media (max-width: 400px) {
-  .about_card {
-    display: block;
+    align-items: center;
+    height: 100%;
+    border: 1px solid green;
   }
-} */
+}
 
 /* Single column tile */
 .tile {
@@ -692,6 +884,25 @@ span {
   -moz-border-radius: 24px;
   -ms-border-radius: 24px;
   -o-border-radius: 24px;
+}
+@media screen and (max-device-width: 1200px) {
+  .mobile_tile {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 50%;
+    margin: 0 2px;
+    height: 28%;
+    /* contain: content; */
+    box-shadow: 0 2px 5px 0 #bee1e6; /* add $primary-color */
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+  }
 }
 
 /* Styling for image to fit in a single column tile */
@@ -845,6 +1056,33 @@ h1.collaborate {
   overflow: hidden;
   width: 100%;
   height: 100%;
+
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+}
+
+@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+  .blog_card {
+    display: flex;
+    flex-direction: column;
+    max-width: 90vw;
+    height: 600px;
+    /* border: 4px solid blue; */
+    box-shadow: 0 2px 32px 0 #bee1e6; /* add $primary-color */
+  }
+}
+@media screen and (max-device-width: 600px) {
+  .blog_card {
+    display: flex;
+    flex-direction: column;
+    max-width: 90vw;
+    height: 500px;
+    /* border: 4px solid blue; */
+    box-shadow: 0 2px 32px 0 #bee1e6; /* add $primary-color */
+  }
 }
 
 /* Next & previous buttons */
@@ -945,6 +1183,12 @@ h1.collaborate {
   border-top-left-radius: 24px;
   border-bottom-left-radius: 24px;
 }
+/* Removes bottom left border radius from image on mobile */
+@media screen and (max-device-width: 1200px) {
+  .blog_img {
+    border-bottom-left-radius: 0;
+  }
+}
 
 /* card that provides a sneak peek of the blog */
 .blog_peek {
@@ -958,6 +1202,21 @@ h1.collaborate {
   align-items: center;
   padding: 12px;
 }
+@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+  .blog_peek {
+    align-items: flex-start;
+    padding: 0;
+    height: 30%;
+    /* border: 2px solid brown; */
+  }
+}
+@media screen and (max-device-width: 600px) {
+  .blog_peek {
+    height: 20%;
+    padding: 0;
+    /* border: 2px solid brown; */
+  }
+}
 
 /* Styling for blog title */
 .blog_title {
@@ -965,12 +1224,35 @@ h1.collaborate {
   width: 80%;
   line-height: 1.5;
 }
+@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+  .blog_title {
+    padding: 24px 0 4px 24px;
+    width: 80%;
+    font-size: 28px;
+    /* border: 2px solid blue; */
+    line-height: normal;
+  }
+}
+@media screen and (max-device-width: 600px) {
+  .blog_title {
+    width: 80%;
+    padding: 0 0 4px 0;
+    font-size: 16px;
+    /* border: 2px solid blue; */
+    line-height: normal;
+  }
+}
 
 /* Styling for blog description */
 .blog_description {
   width: 80%;
   line-height: 1.5;
   margin-bottom: 24px;
+}
+@media screen and (max-device-width: 1200px) {
+  .blog_description {
+    display: none;
+  }
 }
 
 /* Styling for blog published date */
@@ -981,10 +1263,43 @@ h1.collaborate {
   font-style: italic;
   color: grey;
 }
+@media screen and (max-device-width: 1200px) and (min-device-width: 600px) {
+  .blog_published {
+    padding: 0 24px;
+    font-size: 16px;
+    width: 80%;
+    margin: 0;
+    /* border: 2px solid purple; */
+  }
+}
+@media screen and (max-device-width: 600px) {
+  .blog_published {
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    /* border: 2px solid purple; */
+  }
+}
 
-/* Position tags on left align */
+/* Conatainer for tags */
 .blog_tags {
   width: 80%;
+}
+@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+  .blog_tags {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    font-size: 12px;
+    width: 80%;
+    padding: 12px 0 24px 24px;
+    /* border: 2px solid pink; */
+  }
+}
+@media screen and (max-device-width: 600px) {
+  .blog_tags {
+    display: none;
+  }
 }
 
 /* ------------------------ Individual Blog Post ------------------------ */
@@ -1200,7 +1515,6 @@ article img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   align-items: center;
   overflow: hidden;
   width: 100%;
@@ -1210,6 +1524,22 @@ article img {
   -moz-border-radius: 24px;
   -ms-border-radius: 24px;
   -o-border-radius: 24px;
+}
+@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+  .projects_card {
+    max-width: 90vw;
+    height: 600px;
+    /* border: 4px solid blue; */
+    box-shadow: 0 2px 32px 0 #bee1e6; /* add $primary-color */
+  }
+}
+@media screen and (max-device-width: 600px) {
+  .projects_card {
+    max-width: 90vw;
+    height: 500px;
+    /* border: 4px solid blue; */
+    box-shadow: 0 2px 32px 0 #bee1e6; /* add $primary-color */
+  }
 }
 
 /* Next & previous buttons */
@@ -1234,11 +1564,21 @@ article img {
   right: 15%;
   border-radius: 3px 0 0 3px;
 }
+@media screen and (max-device-width: 1200px) {
+  .next {
+    right: 5%;
+  }
+}
 
 /* Position the "prev button" to the left */
 .prev {
   left: 15%;
   border-radius: 3px 0 0 3px;
+}
+@media screen and (max-device-width: 1200px) {
+  .prev {
+    left: 5%;
+  }
 }
 
 /* On hover, add a background color with a little opacity */
@@ -1300,10 +1640,10 @@ article img {
   }
 }
 
-/* ------------------------ Individual Project Card ------------------------ */
+/* ------------------------ Projects Page ------------------------ */
 
 /* Image styling that takes up the top 80% of the card */
-.projects {
+.projects_img {
   display: flex;
   width: 100%;
   height: 80%;
@@ -1313,12 +1653,24 @@ article img {
   background-size: cover;
 }
 
-/* Project info that takes up thebottom 20% of the card. Children are in row format */
+/* Project info that takes up the bottom portion of the card. Children are in row format */
 .projects_info {
   display: flex;
+  justify-content: center;
   flex-direction: row;
   width: 100%;
   height: 20%;
+}
+@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+  .projects_info {
+    flex-direction: column;
+    height: 30%;
+  }
+}
+@media screen and (max-device-width: 600px) {
+  .projects_info {
+    height: 20%;
+  }
 }
 
 /* Container for title and description text. takes up left hand side half of the info bar  */
@@ -1327,13 +1679,60 @@ article img {
   flex-direction: column;
   width: 50%;
 }
-
-.projects_title {
-  margin: 24px 0 0 24px;
+@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+  .projects_description {
+    /* border: 2px solid orange; */
+    height: 100%;
+    width: 100%;
+  }
+}
+@media screen and (max-device-width: 600px) {
+  .projects_description {
+    justify-content: center;
+    padding: 0;
+    /* border: 2px solid orange; */
+    height: 100%;
+    width: 80%;
+  }
 }
 
+/* Info bar title */
+.projects_title {
+  padding: 24px 0 4px 24px;
+}
+@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+  .projects_title {
+    /* border: 2px solid orangered; */
+    font-size: 32px;
+  }
+}
+@media screen and (max-device-width: 600px) {
+  .projects_title {
+    /* border: 2px solid orangered; */
+    padding: 0 0 4px 0;
+    font-size: 20px;
+  }
+}
+
+/* Info bar description */
 .projects_text {
-  margin: 0 24px;
+  padding: 0 24px;
+  width: 100%;
+}
+@media screen and (max-device-width: 1200px) and (min-device-width: 600px) {
+  .projects_text {
+    font-size: 16px;
+    width: 85%;
+    /* border: 2px solid purple; */
+  }
+}
+@media screen and (max-device-width: 600px) {
+  .projects_text {
+    font-size: 12px;
+    padding: 0;
+    margin-bottom: 4px;
+    /* border: 2px solid purple; */
+  }
 }
 
 /* Container for tags. takes up right hand side half of the info bar  */
@@ -1341,7 +1740,21 @@ article img {
   justify-content: flex-end;
   width: 50%;
 }
-
+@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+  .projects_tags {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    font-size: 12px;
+    width: 100%;
+    padding: 12px 0 24px 24px;
+  }
+}
+@media screen and (max-device-width: 600px) {
+  .projects_tags {
+    display: none;
+  }
+}
 /* ------------------------ Footer ------------------------ */
 
 /* Postion footer in the centre at the bottom */
