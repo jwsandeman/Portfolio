@@ -741,6 +741,16 @@ span {
     box-shadow: none;
     /* border: 2px solid pink; */
   }
+  .mobile_card_home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    /* height: auto; */
+    box-shadow: none;
+    /* border: 2px solid pink; */
+  }
 }
 
 .card.animate:hover {
