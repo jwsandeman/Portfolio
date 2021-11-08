@@ -739,9 +739,9 @@ span {
     width: 100vw;
     height: auto;
     box-shadow: none;
-    /* border: 2px solid pink; */
+    /* border: 4px solid pink; */
   }
-  .mobile_card_home {
+  .mobile_card_column {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -867,16 +867,13 @@ span {
   /* Figured out i can use percentages which helps keep the card padding responsive */
   padding: 2% 0;
 }
-@media screen and (max-device-width: 1200px) {
-  .mobile_about_card {
-    display: flex;
+@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+  .about_card {
     flex-direction: row;
-    justify-content: center;
-
-    align-items: center;
-    height: 100%;
-    border: 1px solid green;
+    /* border: 2px solid green; */
   }
+}
+@media screen and (max-device-width: 600px) {
 }
 
 /* Single column tile */
@@ -896,23 +893,18 @@ span {
   -ms-border-radius: 24px;
   -o-border-radius: 24px;
 }
-@media screen and (max-device-width: 1200px) {
-  .mobile_tile {
-    display: flex;
-    flex-direction: row;
-    /* flex-wrap: wrap; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    width: 50%;
-    margin: 0 2px;
-    height: 28%;
-    /* contain: content; */
-    box-shadow: 0 2px 5px 0 #bee1e6; /* add $primary-color */
-    border-radius: 24px;
-    -webkit-border-radius: 24px;
-    -moz-border-radius: 24px;
-    -ms-border-radius: 24px;
-    -o-border-radius: 24px;
+@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+  .tile {
+    width: 45vw;
+    height: 20vh;
+    margin: 16px 0;
+  }
+}
+@media screen and (max-device-width: 600px) {
+  .tile {
+    width: 90vw;
+    height: 20vh;
+    margin: 16px 0;
   }
 }
 
@@ -921,6 +913,20 @@ span {
   height: 28%;
   background: url(../img/jasonprofilepic.jpeg);
   background-size: cover;
+}
+@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+  .tile_img {
+    width: 90vw;
+    height: 60vh;
+    margin: 16px 0;
+  }
+}
+@media screen and (max-device-width: 600px) {
+  .tile_img {
+    width: 90vw;
+    height: 40vh;
+    margin: 16px 0;
+  }
 }
 
 /* Triple sized tile */
@@ -941,11 +947,30 @@ span {
   -ms-border-radius: 24px;
   -o-border-radius: 24px;
 }
+@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+  .triple_tile {
+    width: 90vw;
+    height: 20vh;
+    margin: 16px 0;
+  }
+}
+@media screen and (max-device-width: 600px) {
+  .triple_tile {
+    width: 90vw;
+    height: 40vh;
+    margin: 16px 0;
+  }
+}
 
 /* Styling for triple tile title */
 .about_title {
   display: flex;
   padding: 8px 24px;
+}
+@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+  .about_title {
+    font-size: 24px;
+  }
 }
 
 /* Styling for triple tile description */
@@ -953,6 +978,11 @@ span {
   display: flex;
   padding: 0 24px 8px 24px;
   font-size: 14px;
+}
+@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+  .about_description {
+    font-size: 16px;
+  }
 }
 
 /* Styling for single tile titles */
@@ -967,6 +997,11 @@ span {
   padding: 8px 0 4px 0;
   height: 40%;
   /* border: 2px solid green; */
+}
+@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+  .tile h3 {
+    font-size: 24px;
+  }
 }
 
 h3.resume,
@@ -1002,6 +1037,11 @@ h3.contact {
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
+@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+  .tile h1 {
+    font-size: 40px;
+  }
+}
 
 h1.looking {
   /* Create the gradient. */
@@ -1023,17 +1063,32 @@ h1.interests {
   /* Create the gradient. */
   background-image: linear-gradient(45deg, #bee1e6, #cddafd);
 }
+@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+  h1.interests {
+    font-size: 24px;
+  }
+}
 
 h1.experience {
   font-size: 16px;
   /* Create the gradient. */
   background-image: linear-gradient(45deg, #fad2e1, #dfe7fd);
 }
+@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+  h1.experience {
+    font-size: 24px;
+  }
+}
 
 h1.collaborate {
   font-size: 16px;
   /* Create the gradient. */
   background-image: linear-gradient(45deg, #eae4e9, #bee1e6);
+}
+@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+  h1.collaborate {
+    font-size: 24px;
+  }
 }
 
 /* Icon positioning for stack tile */
@@ -1735,7 +1790,7 @@ article img {
   .prev,
   .next,
   .text {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 
@@ -1863,4 +1918,23 @@ footer {
   bottom: 30px;
   color: rgba(0, 0, 0, 0.5);
   /* border: 4px solid rgb(3, 3, 3); */
+}
+@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+  .about_footer {
+    display: flex;
+    position: relative;
+    bottom: 0;
+    height: 50px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+  }
+}
+@media screen and (max-device-width: 600px) {
+  .about_footer {
+    display: flex;
+    position: relative;
+    bottom: 0;
+    height: 50px;
+    color: rgba(0, 0, 0, 0.5);
+  }
 }
