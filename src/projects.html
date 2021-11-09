@@ -95,7 +95,9 @@
           <!-- Info bar at the bottom of card -->
           <section class="projects_info">
             <div class="projects_description">
-              <h1 class="projects_title mobile_projects_title">React Expense App</h1>
+              <h1 class="projects_title mobile_projects_title">
+                React Expense App
+              </h1>
               <p class="projects_text">
                 This blogging site was built using javascript, HTML and CSS. It
                 has full CRUD (create, read, update, delete) functionality.
@@ -180,15 +182,15 @@
       <!-- Prev/Next buttons -->
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <!-- Bottom bar pagination -->
+      <nav style="text-align: center; margin-top: 24px">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </nav>
     </main>
     <br />
-
-    <!-- Bottom bar pagination -->
-    <nav style="text-align: center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-    </nav>
 
     <!-- Slideshow Script -->
     <script>
@@ -224,8 +226,9 @@
       }
     </script>
 
-<footer>
-  &copy;2021 Made by Jason Sandeman | <a href="./post1.html#attribution">&nbsp; Attribution</a>
-</footer>
+    <footer>
+      &copy;2021 Made by Jason Sandeman |
+      <a href="./post1.html#attribution">&nbsp; Attribution</a>
+    </footer>
   </body>
 </html>
