@@ -279,7 +279,6 @@ a:active {
     cursor: pointer;
     width: 100%;
     height: 40px;
-    font-size: 18px;
     color: #bee1e6;
     background: #fff;
     border-radius: none;
@@ -749,10 +748,10 @@ span {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 80%;
+    height: 70%;
     margin: auto 0;
     box-shadow: none;
-    /* border: 6px solid green; */
+    border: 6px solid green;
   }
   .mobile_card_column {
     display: flex;
@@ -760,10 +759,10 @@ span {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 80%;
+    height: 70%;
     margin: auto 0;
     box-shadow: none;
-    /* border: 2px solid green; */
+    border: 2px solid purple;
   }
 }
 
@@ -1942,6 +1941,7 @@ footer {
     height: 50px;
     color: rgba(0, 0, 0, 0.5);
     font-size: 20px;
+    margin: 24px 0;
   }
 }
 @media screen and (max-device-width: 600px) {
