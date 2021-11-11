@@ -1,3 +1,5 @@
+## Source Code
+
 View the source code on GitHub [here](https://github.com/jwsandeman/JasonSandeman_T1A2).
 
 ## Project Description
@@ -44,7 +46,7 @@ The purpose of the portfolio is website is to showcase my skills as a web profes
 
 ### Wireframe
 
-- Once you crawl out of the catacombs of the internet and have closed all of your tabs on all of your screens its time to start on the wireframe. This can be a simple(low-fidelity) or complicated(high-fidelity) approach, its up to you. I prefer to keep it simple at first by sketching it out roughly on the ipad and then ill move to a more concrete wirframe when im happy with the overall design. You can access my wireframes [here](https://whimsical.com/portfolio-wireframe-FrwWza12S3iqTH7YrLgS8G@3CRerdhrAw8V6w9PrpoRpqSq). ![Sketch](./sketch.png) ![Wireframes](./wireframes.png) ![Desktop Wireframe](./desktopwireframe.png) ![Tablet Wireframe](./tabletwireframe.png) ![Mobile wireframe](./mobilewireframe.png)
+- Once you crawl out of the catacombs of the internet and have closed all of your tabs on all of your screens its time to start on the wireframe. This can be a simple(low-fidelity) or complicated(high-fidelity) approach, its up to you. I prefer to keep it simple at first by sketching it out roughly on the ipad and then ill move to a more concrete wirframe when im happy with the overall design. You can access my wireframes [here](https://whimsical.com/portfolio-wireframe-FrwWza12S3iqTH7YrLgS8G@3CRerdhrAw8V6w9PrpoRpqSq). ![Sketch](./sketch.png) ![Wireframes](./wireframes.png) ![Desktop Wireframe](./dwireframe.png) ![Tablet Wireframe](./twireframe.png) ![Mobile wireframe](./mwireframe.png)
 
 ## Tech Stack
 
@@ -133,17 +135,17 @@ Now that we are clear on our project requirements and intended tech stack it is 
 
 Heres a few of the screenshots. The rest are in the docs folder.
 
-- Desktop halfway progress shots: ![About Page](./daboutpageprogress.png)![Blog Page](./dblogpageprogress.png)
+Desktop screenshots:
 
-- Mobile halfway progress shots:
+![Home Page](./dhomecompleted.png)![About Page](./daboutcompleted.png)![Projects Page](./dprojectscompleted.png)![Blog Page](./dblogcompleted.png)![Post Page](./dpostcompleted.png)
 
-- Tablet halfway progress shots:
+Tablet screenshots:
 
-- Desktop completed: ![About Page](./daboutcompleted.png)![Blog Page](./dblogcompleted.png)
+![Projects Page](./tprojectscompleted.png)![Post Page](tpostcompletedtop.png)![About Page](./taboutcompleted.png)
 
-- Mobile completed:
+-Mobile screenshots:
 
-- Tablet completed:
+![Home Page](mhomecompleted.png)![Post Page](./mpostcompletedbody.png)![About Page](./maboutcompleted.png)
 
 ## Components and Features
 
@@ -242,6 +244,14 @@ Now lets talk about what components and features i used in my design.
   The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE
+
+### Slideshow Component on Blog and Projects pages.
+
+- I used slideshow from [w3schools.com](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow).
+
+### Text/icon background gradients
+
+- For the gradient i used an example from Sarah L. Fossheim's blog [post](https://fossheim.io/writing/posts/css-text-gradient/)
 
 ---
 
