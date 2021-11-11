@@ -500,8 +500,8 @@ a:active {
   padding: 16px 92px;
 }
 
-/* This positions the pen icon */
-.fa-pen {
+/* This positions the blog icon */
+.fa-blog {
   display: flex;
   position: fixed;
   right: 32px;
@@ -509,7 +509,7 @@ a:active {
   color: #bee1e6; /* add $primary-color */
 }
 
-/* This positions the "BLOG" text next to the pen icon */
+/* This positions the "BLOG" text next to the blog icon */
 .blog_txt {
   right: 88px;
   bottom: 32px;
@@ -616,11 +616,14 @@ a:active {
 }
 
 .fa-twitter {
+  background-color: #bee1e6;
+  background-image: -moz-linear-gradient(left, #bee1e6 0%, #f0efeb 100%);
+  background-image: -webkit-linear-gradient(left, #bee1e6 0%, #f0efeb 100%);
+  background-image: linear-gradient(to right, #bee1e6 0%, #f0efeb 100%);
+  background-size: 100%;
+  background-repeat: repeat;
   box-shadow: 0 4px 4px 0 #fff1e6, 4px 0 4px 0 #fad2e1, 0 -4px 4px 0 #bee1e6,
     -4px 0 4px 0 #cddafd;
-  background: -moz-linear-gradient(left, #bee1e6 0%, #f0efeb 100%);
-  background: -webkit-linear-gradient(left, #bee1e6 0%, #f0efeb 100%);
-  background: linear-gradient(to right, #bee1e6 0%, #f0efeb 100%);
 
   /* Use the text as a mask for the background. */
   /* This is for text/icon gradients. This will show the gradient as a text color rather than element bg. */
@@ -648,22 +651,6 @@ a:active {
 }
 
 .fa-download {
-  box-shadow: 0 4px 4px 0 #fff1e6, 4px 0 4px 0 #fad2e1, 0 -4px 4px 0 #bee1e6,
-    -4px 0 4px 0 #cddafd;
-  background: -moz-linear-gradient(left, #f0efeb 0%, #dfe7fd 100%);
-  background: -webkit-linear-gradient(left, #f0efeb 0%, #dfe7fd 100%);
-  background: linear-gradient(to right, #f0efeb 0%, #dfe7fd 100%);
-
-  /* Use the text as a mask for the background. */
-  /* This is for text/icon gradients. This will show the gradient as a text color rather than element bg. */
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-
-.fa-node-js {
   box-shadow: 0 4px 4px 0 #fff1e6, 4px 0 4px 0 #fad2e1, 0 -4px 4px 0 #bee1e6,
     -4px 0 4px 0 #cddafd;
   background: -moz-linear-gradient(left, #f0efeb 0%, #dfe7fd 100%);
