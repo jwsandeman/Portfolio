@@ -584,11 +584,14 @@ a:active {
 /* ------------------------ Social Icons ------------------------ */
 
 .fa-github {
+  background-color: #bee1e6;
+  background-image: -moz-linear-gradient(left, #fff1e6 0%, #fde2e4 100%);
+  background-image: -webkit-linear-gradient(left, #fff1e6 0%, #fde2e4 100%);
+  background-image: linear-gradient(to right, #fff1e6 0%, #fde2e4 100%);
+  background-size: 100%;
+  background-repeat: repeat;
   box-shadow: 0 4px 4px 0 #fff1e6, 4px 0 4px 0 #fad2e1, 0 -4px 4px 0 #bee1e6,
     -4px 0 4px 0 #cddafd;
-  background: -moz-linear-gradient(left, #fff1e6 0%, #fde2e4 100%);
-  background: -webkit-linear-gradient(left, #fff1e6 0%, #fde2e4 100%);
-  background: linear-gradient(to right, #fff1e6 0%, #fde2e4 100%);
 
   /* Use the text as a mask for the background. */
   /* This is for text/icon gradients. This will show the gradient as a text color rather than element bg. */
@@ -600,11 +603,14 @@ a:active {
 }
 
 .fa-linkedin-in {
+  background-color: #bee1e6;
+  background-image: -moz-linear-gradient(left, #fad2e1 0%, #e2ece9 100%);
+  background-image: -webkit-linear-gradient(left, #fad2e1 0%, #e2ece9 100%);
+  background-image: linear-gradient(to right, #fad2e1 0%, #e2ece9 100%);
+  background-size: 100%;
+  background-repeat: repeat;
   box-shadow: 0 4px 4px 0 #fff1e6, 4px 0 4px 0 #fad2e1, 0 -4px 4px 0 #bee1e6,
     -4px 0 4px 0 #cddafd;
-  background: -moz-linear-gradient(left, #fad2e1 0%, #e2ece9 100%);
-  background: -webkit-linear-gradient(left, #fad2e1 0%, #e2ece9 100%);
-  background: linear-gradient(to right, #fad2e1 0%, #e2ece9 100%);
 
   /* Use the text as a mask for the background. */
   /* This is for text/icon gradients. This will show the gradient as a text color rather than element bg. */
@@ -635,11 +641,14 @@ a:active {
 }
 
 .fa-paper-plane {
+  background-color: #bee1e6;
+  background-image: -moz-linear-gradient(left, #f0efeb 0%, #dfe7fd 100%);
+  background-image: -webkit-linear-gradient(left, #f0efeb 0%, #dfe7fd 100%);
+  background-image: linear-gradient(to right, #f0efeb 0%, #dfe7fd 100%);
+  background-size: 100%;
+  background-repeat: repeat;
   box-shadow: 0 4px 4px 0 #fff1e6, 4px 0 4px 0 #fad2e1, 0 -4px 4px 0 #bee1e6,
     -4px 0 4px 0 #cddafd;
-  background: -moz-linear-gradient(left, #f0efeb 0%, #dfe7fd 100%);
-  background: -webkit-linear-gradient(left, #f0efeb 0%, #dfe7fd 100%);
-  background: linear-gradient(to right, #f0efeb 0%, #dfe7fd 100%);
 
   /* Use the text as a mask for the background. */
   /* This is for text/icon gradients. This will show the gradient as a text color rather than element bg. */
@@ -651,11 +660,14 @@ a:active {
 }
 
 .fa-download {
+  background-color: #bee1e6;
+  background-image: -moz-linear-gradient(left, #f0efeb 0%, #dfe7fd 100%);
+  background-image: -webkit-linear-gradient(left, #f0efeb 0%, #dfe7fd 100%);
+  background-image: linear-gradient(to right, #f0efeb 0%, #dfe7fd 100%);
+  background-size: 100%;
+  background-repeat: repeat;
   box-shadow: 0 4px 4px 0 #fff1e6, 4px 0 4px 0 #fad2e1, 0 -4px 4px 0 #bee1e6,
     -4px 0 4px 0 #cddafd;
-  background: -moz-linear-gradient(left, #f0efeb 0%, #dfe7fd 100%);
-  background: -webkit-linear-gradient(left, #f0efeb 0%, #dfe7fd 100%);
-  background: linear-gradient(to right, #f0efeb 0%, #dfe7fd 100%);
 
   /* Use the text as a mask for the background. */
   /* This is for text/icon gradients. This will show the gradient as a text color rather than element bg. */
