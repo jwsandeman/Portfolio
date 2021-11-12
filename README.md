@@ -2,7 +2,7 @@
 
 ## Links
 
-View the Website [here](https://festive-aryabhata-690f3c.netlify.app/index.html).
+View the Website [here](https://festive-aryabhata-690f3c.netlify.app/index.html) (this website is a work in progress for my @coderacademy portflio assignment and as such some of the blog posts have placeholder text and images).
 
 View the source code on GitHub [here](https://github.com/jwsandeman/JasonSandeman_T1A2).
 
@@ -28,7 +28,7 @@ The purpose of the portfolio is website is to showcase my skills as a web profes
 
 ---
 
-## Project Planning
+## Design Process & Decisions
 
 ### Project Management Dashboard
 
@@ -36,7 +36,7 @@ The purpose of the portfolio is website is to showcase my skills as a web profes
 
 ### Software Requirements
 
-- Next you need to look at your design brief and client/software requirements. This should be obvious but you need to write these down, preferably in your project dashboard. You'll be surprised how many times you reference these whilst building your project. My design brief is an assignment so ive got plenty of information to reference.
+- Next i checked the design brief and client/software requirements. This should be obvious but you need to write these down, preferably in your project dashboard. You'll be surprised how many times you reference these whilst building your project. My design brief is an assignment so ive got plenty of information to reference.
 
 ### Sitemap
 
@@ -46,61 +46,38 @@ The purpose of the portfolio is website is to showcase my skills as a web profes
 
 ### Planning
 
-- Once you've set up your dashboard now its time to break the project down into manageable chunks. Start at the high level deliverables and work your way down to the smallest tasks. This can be time consuming but as Benjamin Franklin says "If you fail to plan, you are planning to fail."
+- Now that my dashboard is set up its time to break the project down into manageable chunks. Starting at the high level deliverables and working my way down to the smallest tasks. This can be time consuming but as Benjamin Franklin says "If you fail to plan, you are planning to fail."
 
 ### Inspiration/Mood Board
 
-- Now that you have a plan its time to find some inspiration. This is one of the more enjoyable parts of starting a new project, where you get to dive head first into the depths of the bottomless internet and find sites that inspire you and that would fit the client design spec well. A word of warning - don't spend too much time on this. Set a time limit and stick to it, otherwise inspiration turns into procrastination (speaking from personal experience).
+- Now that I have a plan its time to find some inspiration. This is one of the more enjoyable parts of starting a new project, where you get to dive head first into the depths of the bottomless internet and find sites that inspire you and that would fit the client design spec well. A word of warning - don't spend too much time on this. Set a time limit and stick to it, otherwise inspiration turns into procrastination (speaking from personal experience).
+
+- I ended up settling for a design with a particular aesthetic that would give the whole site a ‘business card’ feel to it. I wanted a clean and effective user interface without too much information overload in order to reduce friction. I also wanted a bit of animation to help enhance the user experience. I used material design for all my sizing (4px/8px increments).
+
+### Design Decisions
+
+Desktop:
+
+- I wanted fixed buttons that stayed in the same place to give the website a single page feel.
+- I wanted to steer away from traditional single column scrolling where possible (except blog posts) to maintain the business card effect
+- I wanted the ‘about me’ page to have a series of tiles addressing my skills/experience/interest/hobbies etc.
+
+Mobile/Tablet:
+
+- I kept the same basic layout with a similar design aesthetic.
+- Optimised the design for single column layout.
+- I kept the single page layout for home, blog and projects.
+- About me and blog posts were single column scrolling
 
 ### Wireframe
 
-- Once you crawl out of the catacombs of the internet and have closed all of your tabs on all of your screens its time to start on the wireframe. This can be a simple(low-fidelity) or complicated(high-fidelity) approach, its up to you. I prefer to keep it simple at first by sketching it out roughly on the ipad and then ill move to a more concrete wirframe when im happy with the overall design. You can access my wireframes [here](https://whimsical.com/portfolio-wireframe-FrwWza12S3iqTH7YrLgS8G@3CRerdhrAw8V6w9PrpoRpqSq). ![Sketch](./docs/sketch.png) ![Wireframes](./docs/wireframes.png) ![Desktop Wireframe](./docs/dwireframe.png) ![Tablet Wireframe](./docs/twireframe.png) ![Mobile wireframe](./docs/mwireframe.png)
-
----
-
-## Tech Stack
-
-Before we start building the project id like to go over the tech stack that i plan on using and the reasons why i chose each technology.
-
-### Project Management
-
-- To keep myself organised and accountable i used **_Notion_**. Its a hybrid between trello, google docs, quip and has handy tools like kanban boards, lists, calendars, gant charts, tables/databases and is basically my one stop shop for organising my entire life.
-
-### Time Management
-
-- I use 2 techniques to help stay on track. The 1st tool is the **_pomodoro technique_** which i think most people have heard of, if not google it.
-
-- The second tool i use is a free phone app called **_Structured_** which lets you break up your day into single manageble task that you can set a time limit on. As the day progresses structured counts down each task and gives you a great visual on how much time you have left on your current task until the next task begins. Simple but very very effective.
-
-### Code Editor
-
-- **_Visual Studio Code_** is my favourite code editor. The amount of helpful extensions alone are enough to justify this over other IDE's for me. Live server, Prettier and Bracket Pair Colouriser being some of my favourites. I also like the layout and the collaboration tools, and I don't think i could go back to an IDE that doesnt have an in-built terminal.
-
-### HTML
-
-- Ive chosen **_HTML_** not only because it is a reuqirement of my assignment but because it is stil a fast and effective way to design static websites that look amazing.
-
-### CSS/SCSS
-
-- **_CSS_** is essential for any website to overlay desired styling, fonts, animations and colours. Ive also decided to use **_SCSS_** to help simplify the design process with variables, @mixins and nesting.
-
-### Version Control
-
-- For version control i am using **_Git_** and my source code is available on **_GitHub_**.
-
-### Hosting
-
-- I have chosen to host my portfolio site on **_Netlfiy_** because of how easy they have made the process. Also, its free.
-
-### Security
-
-- I used **_Subresource Integrity_** as reccommended by Coder Academy
+- Once I crawled out of the catacombs of the internet and closed all of my tabs on all of my screens it was time to start on the wireframe. This can be a simple(low-fidelity) or complicated(high-fidelity) approach, its up to you. I prefer to keep it simple at first by sketching it out roughly on the ipad and then ill move to a more concrete wirframe when im happy with the overall design. You can access my wireframes [here](https://whimsical.com/portfolio-wireframe-FrwWza12S3iqTH7YrLgS8G@3CRerdhrAw8V6w9PrpoRpqSq). ![Sketch](./docs/sketch.png) ![Wireframes](./docs/wireframes.png) ![Desktop Wireframe](./docs/dwireframe.png) ![Tablet Wireframe](./docs/twireframe.png) ![Mobile wireframe](./docs/mwireframe.png)
 
 ---
 
 ## Initialise The Project
 
-Now that we are clear on our project requirements and intended tech stack it is time to intitialise the project! Lets open the terminal (we will move to VS code later) and perform the following steps:
+Now that we are clear on our project requirements it is time to intitialise the project! Lets open the terminal (we will move to VS code later) and perform the following steps:
 
 1. Make a new directory for the project and move into that directory
 
@@ -145,19 +122,73 @@ Now that we are clear on our project requirements and intended tech stack it is 
 
 8. Lets code! I'll start with the HTML pages first and then move onto the CSS. For the sake of time ill skip straight to the completed screenshots. Also be sure to make regular commits and save your work!
 
-Heres a few of the screenshots. The rest are in the docs folder.
+---
 
-Desktop screenshots:
+## Development
 
-![Home Page](./docs/dhomecompleted.png)![About Page](./docs/daboutcompleted.png)![Projects Page](./docs/dprojectscompleted.png)![Blog Page](./docs/dblogcompleted.png)![Post Page](./docs/dpostcompleted.png)
+### Desktop
 
-Tablet screenshots:
+- Built the fixed navigation and footer to achieve desired aesthetic.
+- Built the main card that would be used on each page using flexbox.
+- Built the tiles on the about page.
+- Added blog and projects page.
+- Styled each page.
+- Added slideshow to blog and projects which prevented the need for page scrolling.
+- Built blog post layout.
+- Converted styling to mobile and tablet.
 
-![Projects Page](./docs/tprojectscompleted.png)![Post Page](./docs/tpostcompletedtop.png)![About Page](./docs/taboutcompleted.png)
+### Mobile
 
-Mobile screenshots:
+- I opted for a standard nav bar at the top for tablet and a pop-down hamburger menu for mobile.
+- I removed the card effect for tablet and mobile and just used a basic column layout.
+- I kept the same slideshow component for the blog and projects page which also worked well on mobile.
+- The blog posts kept the same column layout.
 
-![Home Page](./docs/mhomecompleted.png)![Post Page](./docs/mpostcompletedbody.png)![About Page](./docs/maboutcompleted.png)![Mobile Menu](./docs/mmenu.png)
+## Tech Stack
+
+I'd like to go over the tech stack that i used and the reasons why i chose each technology.
+
+### Project Management
+
+- To keep myself organised and accountable i used **_Notion_**. Its a hybrid between trello, google docs, quip and has handy tools like kanban boards, lists, calendars, gant charts, tables/databases and is basically my one stop shop for organising my entire life.
+
+### Time Management
+
+- I use 2 techniques to help stay on track. The 1st tool is the **_pomodoro technique_** which i think most people have heard of, if not google it.
+
+- The second tool i use is a free phone app called **_Structured_** which lets you break up your day into single manageble task that you can set a time limit on. As the day progresses structured counts down each task and gives you a great visual on how much time you have left on your current task until the next task begins. Simple but very very effective.
+
+### Code Editor
+
+- **_Visual Studio Code_** is my favourite code editor. The amount of helpful extensions alone are enough to justify this over other IDE's for me. Live server, Prettier and Bracket Pair Colouriser being some of my favourites. I also like the layout and the collaboration tools, and I don't think i could go back to an IDE that doesnt have an in-built terminal.
+
+### Markdown
+
+- I used markdown to create this README which i then converted into html and injected straight into my blog post which was really helpful as it maintained markdown formatting and save me a lot of double handling.
+
+### HTML
+
+- Ive chosen **_HTML_** not only because it is a reuqirement of my assignment but because it is stil a fast and effective way to design static websites that look amazing.
+
+### CSS
+
+- **_CSS_** is essential for any website to overlay desired styling, fonts, animations and colours. I also intended to use **_SCSS_** to help simplify the design process with variables, @mixins and nesting. However i was a litlle late converting it to SCSS and essentially ran out of time to convert it before i had to hand in my assignment. I was close though.. i added all of the mixins and variables to my CSS file (commented out) in preperation for easier converting. I'll probably convert it at a later date.
+
+### Javascript (... I know, I know. I said only HTML & CSS)
+
+- So i almost built this portfolio website using only HTML and CSS but let's be honest who doesnt enjoy a quick script here and there. I used 2 seperate scripts in order to make 2 different components work. 1 was for the Markdown -> HTML converter script and the other was for the slideshow component on the blog and projects page.
+
+### Version Control
+
+- For version control i am using **_Git_** and my source code is available on **_GitHub_**.
+
+### Hosting
+
+- I have chosen to host my portfolio site on **_Netlfiy_** because of how easy they have made the process. I can deploy production changes using git in the terminal in VS Code, it's dead simple. Also, its free.
+
+### Security
+
+- I used **_Subresource Integrity_** as reccommended by Coder Academy
 
 ---
 
@@ -167,29 +198,41 @@ Now lets talk about what components and features i used in my design.
 
 ### Responsive Design
 
-- I designed this website with responsive layouts in mind. When the screen size changes, the layout and typography is optimised for the current screen size. I have used 3 main media breakpoints - Desktop, Tablet and Mobile.
+- I designed this website with responsive layouts in mind. When the screen size changes, the layout and typography is optimised for the current screen size. I have used 3 main media breakpoints - Desktop(>1200px), Tablet(600-1200px) and Mobile(<600px).
 
 ### Site Navigation
 
+Header/Navigation - will be simple and effective whilst utilising brand colours to minimise friction.
+
 - Desktop - I have used 4 buttons placed in eah corner of the web page to allow users to navigate around my portfolio. When a user hovers over one of the buttons the icon will rotate and dislay the link description
+
+- Tablet - Using a centred navigation bar at the top of each page.
 
 - Mobile - I have opted for the tradtional burger menu at the top of the screen to diplay the navigation menu.
 
-### Main Body Theme
-
-- Desktop - I am using a business card style to display all of my information on. This shows that i understand flexbox and helps keep the attention on the center of the screen rather than having to scroll or navigate menus.
-
-- Mobile - I used a single vertical column scrolling layout for the mobile as the card theme would not work well on smaller screens.
-
 ### Footer
 
-- Desktop/Mobile - The Footer is a simple copyright with my name.
+- Desktop/Mobile - Simple footer at the bottom of every page with a link to attribution for the tools i used on this site.
+
+### Main Card Theme
+
+- Desktop - I am using a business card style to display all of my information in. This shows that i understand flexbox and will capture the users attention with a central focus point on the page.
+
+- Mobile - I used a single vertical column scrolling layout for the mobile as the card theme would not work as well on smaller screens.
 
 ### About Me Card
 
 - Desktop - I used a grid styled approach for the 'about me' section. This shows off important information and stats that i want to user to be able to ascertain at a glance.
 
 - Mobile - I used the single vertical scrolling column layout here.
+
+### Tiles
+
+- Desktop/Mobile - will provide short and concise summaries in individual cards on the about page.
+
+### Slideshow
+
+- Desktop/Mobile - will help the user navigate blog posts and projects without leaving the page whilst offering a preview image and description.
 
 ### Blog Card
 
@@ -206,6 +249,24 @@ Now lets talk about what components and features i used in my design.
 ### Blog Post
 
 - Desktop/Mobile - I used a vertical scrolling column with an image as the post header. Then you have the post meta data and tags followed by the heading and publish date. After that the user can read the blog post by scrolling down the page.
+
+---
+
+## Screenshots
+
+Heres a few of the screenshots of the finished product. The rest are in the docs folder.
+
+Desktop screenshots:
+
+![Home Page](./docs/dhomecompleted.png)![About Page](./docs/daboutcompleted.png)![Projects Page](./docs/dprojectscompleted.png)![Blog Page](./docs/dblogcompleted.png)![Post Page](./docs/dpostcompleted.png)
+
+Tablet screenshots:
+
+![Projects Page](./docs/tprojectscompleted.png)![Post Page](./docs/tpostcompletedtop.png)![About Page](./docs/taboutcompleted.png)
+
+Mobile screenshots:
+
+![Home Page](./docs/mhomecompleted.png)![Post Page](./docs/mpostcompletedbody.png)![About Page](./docs/maboutcompleted.png)![Mobile Menu](./docs/mmenu.png)
 
 ---
 
@@ -263,11 +324,32 @@ Now lets talk about what components and features i used in my design.
 
 ### Slideshow Component on Blog and Projects pages.
 
-- I used slideshow from [w3schools.com](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow).
+- I used slideshow from [w3schools.com](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow). It involved HTML, CSS and a small Javascript script.
 
 ### Text/icon background gradients
 
 - For the gradient i used an example from Sarah L. Fossheim's blog [post](https://fossheim.io/writing/posts/css-text-gradient/)
+
+---
+
+## Challenges
+
+- Juggling work and family commitments.
+- Being over ambitious with the design and trying to figure out how to code it.
+- The desktop navigation button css animation was very time consuming.
+- The slideshow css was hard to get right.
+- The icons had a weird glitch where they would randomly not show up on different devices/browsers.
+- The desktop design proved very difficult to convert to mobile later. I found the design would behave - differently on my iphone and ipad than it did in the google chrome device toolbar.
+- I had to opt for a simpler mobile design than i had originally intended.
+- I pretty much had to start again with the mobile cards which caused breaking changes.
+- In future i will definitely be starting with mobile first and expanding from there.
+
+## Favourite Parts
+
+- When my css worked.
+- Getting the desktop navigation buttons working correctly was a big win.
+- Getting the slideshow working properly was another big win.
+- The end result - I’m really happy with how the desktop site turned out especially the blog posts.
 
 ---
 
