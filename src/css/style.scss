@@ -1,3 +1,5 @@
+// This stylesheet is not in use as i ran out of time to convert it over 
+
 /* This resets the page to my preferred starting point. */
 * {
   margin: 0;
@@ -24,6 +26,80 @@ body {
     /* border: 4px solid orchid; */
   }
 }
+
+/* ------------------------  $variables  ------------------------ */
+
+// $primary-color: #bee1e6;
+// $secondary-color: #E2ECE9;
+
+/* ------------------------  @Mixins  ------------------------ */
+
+/* This styles icons */
+/* @mixin icon-style {
+  display: flex;
+  margin: 8px;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+} */
+
+/* This styles round icons */
+/* @mixin round-icon {
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+} */
+
+/* This styles the navigation buttons */
+/* @mixin nav-button-style {
+  position: fixed;
+  box-shadow: 0 4px 4px 0 #fff1e6, 4px 0 4px 0 #fad2e1, 0 -4px 4px 0 #bee1e6, -4px 0 4px 0 #cddafd;
+  transition: 1s;
+  transition-timing-function: ease-out;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+} */
+
+/* This shows the navigation text when hovering over the icon */
+/* @mixin hover-text {
+  display: flex;
+  opacity: 100%;
+  transition: opacity 1.5s;
+  transition-timing-function: ease-in;
+  -webkit-transition: opacity 1.5s;
+  -moz-transition: opacity 1.5s;
+  -ms-transition: opacity 1.5s;
+  -o-transition: opacity 1.5s;
+} */
+
+/* This is for text/icon gradients. It will show the gradient as a text color rather than element bg. */
+/* @mixin icon-clip {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+} */
+
+/* This is a flexbox row centred */
+/* @mixin row-centred {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+} */
+
+/* This is a flexbox colum centred */
+/* @mixin column-centred {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
 
 /* ------------------------  Type-scale  ------------------------ */
 
@@ -60,11 +136,14 @@ a:active {
 
 /* This adds styling and a transition timer to all icons */
 .icon i {
+  /* @include icon-style (); */
   display: flex;
   margin: 8px;
   justify-content: center;
   align-items: center;
   font-size: 32px;
+
+  /* @include round-icon (); */
   height: 56px;
   width: 56px;
   border-radius: 50%;
@@ -72,6 +151,8 @@ a:active {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+
+  /* Independant declarations */
   transition: 1s;
   -webkit-transition: 1s;
   -moz-transition: 1s;
@@ -90,11 +171,14 @@ a:active {
 
 /* This adds icon border styling to all navigation buttons in order to make the box-shadow transform correctly */
 .icon_border {
+  /* @include icon-style ():; */
   display: flex;
   margin: 8px;
   justify-content: center;
   align-items: center;
   font-size: 32px;
+
+  /* @include round-icon (); */
   height: 56px;
   width: 56px;
   border-radius: 50%;
@@ -114,7 +198,6 @@ a:active {
 }
 
 /* ------------------------  Mobile Navigation Bar ------------------------ */
-/* Removes desktop navigation buttons on mobile/tablet */
 @media screen and (max-device-width: 1200px) {
   .desktop_nav {
     display: none;
@@ -133,40 +216,37 @@ a:active {
   /* border: 2px solid green; */
   /* background-color: pink; */
 }
-/* Removes mobile/tablet navigation on desktop */
 @media screen and (min-device-width: 1200px) {
   .mobile_nav {
     display: none;
   }
 }
 
-/* Styles the font in the menu */
 .mobile_nav ul {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   color: #bee1e6;
 }
 
-/* Hides the toggle checkbox */
 #checkbox1,
 .toggle {
   display: none;
 }
 
-/* Sets up the menu styling */
 .menu {
   padding: 0;
   margin: 0;
   max-width: 700px;
   height: 50px;
+  /* border-radius: 5px; */
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   list-style-type: none;
+  /* border: 3px purple; */
 }
 
-/* Styles the individual links */
 .menu li a {
   text-decoration: none;
   align-self: center;
@@ -227,17 +307,18 @@ a:active {
   #checkbox1:checked + label .first {
     height: 200px;
   }
-  /* Menu styling */
   .menu {
     border-radius: 0px;
+    /* border-top-left-radius: 5px; */
+    /* border-top-right-radius: 5px; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     height: 0px;
     transition: height 0.3s linear;
+    /* background-color: yellow; */
   }
-  /* Align the list */
   .menu li {
     display: flex;
     /* magic */
@@ -246,21 +327,21 @@ a:active {
     opacity: 0;
     visibility: hidden;
   }
-  /* Align the links */
   .menu li a {
     width: 100vw;
     text-align: center;
     align-self: center;
     align-content: center;
   }
-  /* Background color */
+
   .first {
     background: #bee1e6;
   }
-  /* Toggle color */
+
   .first li a {
     color: #fff;
   }
+
   .first li a:hover {
     background: #fff;
   }
@@ -270,14 +351,17 @@ a:active {
 
 /* Adds the icon styling to the h1 text and hides it with opacity */
 .icon h1 {
+  /* @include icon-style (); */
   display: flex;
   margin: 8px;
   justify-content: center;
   align-items: center;
   font-size: 40px;
   height: 56px;
+
+  /* Independant declarations */
   position: fixed;
-  color: #bee1e6;
+  color: #bee1e6; /* add $primary-color */
   opacity: 0;
   transition: 1s;
   transition-timing-function: ease-in;
@@ -291,6 +375,7 @@ a:active {
 
 /* This positions the home button border, the box shadow and adds a transition timer */
 .icon_border.home {
+  /* @include nav-button-style (); */
   position: fixed;
   box-shadow: 0 4px 4px 0 #fff1e6, 4px 0 4px 0 #fad2e1, 0 -4px 4px 0 #bee1e6,
     -4px 0 4px 0 #cddafd;
@@ -300,6 +385,8 @@ a:active {
   -moz-transition: 1s;
   -ms-transition: 1s;
   -o-transition: 1s;
+
+  /* independant declarations */
   left: 32px;
   top: 32px;
 }
@@ -315,7 +402,7 @@ a:active {
   position: fixed;
   left: 32px;
   top: 32px;
-  color: #bee1e6;
+  color: #bee1e6; /* add $primary-color */
 }
 
 /* This positions the "HOME" text next to the home icon */
@@ -326,6 +413,7 @@ a:active {
 
 /* This unhides the "HOME" text when the user hovers over the icon using opacity */
 .home_wrapper:hover .home_txt {
+  /* @include hover-text (); */
   display: flex;
   opacity: 100%;
   transition: opacity 1.5s;
@@ -340,6 +428,7 @@ a:active {
 
 /* This positions the about button border, the box shadow and adds a transition timer */
 .icon_border.about {
+  /* @include nav-button-style (); */
   position: fixed;
   box-shadow: 0 4px 4px 0 #fff1e6, 4px 0 4px 0 #fad2e1, 0 -4px 4px 0 #bee1e6,
     -4px 0 4px 0 #cddafd;
@@ -349,6 +438,8 @@ a:active {
   -moz-transition: 1s;
   -ms-transition: 1s;
   -o-transition: 1s;
+
+  /* independant declarations */
   right: 32px;
   top: 32px;
 }
@@ -364,7 +455,7 @@ a:active {
   position: fixed;
   right: 32px;
   top: 32px;
-  color: #bee1e6;
+  color: #bee1e6; /* add $primary-color */
 }
 
 /* This positions the "ABOUT" text next to the info icon */
@@ -375,6 +466,7 @@ a:active {
 
 /* This unhides the "ABOUT" text when the user hovers over the icon using opacity */
 .about_wrapper:hover .about_txt {
+  /* @include hover-text (); */
   display: flex;
   opacity: 100%;
   transition: opacity 1.5s;
@@ -389,6 +481,7 @@ a:active {
 
 /* This positions the blog button border, the box shadow and adds a transition timer */
 .icon_border.blog {
+  /* @include nav-button-style (); */
   position: fixed;
   box-shadow: 0 4px 4px 0 #fff1e6, 4px 0 4px 0 #fad2e1, 0 -4px 4px 0 #bee1e6,
     -4px 0 4px 0 #cddafd;
@@ -398,6 +491,8 @@ a:active {
   -moz-transition: 1s;
   -ms-transition: 1s;
   -o-transition: 1s;
+
+  /* independant declarations */
   right: 32px;
   bottom: 32px;
 }
@@ -413,7 +508,7 @@ a:active {
   position: fixed;
   right: 32px;
   bottom: 32px;
-  color: #bee1e6;
+  color: #bee1e6; /* add $primary-color */
 }
 
 /* This positions the "BLOG" text next to the blog icon */
@@ -424,6 +519,7 @@ a:active {
 
 /* This unhides the "BLOG" text when the user hovers over the icon using opacity */
 .blog_wrapper:hover .blog_txt {
+  /* @include hover-text (); */
   display: flex;
   opacity: 100%;
   transition: opacity 1.5s;
@@ -438,6 +534,7 @@ a:active {
 
 /* This positions the projects button border, the box shadow and adds a transition timer */
 .icon_border.projects_icon {
+  /* @include nav-button-style (); */
   position: fixed;
   box-shadow: 0 4px 4px 0 #fff1e6, 4px 0 4px 0 #fad2e1, 0 -4px 4px 0 #bee1e6,
     -4px 0 4px 0 #cddafd;
@@ -447,6 +544,8 @@ a:active {
   -moz-transition: 1s;
   -ms-transition: 1s;
   -o-transition: 1s;
+
+  /* independant declarations */
   left: 32px;
   bottom: 32px;
 }
@@ -462,7 +561,7 @@ a:active {
   position: fixed;
   left: 32px;
   bottom: 32px;
-  color: #bee1e6;
+  color: #bee1e6; /* add $primary-color */
 }
 
 /* This positions the "PROJECTS" text next to the briefcase icon */
@@ -473,6 +572,7 @@ a:active {
 
 /* This unhides the "PROJECTS" text when the user hovers over the icon using opacity */
 .projects_wrapper:hover .projects_txt {
+  /* @include hover-text (); */
   display: flex;
   opacity: 100%;
   transition: opacity 1.5s;
@@ -494,6 +594,7 @@ a:active {
   background-repeat: repeat;
   box-shadow: 0 4px 4px 0 #fff1e6, 4px 0 4px 0 #fad2e1, 0 -4px 4px 0 #bee1e6,
     -4px 0 4px 0 #cddafd;
+
   /* Use the text as a mask for the background. */
   /* This is for text/icon gradients. This will show the gradient as a text color rather than element bg. */
   background-clip: text;
@@ -512,6 +613,7 @@ a:active {
   background-repeat: repeat;
   box-shadow: 0 4px 4px 0 #fff1e6, 4px 0 4px 0 #fad2e1, 0 -4px 4px 0 #bee1e6,
     -4px 0 4px 0 #cddafd;
+
   /* Use the text as a mask for the background. */
   /* This is for text/icon gradients. This will show the gradient as a text color rather than element bg. */
   background-clip: text;
@@ -530,6 +632,7 @@ a:active {
   background-repeat: repeat;
   box-shadow: 0 4px 4px 0 #fff1e6, 4px 0 4px 0 #fad2e1, 0 -4px 4px 0 #bee1e6,
     -4px 0 4px 0 #cddafd;
+
   /* Use the text as a mask for the background. */
   /* This is for text/icon gradients. This will show the gradient as a text color rather than element bg. */
   background-clip: text;
@@ -548,6 +651,7 @@ a:active {
   background-repeat: repeat;
   box-shadow: 0 4px 4px 0 #fff1e6, 4px 0 4px 0 #fad2e1, 0 -4px 4px 0 #bee1e6,
     -4px 0 4px 0 #cddafd;
+
   /* Use the text as a mask for the background. */
   /* This is for text/icon gradients. This will show the gradient as a text color rather than element bg. */
   background-clip: text;
@@ -566,6 +670,7 @@ a:active {
   background-repeat: repeat;
   box-shadow: 0 4px 4px 0 #fff1e6, 4px 0 4px 0 #fad2e1, 0 -4px 4px 0 #bee1e6,
     -4px 0 4px 0 #cddafd;
+
   /* Use the text as a mask for the background. */
   /* This is for text/icon gradients. This will show the gradient as a text color rather than element bg. */
   background-clip: text;
@@ -595,7 +700,6 @@ span {
   -o-border-radius: 24px;
 }
 
-/* Border for tags */
 .html_tag {
   border: 2px solid #fad2e1;
 }
@@ -620,11 +724,13 @@ span {
 
 /* This styles the main 'busines card' card on each page */
 .card {
+  /* @include row-centred (); */
   display: flex;
   flex-direction: row;
   justify-content: center;
+
   background-color: white;
-  box-shadow: 0 2px 32px 0 #bee1e6;
+  box-shadow: 0 2px 32px 0 #bee1e6; /* add $primary-color */
   width: 70%;
   height: 70%;
   border-radius: 24px;
@@ -635,12 +741,10 @@ span {
   transition: all 0.25s ease;
   z-index: 100 !important;
 }
-/* This removes the main card for devices under 1200px */
 @media screen and (max-device-width: 1200px) {
   .card {
     display: none;
   }
-  /* This styles the card for blog, projects and post pages */
   .mobile_card {
     display: flex;
     flex-direction: column;
@@ -650,8 +754,8 @@ span {
     height: 70%;
     margin: auto 0;
     box-shadow: none;
+    /* border: 6px solid green; */
   }
-  /* This styles the card for home and about pages */
   .mobile_card_column {
     display: flex;
     flex-direction: column;
@@ -661,8 +765,10 @@ span {
     height: 70%;
     margin: auto 0;
     box-shadow: none;
+    /* border: 2px solid purple; */
   }
 }
+
 .card.animate:hover {
   transform: translate3d(5px, -5px, -5px);
   -webkit-transform: translate3d(5px, -5px, -5px);
@@ -673,25 +779,39 @@ span {
 
 /* ------------------------ Home Page ------------------------ */
 
-/* Overlay card to help style children */
+/* Overlay card to style help children */
 .home_card {
+  /* @include column-centred (); */
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   align-items: center;
   align-content: space-between;
   width: 100%;
 }
-/* Overlay card to help style children on tablet */
-@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+@media screen and (max-device-width: 1200px) {
   .mobile_home_card {
+    /* @include column-centred (); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
     height: 100%;
+    /* border: 1px solid orange; */
   }
 }
-/* Overlay card to help style children on mobile */
-@media screen and (max-device-width: 600px) {
+@media screen and (max-device-width: 1200px) {
   .mobile_home_card {
+    /* @include column-centred (); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
     height: 60vh;
+    /* border: 1px solid orange; */
   }
 }
 
@@ -706,8 +826,8 @@ span {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+  /* border: 2px solid green; */
 }
-/* Sizes image on tablet */
 @media screen and (max-device-width: 1200px) {
   .home_img {
     display: flex;
@@ -716,7 +836,6 @@ span {
     height: 40%;
   }
 }
-/* Sizes image on mobile */
 @media screen and (max-device-width: 600px) {
   .home_img {
     height: 30%;
@@ -725,9 +844,11 @@ span {
 
 /* Positions title in the centre */
 .home_title {
+  /* @include row-centred (); */
   display: flex;
   flex-direction: row;
   justify-content: center;
+
   width: 70%;
   text-align: center;
   font-size: 40px;
@@ -735,40 +856,33 @@ span {
   letter-spacing: 4px;
   margin: 8px;
 }
-/* Adjusts sizing for tablet */
 @media screen and (max-device-width: 1200px) {
   .home_title {
-    font-size: 28px;
+    font-size: 24px;
     width: 90%;
     margin: 16px 0;
   }
 }
-/* Adjusts sizing for mobile */
 @media screen and (max-device-width: 600px) {
   .home_title {
-    font-size: 24px;
+    font-size: 20px;
     margin: 4px;
   }
 }
 
 /* Positions description in the centre */
 .home_description {
+  /* @include row-centred (); */
   display: flex;
   justify-content: center;
   flex-direction: row;
+
   text-align: center;
   font-size: 18px;
   width: 75%;
   margin: 8px;
   line-height: 1.5;
 }
-/* Adjusts sizing for tablet */
-@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
-  .home_description {
-    font-size: 20px;
-  }
-}
-/* Adjusts sizing for mobile */
 @media screen and (max-device-width: 600px) {
   .home_description {
     font-size: 16px;
@@ -777,9 +891,11 @@ span {
 
 /* Positions icons in the centre */
 .home_social {
+  /* @include row-centred (); */
   display: flex;
   flex-direction: row;
   justify-content: center;
+
   align-items: center;
 }
 
@@ -794,6 +910,14 @@ span {
   flex-wrap: wrap;
   /* Figured out i can use percentages which helps keep the card padding responsive */
   padding: 2% 0;
+}
+@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+  .about_card {
+    flex-direction: row;
+    /* border: 2px solid green; */
+  }
+}
+@media screen and (max-device-width: 600px) {
 }
 
 /* Single column tile */
@@ -813,15 +937,13 @@ span {
   -ms-border-radius: 24px;
   -o-border-radius: 24px;
 }
-/* Tablet tyile sizing */
 @media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
   .tile {
-    width: 43%;
+    width: 45vw;
     height: 20vh;
     margin: 16px 0;
   }
 }
-/* Mobile tile sizing */
 @media screen and (max-device-width: 600px) {
   .tile {
     width: 90vw;
@@ -836,7 +958,6 @@ span {
   background: url(../img/jasonprofilepic.jpeg);
   background-size: cover;
 }
-/* Tablet image styling */
 @media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
   .tile_img {
     width: 90vw;
@@ -844,7 +965,6 @@ span {
     margin: 16px 0;
   }
 }
-/* Mobile image styling */
 @media screen and (max-device-width: 600px) {
   .tile_img {
     width: 90vw;
@@ -855,9 +975,11 @@ span {
 
 /* Triple sized tile */
 .triple_tile {
+  /* @include column-centred (); */
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   contain: content;
   width: 68%;
   margin: 0 2px 0 0;
@@ -869,15 +991,13 @@ span {
   -ms-border-radius: 24px;
   -o-border-radius: 24px;
 }
-/* Drops back down to a double sized tile for tablet */
 @media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
   .triple_tile {
     width: 90vw;
-    height: 25vh;
+    height: 20vh;
     margin: 16px 0;
   }
 }
-/* Drops down further to a singl tile for mobile */
 @media screen and (max-device-width: 600px) {
   .triple_tile {
     width: 90vw;
@@ -891,7 +1011,6 @@ span {
   display: flex;
   padding: 8px 24px;
 }
-/* Title sizing for tablet */
 @media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
   .about_title {
     font-size: 24px;
@@ -904,31 +1023,31 @@ span {
   padding: 0 24px 8px 24px;
   font-size: 14px;
 }
-/* Description sizing for tablet */
 @media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
   .about_description {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
 /* Styling for single tile titles */
 .tile h3 {
+  /* @include row-centred (); */
   display: flex;
   flex-direction: row;
   justify-content: center;
+
   align-items: flex-end;
   font-size: 16px;
   padding: 8px 0 4px 0;
   height: 40%;
+  /* border: 2px solid green; */
 }
-/* Single tile sizing for tablet */
 @media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
   .tile h3 {
     font-size: 24px;
   }
 }
 
-/* Padding for resume and contact tile headings */
 h3.resume,
 h3.contact {
   padding-bottom: 2px;
@@ -936,18 +1055,24 @@ h3.contact {
 
 /* Styling for single tile gradient titles */
 .tile h1 {
+  /* @include row-centred (); */
   display: flex;
   flex-direction: row;
   justify-content: center;
+
   align-items: flex-start;
   height: 60%;
   text-align: center;
   font-size: 28px;
+  /* border: 2px solid green; */
+
   /* Fallback: Set a background color. */
   background-color: #bee1e6; /* add $primary-color */
+
   /* Set the background size and repeat properties. */
   background-size: 100%;
   background-repeat: repeat;
+
   /* Use the text as a mask for the background. */
   /* This is for text/icon gradients. This will show the gradient as a text color rather than element bg. */
   background-clip: text;
@@ -956,31 +1081,32 @@ h3.contact {
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
-/* Gradient sizing for tablet */
 @media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
   .tile h1 {
     font-size: 40px;
   }
 }
 
-/* Tile gradients for headings */
 h1.looking {
+  /* Create the gradient. */
   background-image: linear-gradient(45deg, #fff1e6, #fad2e1);
 }
 
 h1.working {
+  /* Create the gradient. */
   background-image: linear-gradient(45deg, #fad2e1, #dfe7fd);
 }
 
 h1.learning {
+  /* Create the gradient. */
   background-image: linear-gradient(45deg, #eae4e9, #bee1e6);
 }
 
 h1.interests {
   font-size: 16px;
+  /* Create the gradient. */
   background-image: linear-gradient(45deg, #bee1e6, #cddafd);
 }
-/* Adjusted size for tablet */
 @media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
   h1.interests {
     font-size: 24px;
@@ -989,9 +1115,9 @@ h1.interests {
 
 h1.experience {
   font-size: 16px;
+  /* Create the gradient. */
   background-image: linear-gradient(45deg, #fad2e1, #dfe7fd);
 }
-/* Adjusted size for tablet */
 @media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
   h1.experience {
     font-size: 24px;
@@ -1000,9 +1126,9 @@ h1.experience {
 
 h1.collaborate {
   font-size: 16px;
+  /* Create the gradient. */
   background-image: linear-gradient(45deg, #eae4e9, #bee1e6);
 }
-/* Adjusted size for tablet */
 @media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
   h1.collaborate {
     font-size: 24px;
@@ -1011,12 +1137,15 @@ h1.collaborate {
 
 /* Icon positioning for stack tile */
 .icon_box {
+  /* @include row-centred (); */
   display: flex;
   flex-direction: row;
   justify-content: center;
+
   align-items: flex-start;
   height: 60%;
   padding-bottom: 8px;
+  /* border: 2px solid green; */
 }
 
 /* ------------------------ Blog Page Slides ------------------------ */
@@ -1028,37 +1157,42 @@ h1.collaborate {
 
 /* Slideshow container */
 .blog_card {
+  /* @include row-centred (); */
   display: flex;
   flex-direction: row;
   justify-content: center;
+
   align-items: center;
   overflow: hidden;
   width: 100%;
   height: 100%;
+  /* border: 2px solid red; */
+
   border-radius: 24px;
   -webkit-border-radius: 24px;
   -moz-border-radius: 24px;
   -ms-border-radius: 24px;
   -o-border-radius: 24px;
 }
-/* Slideshow container for tablet */
+
 @media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
   .blog_card {
     display: flex;
     flex-direction: column;
     max-width: 90vw;
     height: 600px;
-    box-shadow: 0 2px 32px 0 #bee1e6;
+    /* border: 4px solid blue; */
+    box-shadow: 0 2px 32px 0 #bee1e6; /* add $primary-color */
   }
 }
-/* Slideshow container for mobile */
 @media screen and (max-device-width: 600px) {
   .blog_card {
     display: flex;
     flex-direction: column;
     max-width: 90vw;
     height: 350px;
-    box-shadow: 0 2px 32px 0 #bee1e6;
+    /* border: 4px solid blue; */
+    box-shadow: 0 2px 32px 0 #bee1e6; /* add $primary-color */
   }
 }
 
@@ -1071,12 +1205,12 @@ h1.collaborate {
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: #bee1e6;
+  color: #bee1e6; /* $primary-color: #bee1e6; */
   font-weight: bold;
   font-size: 24px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
-  user-select: none;
+  /* user-select: none; */
 }
 
 /* Position the "next button" to the right */
@@ -1094,7 +1228,7 @@ h1.collaborate {
 /* On hover, add a background color with a little opacity */
 .prev:hover,
 .next:hover {
-  background-color: #bee1e6;
+  background-color: #bee1e6; /* $primary-color: #bee1e6; */
   opacity: 0.5;
 }
 
@@ -1117,13 +1251,16 @@ h1.collaborate {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #e2ece9;
+  background-color: #e2ece9; /* $secondary-color: #E2ECE9; */
+  /* border-radius: 50%; */
   display: inline-block;
   transition: background-color 0.6s ease;
+  /* border: 2px solid green; */
 }
+
 .active,
 .dot:hover {
-  background-color: #bee1e6;
+  background-color: #bee1e6; /* $primary-color: #bee1e6; */
 }
 
 /* Fading animation */
@@ -1133,6 +1270,7 @@ h1.collaborate {
   animation-name: fade;
   animation-duration: 1.5s;
 }
+
 @-webkit-keyframes fade {
   from {
     opacity: 0.4;
@@ -1141,6 +1279,7 @@ h1.collaborate {
     opacity: 1;
   }
 }
+
 @keyframes fade {
   from {
     opacity: 0.4;
@@ -1179,27 +1318,29 @@ h1.collaborate {
 
 /* card that provides a sneak peek of the blog */
 .blog_peek {
+  /* @include column-centred (); */
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   width: 100%;
   height: 100%;
   align-items: center;
   padding: 12px;
 }
-/* Card sizing for tablet */
 @media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
   .blog_peek {
     align-items: flex-start;
     padding: 0;
     height: 30%;
+    /* border: 2px solid brown; */
   }
 }
-/* Card sizing for mobile */
 @media screen and (max-device-width: 600px) {
   .blog_peek {
     height: 30%;
     padding: 0;
+    /* border: 2px solid brown; */
   }
 }
 
@@ -1209,21 +1350,21 @@ h1.collaborate {
   width: 80%;
   line-height: 1.5;
 }
-/* Blog title sizing for tablet */
 @media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
   .blog_title {
     padding: 24px 0 4px 24px;
     width: 80%;
     font-size: 28px;
+    /* border: 2px solid blue; */
     line-height: normal;
   }
 }
-/* Blog title sizing for mobile */
 @media screen and (max-device-width: 600px) {
   .blog_title {
     width: 80%;
     padding: 0 0 4px 0;
     font-size: 16px;
+    /* border: 2px solid blue; */
     line-height: normal;
   }
 }
@@ -1234,7 +1375,6 @@ h1.collaborate {
   line-height: 1.5;
   margin-bottom: 24px;
 }
-/* Styling for tablet/mobile */
 @media screen and (max-device-width: 1200px) {
   .blog_description {
     display: none;
@@ -1249,21 +1389,21 @@ h1.collaborate {
   font-style: italic;
   color: grey;
 }
-/* Styling for tablet */
 @media screen and (max-device-width: 1200px) and (min-device-width: 600px) {
   .blog_published {
     padding: 0 24px;
     font-size: 16px;
     width: 80%;
     margin: 0;
+    /* border: 2px solid purple; */
   }
 }
-/* Styling for mobile */
 @media screen and (max-device-width: 600px) {
   .blog_published {
     font-size: 12px;
     padding: 0;
     margin: 0;
+    /* border: 2px solid purple; */
   }
 }
 
@@ -1271,17 +1411,17 @@ h1.collaborate {
 .blog_tags {
   width: 80%;
 }
-/* Tablet conatiner for tags */
 @media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
   .blog_tags {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
     font-size: 12px;
+    width: 80%;
     padding: 12px 0 24px 24px;
+    /* border: 2px solid pink; */
   }
 }
-/* Removes tags on mobile */
 @media screen and (max-device-width: 600px) {
   .blog_tags {
     display: none;
@@ -1292,26 +1432,28 @@ h1.collaborate {
 
 /* This sets up the blog post column */
 .post_column {
+  /* @include column-centred (); */
   display: flex;
   flex-direction: column;
+  /* justify-content: center; */
+
   width: 60%;
   max-width: 900px;
   margin: 48px 0;
   background-color: white;
-  box-shadow: 0 2px 32px 0 #bee1e6;
+  box-shadow: 0 2px 32px 0 #bee1e6; /* add $primary-color */
   border-radius: 24px;
   -webkit-border-radius: 24px;
   -moz-border-radius: 24px;
   -ms-border-radius: 24px;
   -o-border-radius: 24px;
+  /* z-index: 100 !important; */
 }
-/* Column width on tablet */
 @media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
   .post_column {
     width: 80%;
   }
 }
-/* Column width on mobile */
 @media screen and (max-device-width: 600px) {
   .post_column {
     width: 100%;
@@ -1320,6 +1462,8 @@ h1.collaborate {
 
 /* This contains all of the blog post elements */
 .post_container {
+  /* @include column-centred (); */
+  /* I may not even need this div at all */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1334,8 +1478,9 @@ h1.collaborate {
   border-top-right-radius: 24px;
 }
 
-/* Post meta data/info cntainer */
 .metadata {
+  /*@includerow-centred():;
+  */
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -1343,18 +1488,19 @@ h1.collaborate {
   width: 80%;
   margin: 16px auto;
   height: 100px;
+  /* border: 2px solid grey; */
   border-radius: 52px;
   -webkit-border-radius: 52px;
   -moz-border-radius: 52px;
   -ms-border-radius: 52px;
   -o-border-radius: 52px;
 }
-/* Meta data container for mobile */
 @media screen and (max-device-width: 600px) {
   .metadata {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* border: 2px solid green; */
     height: fit-content;
   }
 }
@@ -1373,12 +1519,17 @@ h1.collaborate {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-/* Image styling for mobile */
+@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+  .meta_img {
+    /* width: 80%; */
+  }
+}
 @media screen and (max-device-width: 600px) {
   .meta_img {
     height: 100px;
     width: 100px;
     justify-content: center;
+    /* border: 2px solid brown; */
   }
 }
 
@@ -1387,21 +1538,23 @@ h1.collaborate {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   padding: 8px;
   height: max-content;
   width: 40%;
+  /* border: 1px solid blue; */
 }
-/* Tablet post info */
 @media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
   .meta_info {
     width: 50%;
+    /* border: 2px solid brown; */
   }
 }
-/* Mobile post info */
 @media screen and (max-device-width: 600px) {
   .meta_info {
     align-items: center;
     width: 100%;
+    /* border: 2px solid brown; */
   }
 }
 
@@ -1412,12 +1565,13 @@ h1.collaborate {
   font-size: 24px;
   font-weight: 800;
   padding: 0;
+  /* border: 2px solid green; */
 }
-/* Publisher styling on mobile */
 @media screen and (max-device-width: 600px) {
   .meta_info p.name {
     width: fit-content;
     margin: 0 auto;
+    /* border: 2px solid blue; */
   }
 }
 
@@ -1426,21 +1580,22 @@ h1.collaborate {
   display: flex;
   margin: 0;
   padding: 0;
+  /* border: 2px solid green; */
 }
-/* Published date styling for tablet */
 @media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
   .meta_info p.blog_published {
     width: 100%;
     margin: 0;
     padding: 0;
+    /* border: 2px solid blue; */
   }
 }
-/* Published date styling for mobile */
 @media screen and (max-device-width: 600px) {
   .meta_info p.blog_published {
     text-align: center;
     width: fit-content;
     margin: 0 auto;
+    /* border: 2px solid pink; */
   }
 }
 
@@ -1450,6 +1605,7 @@ h1.collaborate {
   align-items: center;
   margin-left: 0;
   padding: 0;
+  /* border: 2px solid green; */
 }
 
 /* Like / save / share buttons */
@@ -1457,41 +1613,44 @@ h1.collaborate {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+
   align-items: center;
   flex-wrap: wrap;
   height: 100%;
   width: 40%;
   font-size: 24px;
+  /* border: 1px solid blue; */
 }
-/* Like / save / share buttons on tablet */
 @media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
   .meta_links {
     width: 30%;
+    /* padding-left: ; */
+    /* border: 2px solid pink; */
   }
 }
-/* Like / save / share buttons on mobile */
 @media screen and (max-device-width: 600px) {
   .meta_links {
     justify-content: center;
     width: fit-content;
     margin: 0 auto;
+    /* border: 2px solid brown; */
   }
 }
-/* Like / save / share buttons colour and padding */
+
 .meta_links i {
   padding-left: 16px;
   color: #bee1e6;
 }
-/* Like / save / share buttons padding on mobile */
 @media screen and (max-device-width: 600px) {
   .meta_links i {
     padding: 0 8px;
   }
 }
-/* Like / save / share buttons active colors */
+
 a:active .fa-heart {
   color: red;
 }
+
 a:active .fa-bookmark {
   color: black;
 }
@@ -1526,6 +1685,7 @@ h1.post {
   width: 80%;
   margin: 16px auto;
 }
+
 a:hover .back_link {
   color: #bee1e6;
 }
@@ -1579,20 +1739,20 @@ article img {
   -ms-border-radius: 24px;
   -o-border-radius: 24px;
 }
-/* Slideshow container for tablet */
 @media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
   .projects_card {
     max-width: 90vw;
     height: 600px;
-    box-shadow: 0 2px 32px 0 #bee1e6;
+    /* border: 4px solid blue; */
+    box-shadow: 0 2px 32px 0 #bee1e6; /* add $primary-color */
   }
 }
-/* Slideshow container for mobile */
 @media screen and (max-device-width: 600px) {
   .projects_card {
     max-width: 90vw;
     height: 350px;
-    box-shadow: 0 2px 32px 0 #bee1e6;
+    /* border: 4px solid blue; */
+    box-shadow: 0 2px 32px 0 #bee1e6; /* add $primary-color */
   }
 }
 
@@ -1605,11 +1765,12 @@ article img {
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: #bee1e6;
+  color: #bee1e6; /* $primary-color: #bee1e6; */
   font-weight: bold;
   font-size: 24px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
+  /* user-select: none; */
 }
 
 /* Position the "next button" to the right */
@@ -1617,7 +1778,6 @@ article img {
   right: 15%;
   border-radius: 3px 0 0 3px;
 }
-/* Positioning for tablet/mobile */
 @media screen and (max-device-width: 1200px) {
   .next {
     right: 5%;
@@ -1629,7 +1789,6 @@ article img {
   left: 15%;
   border-radius: 3px 0 0 3px;
 }
-/* Positioning for tablet/mobile */
 @media screen and (max-device-width: 1200px) {
   .prev {
     left: 5%;
@@ -1639,7 +1798,7 @@ article img {
 /* On hover, add a background color with a little opacity */
 .prev:hover,
 .next:hover {
-  background-color: #bee1e6;
+  background-color: #bee1e6; /* $primary-color: #bee1e6; */
   opacity: 0.5;
 }
 
@@ -1654,9 +1813,10 @@ article img {
   display: inline-block;
   transition: background-color 0.6s ease;
 }
+
 .active,
 .dot:hover {
-  background-color: #bee1e6;
+  background-color: #bee1e6; /* $primary-color: #bee1e6; */
 }
 
 /* Fading animation */
@@ -1666,6 +1826,7 @@ article img {
   animation-name: fade;
   animation-duration: 1.5s;
 }
+
 @-webkit-keyframes fade {
   from {
     opacity: 0.4;
@@ -1674,6 +1835,7 @@ article img {
     opacity: 1;
   }
 }
+
 @keyframes fade {
   from {
     opacity: 0.4;
@@ -1697,10 +1859,13 @@ article img {
 /* Image styling that takes up the top 80% of the card */
 .projects_img {
   display: flex;
+  /* width: 100%; */
   height: 80%;
+  /* background: url(../img/bloggingsite.png); */
   background-size: contain;
+  /* border: 2px solid pink; */
 }
-/* Preview image */
+
 .omnifood_img {
   display: flex;
   width: 100%;
@@ -1722,14 +1887,12 @@ article img {
   width: 100%;
   height: 20%;
 }
-/* Info styling for tablet */
 @media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
   .projects_info {
     flex-direction: column;
     height: 30%;
   }
 }
-/* Info styling for tablet */
 @media screen and (max-device-width: 600px) {
   .projects_info {
     height: 30%;
@@ -1742,18 +1905,18 @@ article img {
   flex-direction: column;
   width: 50%;
 }
-/* Description container for tablet */
 @media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
   .projects_description {
+    /* border: 2px solid orange; */
     height: 100%;
     width: 100%;
   }
 }
-/* Description container for mobile */
 @media screen and (max-device-width: 600px) {
   .projects_description {
     justify-content: center;
     padding: 0;
+    /* border: 2px solid orange; */
     height: 100%;
     width: 80%;
   }
@@ -1763,15 +1926,15 @@ article img {
 .projects_title {
   padding: 24px 0 4px 24px;
 }
-/* Info bar title for tablet */
 @media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
   .projects_title {
+    /* border: 2px solid orangered; */
     font-size: 32px;
   }
 }
-/* Info bar title for mobile */
 @media screen and (max-device-width: 600px) {
   .projects_title {
+    /* border: 2px solid orangered; */
     padding: 0 0 4px 0;
     font-size: 20px;
   }
@@ -1779,22 +1942,22 @@ article img {
 
 /* Info bar description */
 .projects_text {
-  padding: 0 0 0 24px;
+  padding: 0 24px;
   width: 100%;
 }
-/* Info bar styling for tablet */
 @media screen and (max-device-width: 1200px) and (min-device-width: 600px) {
   .projects_text {
     font-size: 16px;
     width: 85%;
+    /* border: 2px solid purple; */
   }
 }
-/* Info bar styling for mobile */
 @media screen and (max-device-width: 600px) {
   .projects_text {
     font-size: 12px;
     padding: 0;
     margin-bottom: 4px;
+    /* border: 2px solid purple; */
   }
 }
 
@@ -1803,7 +1966,6 @@ article img {
   justify-content: flex-end;
   width: 50%;
 }
-/* Tags container for tablet */
 @media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
   .projects_tags {
     flex-direction: row;
@@ -1814,7 +1976,6 @@ article img {
     padding: 12px 0 24px 24px;
   }
 }
-/* Tags container for mobile */
 @media screen and (max-device-width: 600px) {
   .projects_tags {
     display: none;
@@ -1830,7 +1991,6 @@ footer {
   color: rgba(0, 0, 0, 0.5);
   /* border: 4px solid rgb(3, 3, 3); */
 }
-/* Footer positioning for tablet */
 @media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
   .about_footer {
     display: flex;
@@ -1842,7 +2002,6 @@ footer {
     font-size: 20px;
   }
 }
-/* Footer positioning for mobile */
 @media screen and (max-device-width: 600px) {
   .about_footer {
     display: flex;
