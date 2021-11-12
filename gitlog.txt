@@ -1,3 +1,135 @@
+commit 0bc87eaaf163a00343e0fa73efea6b899c047e9d
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Fri Nov 12 16:51:39 2021 +1000
+
+    adjusted height of blog and projects slides on mobile to fix burger menu not fully displaying
+
+commit e54216e8b2231842d7e0b9b2b88021a7160e8630
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Fri Nov 12 16:34:28 2021 +1000
+
+    duplicated css file into scss file as i did not have time to convert the css into scss at this point. i will leave the scss file untouched with all of the comments ready for the conversion. Went through css file and removed all scss conversion comments, also did a generald clean up of redundant css code.
+
+commit 348b7f8743b51417e64296b5b26d273d76677c71
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Fri Nov 12 15:06:57 2021 +1000
+
+    updated presentation and downloaded into /ppt directory.
+
+commit a3f8674987ad7e9358799a5a5d2b4eb7203c7f3e
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Fri Nov 12 15:04:54 2021 +1000
+
+    updated readme and portfolio_blog files.
+
+commit ba8bf1425ac6442177190dba004249ad31a90845
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Thu Nov 11 20:59:33 2021 +1000
+
+    added pdf presentation to /ppt directory.
+
+commit 374ec5e96a620a020a6cf8f5cee12ecb5d770d29
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Thu Nov 11 16:31:36 2021 +1000
+
+    updated readme and portfolio blog markdown files. added mobile menu screenshot.
+
+commit 99464a0ea478036234c8fd9151f7c2eebd5674c3
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Thu Nov 11 15:54:34 2021 +1000
+
+    changed font awesome link back to script. updated blog icon. updated twitter icon with fallback colours to check if this fixes the icons not showing up randomly.
+
+commit 35def7e390d1d4bc75e1df8b08c3aaf633c6dcb5
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Thu Nov 11 15:16:42 2021 +1000
+
+    testing icon fix
+
+commit 886b8f4c4b93b88bf49975258b430063a66a9530
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Thu Nov 11 15:05:59 2021 +1000
+
+    updated font awesome cdn, as it appears i was using an older version and some o my icons werent working.
+
+commit 6df46f7d5b5980d2a9cb15c5fce7bbd820066676
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Thu Nov 11 14:38:09 2021 +1000
+
+    updated readme and portfolio blog files with all completion screenshots. optimised all images and made sure file paths were correct in markdown files. finished adding  attribution to both markdown files.
+
+commit 25af78f5f1a4bfa5fa8e170f5bb26c27705474a2
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Tue Nov 9 20:33:58 2021 +1000
+
+    adjusted home image on mobile and tablet. adjusted dots location in projects and blog page and tagged them according to screen size so i could position the dots inside or outside of the main card depending on what screen size is being used.
+
+commit d1f1694889e88c925f644802bab89115402b03fd
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Tue Nov 9 19:36:29 2021 +1000
+
+    adjusted footer margin. adjusted mobile card height.
+
+commit 836a19f63cb300e6c15803c7d864b65f2440643e
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Tue Nov 9 18:59:22 2021 +1000
+
+    moved slideshow dots inside of main div. adjusted font-size on mobile menu.
+
+commit a095b0902db66ff48c8afa31dcb047922d37a242
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Tue Nov 9 18:46:49 2021 +1000
+
+    Postioned mobile navbar and hamburger menu at top of page.
+
+commit 564930f02de73684b03807abf57ef77d5574d7f8
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Mon Nov 8 19:12:44 2021 +1000
+
+    finished mobile and tablet breakpoints for about page. fixed bug where footer was not showing up on mobile/tablet about page.
+
+commit 75826664653b42e36d1fb628bd6f6e46821d3013
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Sun Nov 7 20:19:15 2021 +1000
+
+    added new footer format to all post pages. Added new header format to all post pages. Added responsive styling  breakpoints to all post pages.
+
+commit 98096049688012cc7e61c1f2fa99f31db502f785
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Sun Nov 7 18:46:29 2021 +1000
+
+    Made further adjustments to mobile sizing after checking live deployment on my phone.
+
+commit 9218dc40731af7ec3f329eedb90f4a0c13617401
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Sun Nov 7 18:43:32 2021 +1000
+
+    Adjusted card sizing for mobile device.
+
+commit 0325d9a337cc1e88135dd92362c0bcb073e9a743
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Sun Nov 7 18:28:34 2021 +1000
+
+    optimised images in docs/ folder. Started optmising css with  media queries. Added mobile and tablet breakpoints for home, blog and projects pages.
+
+commit e574ce889e5d57464fd340baf953e02aede83359
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Sat Nov 6 21:00:11 2021 +1000
+
+    uploaded new desktop completed screenshots. updated filepaths in readme and made some modifications.
+
+commit f4260c49cc3288a7023cb58603553135471a537b
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Sat Nov 6 17:20:48 2021 +1000
+
+    finished adding semantic html to all pages. finished commenting all html pages. made some layout modifications to about page and blo post pages.
+
+commit 06cd433f56d2b67c34e64799455d627c61b52d1f
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Sat Nov 6 16:27:50 2021 +1000
+
+    finished all html and css for blog, post1, post2, post3, post4, post5. added semantic html to ptojects, blog and all posts pages. add html comments to projects, blog, and all posts pages. added css comments to new css.
+
 commit 8202d66df1ee510d5257b4123933bbcd9f5df2cc
 Author: jwsandeman <jw.sandeman@gmail.com>
 Date:   Sat Nov 6 14:13:02 2021 +1000

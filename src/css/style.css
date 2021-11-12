@@ -17,7 +17,7 @@ body {
   width: 100vw;
 }
 
-@media (max-device-width: 1200px) {
+@media (max-width: 1200px) {
   body {
     justify-content: center;
     /* align-items: center; */
@@ -115,7 +115,7 @@ a:active {
 
 /* ------------------------  Mobile Navigation Bar ------------------------ */
 /* Removes desktop navigation buttons on mobile/tablet */
-@media screen and (max-device-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .desktop_nav {
     display: none;
   }
@@ -134,7 +134,7 @@ a:active {
   /* background-color: pink; */
 }
 /* Removes mobile/tablet navigation on desktop */
-@media screen and (min-device-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .mobile_nav {
     display: none;
   }
@@ -636,7 +636,7 @@ span {
   z-index: 100 !important;
 }
 /* This removes the main card for devices under 1200px */
-@media screen and (max-device-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .card {
     display: none;
   }
@@ -683,13 +683,13 @@ span {
   width: 100%;
 }
 /* Overlay card to help style children on tablet */
-@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+@media screen and (min-width: 600px) and (max-width: 1200px) {
   .mobile_home_card {
     height: 100%;
   }
 }
 /* Overlay card to help style children on mobile */
-@media screen and (max-device-width: 600px) {
+@media screen and (max-width: 600px) {
   .mobile_home_card {
     height: 60vh;
   }
@@ -708,7 +708,7 @@ span {
   -o-border-radius: 50%;
 }
 /* Sizes image on tablet */
-@media screen and (max-device-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .home_img {
     display: flex;
     flex-direction: column;
@@ -717,7 +717,7 @@ span {
   }
 }
 /* Sizes image on mobile */
-@media screen and (max-device-width: 600px) {
+@media screen and (max-width: 600px) {
   .home_img {
     height: 30%;
   }
@@ -736,7 +736,7 @@ span {
   margin: 8px;
 }
 /* Adjusts sizing for tablet */
-@media screen and (max-device-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .home_title {
     font-size: 28px;
     width: 90%;
@@ -744,7 +744,7 @@ span {
   }
 }
 /* Adjusts sizing for mobile */
-@media screen and (max-device-width: 600px) {
+@media screen and (max-width: 600px) {
   .home_title {
     font-size: 24px;
     margin: 4px;
@@ -763,13 +763,13 @@ span {
   line-height: 1.5;
 }
 /* Adjusts sizing for tablet */
-@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+@media screen and (min-width: 600px) and (max-width: 1200px) {
   .home_description {
     font-size: 20px;
   }
 }
 /* Adjusts sizing for mobile */
-@media screen and (max-device-width: 600px) {
+@media screen and (max-width: 600px) {
   .home_description {
     font-size: 16px;
   }
@@ -814,7 +814,7 @@ span {
   -o-border-radius: 24px;
 }
 /* Tablet tyile sizing */
-@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+@media screen and (min-width: 600px) and (max-width: 1200px) {
   .tile {
     width: 43%;
     height: 20vh;
@@ -822,7 +822,7 @@ span {
   }
 }
 /* Mobile tile sizing */
-@media screen and (max-device-width: 600px) {
+@media screen and (max-width: 600px) {
   .tile {
     width: 90vw;
     height: 20vh;
@@ -837,7 +837,7 @@ span {
   background-size: cover;
 }
 /* Tablet image styling */
-@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+@media screen and (min-width: 600px) and (max-width: 1200px) {
   .tile_img {
     width: 90vw;
     height: 60vh;
@@ -845,7 +845,7 @@ span {
   }
 }
 /* Mobile image styling */
-@media screen and (max-device-width: 600px) {
+@media screen and (max-width: 600px) {
   .tile_img {
     width: 90vw;
     height: 40vh;
@@ -870,7 +870,7 @@ span {
   -o-border-radius: 24px;
 }
 /* Drops back down to a double sized tile for tablet */
-@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+@media screen and (min-width: 600px) and (max-width: 1200px) {
   .triple_tile {
     width: 90vw;
     height: 25vh;
@@ -878,7 +878,7 @@ span {
   }
 }
 /* Drops down further to a singl tile for mobile */
-@media screen and (max-device-width: 600px) {
+@media screen and (max-width: 600px) {
   .triple_tile {
     width: 90vw;
     height: 40vh;
@@ -892,7 +892,7 @@ span {
   padding: 8px 24px;
 }
 /* Title sizing for tablet */
-@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+@media screen and (min-width: 600px) and (max-width: 1200px) {
   .about_title {
     font-size: 24px;
   }
@@ -905,7 +905,7 @@ span {
   font-size: 14px;
 }
 /* Description sizing for tablet */
-@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+@media screen and (min-width: 600px) and (max-width: 1200px) {
   .about_description {
     font-size: 20px;
   }
@@ -922,7 +922,7 @@ span {
   height: 40%;
 }
 /* Single tile sizing for tablet */
-@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+@media screen and (min-width: 600px) and (max-width: 1200px) {
   .tile h3 {
     font-size: 24px;
   }
@@ -957,7 +957,7 @@ h3.contact {
   -moz-text-fill-color: transparent;
 }
 /* Gradient sizing for tablet */
-@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+@media screen and (min-width: 600px) and (max-width: 1200px) {
   .tile h1 {
     font-size: 40px;
   }
@@ -981,7 +981,7 @@ h1.interests {
   background-image: linear-gradient(45deg, #bee1e6, #cddafd);
 }
 /* Adjusted size for tablet */
-@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+@media screen and (min-width: 600px) and (max-width: 1200px) {
   h1.interests {
     font-size: 24px;
   }
@@ -992,7 +992,7 @@ h1.experience {
   background-image: linear-gradient(45deg, #fad2e1, #dfe7fd);
 }
 /* Adjusted size for tablet */
-@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+@media screen and (min-width: 600px) and (max-width: 1200px) {
   h1.experience {
     font-size: 24px;
   }
@@ -1003,7 +1003,7 @@ h1.collaborate {
   background-image: linear-gradient(45deg, #eae4e9, #bee1e6);
 }
 /* Adjusted size for tablet */
-@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+@media screen and (min-width: 600px) and (max-width: 1200px) {
   h1.collaborate {
     font-size: 24px;
   }
@@ -1042,7 +1042,7 @@ h1.collaborate {
   -o-border-radius: 24px;
 }
 /* Slideshow container for tablet */
-@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+@media screen and (min-width: 600px) and (max-width: 1200px) {
   .blog_card {
     display: flex;
     flex-direction: column;
@@ -1052,7 +1052,7 @@ h1.collaborate {
   }
 }
 /* Slideshow container for mobile */
-@media screen and (max-device-width: 600px) {
+@media screen and (max-width: 600px) {
   .blog_card {
     display: flex;
     flex-direction: column;
@@ -1099,13 +1099,13 @@ h1.collaborate {
 }
 
 /* Display the dots on desktop */
-@media screen and (min-device-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .mobile_dots {
     display: none;
   }
 }
 /* Display the dots on mobile */
-@media screen and (max-device-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .desktop_dots {
     display: none;
   }
@@ -1170,7 +1170,7 @@ h1.collaborate {
   border-bottom-left-radius: 24px;
 }
 /* Removes bottom left border radius from image on mobile */
-@media screen and (max-device-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .blog_img {
     border-bottom-left-radius: 0;
     height: 100%;
@@ -1188,7 +1188,7 @@ h1.collaborate {
   padding: 12px;
 }
 /* Card sizing for tablet */
-@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+@media screen and (min-width: 600px) and (max-width: 1200px) {
   .blog_peek {
     align-items: flex-start;
     padding: 0;
@@ -1196,7 +1196,7 @@ h1.collaborate {
   }
 }
 /* Card sizing for mobile */
-@media screen and (max-device-width: 600px) {
+@media screen and (max-width: 600px) {
   .blog_peek {
     height: 30%;
     padding: 0;
@@ -1210,7 +1210,7 @@ h1.collaborate {
   line-height: 1.5;
 }
 /* Blog title sizing for tablet */
-@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+@media screen and (min-width: 600px) and (max-width: 1200px) {
   .blog_title {
     padding: 24px 0 4px 24px;
     width: 80%;
@@ -1219,7 +1219,7 @@ h1.collaborate {
   }
 }
 /* Blog title sizing for mobile */
-@media screen and (max-device-width: 600px) {
+@media screen and (max-width: 600px) {
   .blog_title {
     width: 80%;
     padding: 0 0 4px 0;
@@ -1235,7 +1235,7 @@ h1.collaborate {
   margin-bottom: 24px;
 }
 /* Styling for tablet/mobile */
-@media screen and (max-device-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .blog_description {
     display: none;
   }
@@ -1250,7 +1250,7 @@ h1.collaborate {
   color: grey;
 }
 /* Styling for tablet */
-@media screen and (max-device-width: 1200px) and (min-device-width: 600px) {
+@media screen and (max-width: 1200px) and (min-width: 600px) {
   .blog_published {
     padding: 0 24px;
     font-size: 16px;
@@ -1259,7 +1259,7 @@ h1.collaborate {
   }
 }
 /* Styling for mobile */
-@media screen and (max-device-width: 600px) {
+@media screen and (max-width: 600px) {
   .blog_published {
     font-size: 12px;
     padding: 0;
@@ -1272,7 +1272,7 @@ h1.collaborate {
   width: 80%;
 }
 /* Tablet conatiner for tags */
-@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+@media screen and (min-width: 600px) and (max-width: 1200px) {
   .blog_tags {
     flex-direction: row;
     flex-wrap: wrap;
@@ -1282,7 +1282,7 @@ h1.collaborate {
   }
 }
 /* Removes tags on mobile */
-@media screen and (max-device-width: 600px) {
+@media screen and (max-width: 600px) {
   .blog_tags {
     display: none;
   }
@@ -1306,13 +1306,13 @@ h1.collaborate {
   -o-border-radius: 24px;
 }
 /* Column width on tablet */
-@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+@media screen and (min-width: 600px) and (max-width: 1200px) {
   .post_column {
     width: 80%;
   }
 }
 /* Column width on mobile */
-@media screen and (max-device-width: 600px) {
+@media screen and (max-width: 600px) {
   .post_column {
     width: 100%;
   }
@@ -1350,7 +1350,7 @@ h1.collaborate {
   -o-border-radius: 52px;
 }
 /* Meta data container for mobile */
-@media screen and (max-device-width: 600px) {
+@media screen and (max-width: 600px) {
   .metadata {
     flex-direction: column;
     justify-content: center;
@@ -1374,7 +1374,7 @@ h1.collaborate {
   -o-border-radius: 50%;
 }
 /* Image styling for mobile */
-@media screen and (max-device-width: 600px) {
+@media screen and (max-width: 600px) {
   .meta_img {
     height: 100px;
     width: 100px;
@@ -1392,13 +1392,13 @@ h1.collaborate {
   width: 40%;
 }
 /* Tablet post info */
-@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+@media screen and (min-width: 600px) and (max-width: 1200px) {
   .meta_info {
     width: 50%;
   }
 }
 /* Mobile post info */
-@media screen and (max-device-width: 600px) {
+@media screen and (max-width: 600px) {
   .meta_info {
     align-items: center;
     width: 100%;
@@ -1414,7 +1414,7 @@ h1.collaborate {
   padding: 0;
 }
 /* Publisher styling on mobile */
-@media screen and (max-device-width: 600px) {
+@media screen and (max-width: 600px) {
   .meta_info p.name {
     width: fit-content;
     margin: 0 auto;
@@ -1428,7 +1428,7 @@ h1.collaborate {
   padding: 0;
 }
 /* Published date styling for tablet */
-@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+@media screen and (min-width: 600px) and (max-width: 1200px) {
   .meta_info p.blog_published {
     width: 100%;
     margin: 0;
@@ -1436,7 +1436,7 @@ h1.collaborate {
   }
 }
 /* Published date styling for mobile */
-@media screen and (max-device-width: 600px) {
+@media screen and (max-width: 600px) {
   .meta_info p.blog_published {
     text-align: center;
     width: fit-content;
@@ -1464,13 +1464,13 @@ h1.collaborate {
   font-size: 24px;
 }
 /* Like / save / share buttons on tablet */
-@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+@media screen and (min-width: 600px) and (max-width: 1200px) {
   .meta_links {
     width: 30%;
   }
 }
 /* Like / save / share buttons on mobile */
-@media screen and (max-device-width: 600px) {
+@media screen and (max-width: 600px) {
   .meta_links {
     justify-content: center;
     width: fit-content;
@@ -1483,7 +1483,7 @@ h1.collaborate {
   color: #bee1e6;
 }
 /* Like / save / share buttons padding on mobile */
-@media screen and (max-device-width: 600px) {
+@media screen and (max-width: 600px) {
   .meta_links i {
     padding: 0 8px;
   }
@@ -1580,7 +1580,7 @@ article img {
   -o-border-radius: 24px;
 }
 /* Slideshow container for tablet */
-@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+@media screen and (min-width: 600px) and (max-width: 1200px) {
   .projects_card {
     max-width: 90vw;
     height: 600px;
@@ -1588,7 +1588,7 @@ article img {
   }
 }
 /* Slideshow container for mobile */
-@media screen and (max-device-width: 600px) {
+@media screen and (max-width: 600px) {
   .projects_card {
     max-width: 90vw;
     height: 50vh;
@@ -1618,7 +1618,7 @@ article img {
   border-radius: 3px 0 0 3px;
 }
 /* Positioning for tablet/mobile */
-@media screen and (max-device-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .next {
     right: 5%;
   }
@@ -1630,7 +1630,7 @@ article img {
   border-radius: 3px 0 0 3px;
 }
 /* Positioning for tablet/mobile */
-@media screen and (max-device-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .prev {
     left: 5%;
   }
@@ -1723,14 +1723,14 @@ article img {
   height: 20%;
 }
 /* Info styling for tablet */
-@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+@media screen and (min-width: 600px) and (max-width: 1200px) {
   .projects_info {
     flex-direction: column;
     height: 30%;
   }
 }
 /* Info styling for tablet */
-@media screen and (max-device-width: 600px) {
+@media screen and (max-width: 600px) {
   .projects_info {
     height: 30%;
   }
@@ -1743,14 +1743,14 @@ article img {
   width: 50%;
 }
 /* Description container for tablet */
-@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+@media screen and (min-width: 600px) and (max-width: 1200px) {
   .projects_description {
     height: 100%;
     width: 100%;
   }
 }
 /* Description container for mobile */
-@media screen and (max-device-width: 600px) {
+@media screen and (max-width: 600px) {
   .projects_description {
     justify-content: center;
     padding: 0;
@@ -1764,13 +1764,13 @@ article img {
   padding: 24px 0 4px 24px;
 }
 /* Info bar title for tablet */
-@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+@media screen and (min-width: 600px) and (max-width: 1200px) {
   .projects_title {
     font-size: 32px;
   }
 }
 /* Info bar title for mobile */
-@media screen and (max-device-width: 600px) {
+@media screen and (max-width: 600px) {
   .projects_title {
     padding: 0 0 4px 0;
     font-size: 20px;
@@ -1783,14 +1783,14 @@ article img {
   width: 100%;
 }
 /* Info bar styling for tablet */
-@media screen and (max-device-width: 1200px) and (min-device-width: 600px) {
+@media screen and (max-width: 1200px) and (min-width: 600px) {
   .projects_text {
     font-size: 16px;
     width: 85%;
   }
 }
 /* Info bar styling for mobile */
-@media screen and (max-device-width: 600px) {
+@media screen and (max-width: 600px) {
   .projects_text {
     font-size: 12px;
     padding: 0;
@@ -1804,7 +1804,7 @@ article img {
   width: 50%;
 }
 /* Tags container for tablet */
-@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+@media screen and (min-width: 600px) and (max-width: 1200px) {
   .projects_tags {
     flex-direction: row;
     flex-wrap: wrap;
@@ -1815,7 +1815,7 @@ article img {
   }
 }
 /* Tags container for mobile */
-@media screen and (max-device-width: 600px) {
+@media screen and (max-width: 600px) {
   .projects_tags {
     display: none;
   }
@@ -1831,7 +1831,7 @@ footer {
   /* border: 4px solid rgb(3, 3, 3); */
 }
 /* Footer positioning for tablet */
-@media screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+@media screen and (min-width: 600px) and (max-width: 1200px) {
   .about_footer {
     display: flex;
     position: relative;
@@ -1843,7 +1843,7 @@ footer {
   }
 }
 /* Footer positioning for mobile */
-@media screen and (max-device-width: 600px) {
+@media screen and (max-width: 600px) {
   .about_footer {
     display: flex;
     position: relative;
