@@ -1057,7 +1057,7 @@ h1.collaborate {
     display: flex;
     flex-direction: column;
     max-width: 90vw;
-    height: 350px;
+    height: 50vh;
     box-shadow: 0 2px 32px 0 #bee1e6;
   }
 }
@@ -1591,7 +1591,7 @@ article img {
 @media screen and (max-device-width: 600px) {
   .projects_card {
     max-width: 90vw;
-    height: 350px;
+    height: 50vh;
     box-shadow: 0 2px 32px 0 #bee1e6;
   }
 }
