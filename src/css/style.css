@@ -486,7 +486,7 @@ a:active {
 /* ------------------------ Social Icons ------------------------ */
 
 .fa-github {
-  color: #bee1e6;
+  background-color: #bee1e6;
   background-image: -moz-linear-gradient(left, #fff1e6 0%, #fde2e4 100%);
   background-image: -webkit-linear-gradient(left, #fff1e6 0%, #fde2e4 100%);
   background-image: linear-gradient(to right, #fff1e6 0%, #fde2e4 100%);

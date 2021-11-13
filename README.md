@@ -6,8 +6,6 @@ View the Website [here](https://festive-aryabhata-690f3c.netlify.app/index.html)
 
 View the source code on GitHub [here](https://github.com/jwsandeman/JasonSandeman_T1A2).
 
----
-
 ## Project Description
 
 The purpose of the portfolio is website is to showcase my skills as a web professional to prospective employers and hopefully catch their attention long enough that they stick around to learn more.
@@ -25,8 +23,6 @@ The purpose of the portfolio is website is to showcase my skills as a web profes
 - Users will be able to navigate around my website using 4 buttons which will navigate to my 'about me', 'portfolio, blog and the home page.
 
 - I have chosen to use SCSS to help with streamlining the styling in a logical and efficient manner.
-
----
 
 ## Design Process & Decisions
 
@@ -72,8 +68,6 @@ Mobile/Tablet:
 ### Wireframe
 
 - Once I crawled out of the catacombs of the internet and closed all of my tabs on all of my screens it was time to start on the wireframe. This can be a simple(low-fidelity) or complicated(high-fidelity) approach, its up to you. I prefer to keep it simple at first by sketching it out roughly on the ipad and then ill move to a more concrete wirframe when im happy with the overall design. You can access my wireframes [here](https://whimsical.com/portfolio-wireframe-FrwWza12S3iqTH7YrLgS8G@3CRerdhrAw8V6w9PrpoRpqSq). ![Sketch](./docs/sketch.png) ![Wireframes](./docs/wireframes.png) ![Desktop Wireframe](./docs/dwireframe.png) ![Tablet Wireframe](./docs/twireframe.png) ![Mobile wireframe](./docs/mwireframe.png)
-
----
 
 ## Initialise The Project
 
@@ -121,8 +115,6 @@ Now that we are clear on our project requirements it is time to intitialise the 
    `code .`
 
 8. Lets code! I'll start with the HTML pages first and then move onto the CSS. For the sake of time ill skip straight to the completed screenshots. Also be sure to make regular commits and save your work!
-
----
 
 ## Development
 
@@ -190,8 +182,6 @@ I'd like to go over the tech stack that i used and the reasons why i chose each 
 
 - I used **_Subresource Integrity_** as reccommended by Coder Academy
 
----
-
 ## Components and Features
 
 Now lets talk about what components and features i used in my design.
@@ -250,8 +240,6 @@ Header/Navigation - will be simple and effective whilst utilising brand colours 
 
 - Desktop/Mobile - I used a vertical scrolling column with an image as the post header. Then you have the post meta data and tags followed by the heading and publish date. After that the user can read the blog post by scrolling down the page.
 
----
-
 ## Screenshots
 
 Heres a few of the screenshots of the finished product. The rest are in the docs folder.
@@ -267,8 +255,6 @@ Tablet screenshots:
 Mobile screenshots:
 
 ![Home Page](./docs/mhomecompleted.png)![Post Page](./docs/mpostcompletedbody.png)![About Page](./docs/maboutcompleted.png)![Mobile Menu](./docs/mmenu.png)
-
----
 
 ## Attribution
 
@@ -329,8 +315,6 @@ Mobile screenshots:
 ### Text/icon background gradients
 
 - For the gradient i used an example from Sarah L. Fossheim's blog [post](https://fossheim.io/writing/posts/css-text-gradient/)
-
----
 
 ## Challenges
 

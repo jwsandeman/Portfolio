@@ -1,3 +1,21 @@
+commit 7da55007c87cefbd9231c0cc02654664b33b9bf8
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Sat Nov 13 11:01:15 2021 +1000
+
+    updated css style page after running it  through a css validator.
+
+commit a8bb499a8dd50d576b032387e0a4e15d5a5be8ec
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Sat Nov 13 10:34:21 2021 +1000
+
+    updated html pages after running them through a html validator.
+
+commit da19aa8558fdd14fe40151b098d03d9a7c1896e3
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Fri Nov 12 17:31:25 2021 +1000
+
+    removed device from all media queries as it is depracated. updated gitlog.txt
+
 commit 0bc87eaaf163a00343e0fa73efea6b899c047e9d
 Author: jwsandeman <jw.sandeman@gmail.com>
 Date:   Fri Nov 12 16:51:39 2021 +1000
