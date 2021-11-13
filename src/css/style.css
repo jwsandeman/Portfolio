@@ -198,21 +198,21 @@ a:active {
     clear: both;
     display: block;
     text-align: center;
-    font-size: 24px;
+    font-size: 28px;
     line-height: 40px;
     cursor: pointer;
     width: 100%;
     height: 40px;
     color: #bee1e6;
     background: #fff;
-    border-radius: none;
+    border-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     transition: all 0.1s linear;
-    -webkit-border-radius: none;
-    -moz-border-radius: none;
-    -ms-border-radius: none;
-    -o-border-radius: none;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
   }
   .toggle:hover {
     background: #fff;
@@ -262,7 +262,7 @@ a:active {
     color: #fff;
   }
   .first li a:hover {
-    background: #fff;
+    background: #e2ece9;
   }
 }
 
@@ -486,7 +486,7 @@ a:active {
 /* ------------------------ Social Icons ------------------------ */
 
 .fa-github {
-  background-color: #bee1e6;
+  color: #bee1e6;
   background-image: -moz-linear-gradient(left, #fff1e6 0%, #fde2e4 100%);
   background-image: -webkit-linear-gradient(left, #fff1e6 0%, #fde2e4 100%);
   background-image: linear-gradient(to right, #fff1e6 0%, #fde2e4 100%);
