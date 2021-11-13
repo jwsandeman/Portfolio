@@ -1,3 +1,15 @@
+commit 83791fe3546c960c9ece427d6709befce6e090d7
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Sat Nov 13 14:15:48 2021 +1000
+
+    made some changes to the blog page styling on tablet as layout on blog card was overflowing on ipad pro. Re-integrated sub-resource integrity.
+
+commit 4337fbbacb2c082f8a5e5c75235bb049e6a32ba2
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Sat Nov 13 12:37:20 2021 +1000
+
+    updated gitlog.txt file
+
 commit b8889f58ec6d643ae1c6016cb5c2c0b5b56d7d1f
 Author: jwsandeman <jw.sandeman@gmail.com>
 Date:   Sat Nov 13 12:36:09 2021 +1000
