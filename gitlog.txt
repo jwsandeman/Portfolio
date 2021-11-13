@@ -1,3 +1,15 @@
+commit b8889f58ec6d643ae1c6016cb5c2c0b5b56d7d1f
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Sat Nov 13 12:36:09 2021 +1000
+
+    integrated subresource intgrity into all html pages for - stylesheets, google fonts, font awesome, markdown-> html converter.
+
+commit 5fcd354796fc60c0a4b2030a72b5fd45f59ab9cb
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Sat Nov 13 11:34:26 2021 +1000
+
+    updated readme and portfolio_blog.
+
 commit 7da55007c87cefbd9231c0cc02654664b33b9bf8
 Author: jwsandeman <jw.sandeman@gmail.com>
 Date:   Sat Nov 13 11:01:15 2021 +1000
