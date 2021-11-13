@@ -1,3 +1,21 @@
+commit 123fe10aa2ba46a4881c8a00687ca5a44f588a85
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Sat Nov 13 14:56:34 2021 +1000
+
+    updated blog preview image classes in blog.html in line with new css classes. again.
+
+commit d436906078e6bb1c46be680d50d053a4289759ad
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Sat Nov 13 14:53:12 2021 +1000
+
+    updated blog preview image classes in blog.html in line with new css classes.
+
+commit 7a69b07c9460eeb625bfecccafe238de42346f2f
+Author: jwsandeman <jw.sandeman@gmail.com>
+Date:   Sat Nov 13 14:16:10 2021 +1000
+
+    updated gitlog.txt file
+
 commit 83791fe3546c960c9ece427d6709befce6e090d7
 Author: jwsandeman <jw.sandeman@gmail.com>
 Date:   Sat Nov 13 14:15:48 2021 +1000
