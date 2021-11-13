@@ -1169,12 +1169,49 @@ h1.collaborate {
   border-top-left-radius: 24px;
   border-bottom-left-radius: 24px;
 }
+/* Removes desktop blog preview image container and style tablet blog preview image container */
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+  .blog_img {
+    display: none;
+  }
+  .tablet_blog_img {
+    display: flex;
+    height: 80%;
+    background-size: contain;
+  }
+}
 /* Removes bottom left border radius from image on mobile */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 600px) {
   .blog_img {
     border-bottom-left-radius: 0;
     height: 100%;
   }
+}
+
+/* Preview Images for each post */
+.post1_img {
+  display: flex;
+  width: 100%;
+}
+
+.post2_img {
+  display: flex;
+  width: 100%;
+}
+
+.post3_img {
+  display: flex;
+  width: 100%;
+}
+
+.post4_img {
+  display: flex;
+  width: 100%;
+}
+
+.post5_img {
+  display: flex;
+  width: 100%;
 }
 
 /* card that provides a sneak peek of the blog */
@@ -1213,7 +1250,7 @@ h1.collaborate {
 @media screen and (min-width: 600px) and (max-width: 1200px) {
   .blog_title {
     padding: 24px 0 4px 24px;
-    width: 80%;
+    width: 100%;
     font-size: 28px;
     line-height: normal;
   }
