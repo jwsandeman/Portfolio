@@ -31,6 +31,14 @@
       integrity="sha512-4wFGk961cJS2gpSfzy1vU+R8Q93foZOoGgfEDetiClOqNvggdtnRpdCsAgfm8VU9mKkv2unla8RBYwA6hoFwqg=="
     />
 
+    <!-- Markdown -> HTML file converter -->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"
+      integrity="sha512-6usz9LqINq4snBz7YnvUwKs7ROdPc+FRGKVm+cGrEyVWRnFbCVVbKRUVCnJkZ4IXnvv83VOH0DCLqGI1fcvYhg=="
+      crossorigin="anonymous"
+    ></script>
+
     <!-- Styling to remove body and footer rules from stylesheet for this page only -->
     <style>
       body {
@@ -105,7 +113,7 @@
       <!-- Post container -->
       <section class="post_container">
         <div class="header_img">
-          <img src="./img/nodejs.png" alt="post 2 header image" />
+          <img src="./img/htmlcss.png" alt="post 1 header image" />
         </div>
         <!-- Info bar containing post meta data -->
         <section class="metadata">
@@ -114,9 +122,9 @@
           <!-- Post info -->
           <div class="meta_info">
             <p class="name">Jason Sandeman</p>
-            <p class="blog_published">Posted on 30th Oct 2021</p>
+            <p class="blog_published">Posted on 31st Dec 2021</p>
             <p class="read_time">
-              <i class="far fa-clock"></i>&nbsp;3 min read
+              <i class="far fa-clock"></i>&nbsp;6 min read
             </p>
           </div>
           <!-- Like /save / share buttons -->
@@ -129,10 +137,11 @@
         <hr class="post" />
         <!-- Title and tags section -->
         <section class="post">
-          <h1 class="post">How i used Lorem Ipsum in a post</h1>
+          <h1 class="post">
+            How i built a recipe suggestion terminal app using Ruby
+          </h1>
           <div class="tags post_tags">
-            <span class="html_tag">HTML</span>
-            <span class="css_tag">CSS</span>
+            <span class="html_tag">Ruby</span>
             <span class="git_tag">GIT</span>
           </div>
           <hr class="post" />
@@ -144,59 +153,28 @@
           >
           <!-- Blog post -->
           <article class="post">
-            <h2 class="post">Lorem Ipsum</h2>
             <p class="post">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Provident voluptatibus corporis consequuntur quas rem soluta ab
-              vitae et eaque, mollitia maiores excepturi tenetur blanditiis sint
-              delectus ex deserunt sapiente officiis!
-            </p>
-            <ul class="post">
-              <li>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                molestiae sapiente autem temporibus id praesentium. Illo fugiat
-                voluptas explicabo nulla obcaecati reiciendis quia. Suscipit
-                veritatis cumque alias ex illum quo.
-              </li>
-              <li>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                molestiae sapiente autem temporibus id praesentium. Illo fugiat
-                voluptas explicabo nulla obcaecati reiciendis quia. Suscipit
-                veritatis cumque alias ex illum quo.
-              </li>
-            </ul>
-            <p class="post">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-              quisquam iure itaque nesciunt, error est pariatur, quo aliquid
-              ipsam sint tenetur. Quasi nemo veritatis ut omnis numquam enim
-              fugit recusandae.
-            </p>
-            <img class="post" src="./img/htmlcss.png" alt="placeholder image" />
-            <p class="post">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Voluptatem, voluptas ad explicabo expedita pariatur ab ex et,
-              soluta quod necessitatibus laudantium corrupti blanditiis veniam
-              aperiam impedit sed magni dolorum iure.
-            </p>
-            <ul class="post">
-              <li>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                molestiae sapiente autem temporibus id praesentium.
-              </li>
-              <li>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                molestiae sapiente autem temporibus id praesentium.
-              </li>
-              <li>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                molestiae sapiente autem temporibus id praesentium.
-              </li>
-            </ul>
-            <p class="post">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-              voluptatum, vitae ab, voluptate rerum vel quasi cum maiores
-              dolores laborum omnis error. Deleniti ipsam autem natus eos quae.
-              Harum, facere.
+              <!-- I used a markdown converter script in the header to insert my markdown file directly into the html below. This saved me a ton of time as i already had a correctly formatted markdown file with my blog post written on it. Here is the ISC License attribution.
+
+                ISC License
+
+                Copyright (c) 2021, Jason Lee <jason@zerodevx.com>
+
+                Permission to use, copy, modify, and/or distribute this software for any
+                purpose with or without fee is hereby granted, provided that the above
+                copyright notice and this permission notice appear in all copies.
+
+                THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+                WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+                MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+                ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+                WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+                ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+                OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE. -->
+              <zero-md
+                src="./docs/terminalapp/terminalapp.md"
+                integrity="sha512-R1rwmDrLYn8bX/9t5PexfYcj1wdBEkcmKjkP+WEUJrbQykQw7mClQdspn1KBOghD0BYD8gng+blCiEEGiVFfrA=="
+              ></zero-md>
             </p>
           </article>
           <!-- Back link to blog -->
@@ -206,6 +184,35 @@
             </p></a
           >
         </section>
+        <!-- Time permitting -->
+        <!-- <section class="related">
+          <div class="related_card">
+            <div class="related_img"></div>
+            <div class="related_title"></div>
+          </div>
+          <div class="related_card">
+            <div class="related_img"></div>
+            <div class="related_title"></div>
+          </div>
+          <div class="related_card">
+            <div class="related_img"></div>
+            <div class="related_title"></div>
+          </div>
+        </section>
+        <section class="discussion">
+          <div class="comment_container">
+            <div class="name"></div>
+            <div class="comment"></div>
+          </div>
+          <div class="comment_container">
+            <div class="name"></div>
+            <div class="comment"></div>
+          </div>
+          <div class="comment_container">
+            <div class="name"></div>
+            <div class="comment"></div>
+          </div>
+        </section> -->
       </section>
     </main>
     <footer>
