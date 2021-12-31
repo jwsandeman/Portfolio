@@ -106,11 +106,11 @@ Following the installation instructions above, and once all the dependencies hav
 
 When a user first runs the app they will be presented with an interactive TTY-Prompt menu of options displaying the following features:
 
-   1. Select Ingredients - This is where you select ingredients you currently have at home. You can add or remove as many ingredients as you want.
-   2. Matching Recipes - This shows a list of recipes that match your ingredients. You can select as many recipes as you want. You can also remove recipes if you change your mind.
-   3. My Recipes - Here you can view your recipes and then select a recipe to view the cooking instructions for that recipe.
-   4. Shoppig List - This is a list of all of the ingredients that are missing from your selected recipes.
-   5. Exit - This will close the application.
+1.  Select Ingredients - This is where you select ingredients you currently have at home. You can add or remove as many ingredients as you want.
+2.  Matching Recipes - This shows a list of recipes that match your ingredients. You can select as many recipes as you want. You can also remove recipes if you change your mind.
+3.  My Recipes - Here you can view your recipes and then select a recipe to view the cooking instructions for that recipe.
+4.  Shoppig List - This is a list of all of the ingredients that are missing from your selected recipes.
+5.  Exit - This will close the application.
 
 ### Select Ingredients
 
@@ -189,7 +189,7 @@ Users will be shown a sub-menu with 2 options:
 
 ## 4. Control Flow Diagram
 
-![Terminal Application Control Flow Diagram](./docs/Terminal%20App%20Control%20Flow.png)
+![Terminal Application Control Flow Diagram](./Terminal%20App%20Control%20Flow.png)
 
 Here is a [Link](https://whimsical.com/terminal-app-control-flow-XJLcP7uFDbPyKQayBbWVLs@7YNFXnKbYeumqm8HZNhB9) to my Control Flow Diagram on Whimsical.
 
@@ -201,41 +201,41 @@ I used the Tasks board to keep track of any ideas, questions, bugs or general on
 
 ### Tasks
 
-![Tasks](./docs/tasks_board.png)
+![Tasks](./tasks_board.png)
 
 ### Deliverables
 
-![Deliverables](./docs/notion_deliverables.png)
+![Deliverables](./notion_deliverables.png)
 
 ### Implement Features
 
-![Implement Features](./docs/notion_implement_features.png)
+![Implement Features](./notion_implement_features.png)
 
 ### Initialise Project
 
-![Initialise Project](./docs/notion_initialise_project.png)
+![Initialise Project](./notion_initialise_project.png)
 
 ### Select Ingredients Feature
 
-![Select Ingredients](./docs/notion_select_ingredients.png)
+![Select Ingredients](./notion_select_ingredients.png)
 
 ### Matching Recipes Feature
 
-![Matching Recipes](./docs/notion_matching_recipes.png)
+![Matching Recipes](./notion_matching_recipes.png)
 
 ### My Recipes Feature
 
-![My Recipes](./docs/notion_my_recipes.png)
+![My Recipes](./notion_my_recipes.png)
 
 ### Shopping List Feature
 
-![Shopping List](./docs/notion_shopping_list.png)
+![Shopping List](./notion_shopping_list.png)
 
 ### Testing
 
 Most of my tests were carried out using RSpec which can be found in the src code, but i also carried out a couple of manual tests to confirm the app was working as intended.
 
-![Testing](./docs/notion_manual_tests.png)
+![Testing](./notion_manual_tests.png)
 
 ## 6. Attribution
 
