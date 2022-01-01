@@ -143,7 +143,7 @@ When a user first runs the app they will be presented with an interactive TTY-Pr
 - The user will be greeted by a welcome screen and prompted to enter their name.
 - If they dont enter a string, they will be prompted to enter their name again until a string is entered.
 - Once they do this they will be given a greeting prompt explaining how to interact with the menu options. This will form the basis for all user interactions in the app.
-- The reason I am using TTY-Prompt for most of my user input is to simplify the user experience but also it comes with the added benefit of error handling as users are limited in what they can actually input/select. If they dont select the correct option or input an in invalid option they will receive a prompt on the screen indicatng that they have made an error and that they should try again. Errors will be displayed in red using colorize.
+- The reason I am using TTY-Prompt for most of my user input is to simplify the user experience but also it comes with the added benefit of error handling as users are limited in what they can actually input/select. If they don't select the correct option or input an in invalid option they will receive a prompt on the screen indicating that they have made an error and that they should try again. Errors will be displayed in red using colorize.
 
 ### Main Menu
 

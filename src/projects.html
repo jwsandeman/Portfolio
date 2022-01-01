@@ -10,7 +10,7 @@
     <link
       rel="stylesheet"
       href="./css/style.css"
-      integrity="sha512-2kQqfoA6GFmvwb7kpiICytulYFvYKRPsBCmAun9aY5+uA25hQ/Z1l0arNnMr0yoI31/EsSWU38Q3FS53scjALQ=="
+      integrity="sha512-djscMBSeX2nlUY77XAut/+afzJUPdCuR6TXLbxxNVwo7A2AP7rGV21/V2pu38Zn5dp0N7PheFHtGOorEP9JEtw=="
     />
 
     <!-- Google fonts link -->
@@ -99,11 +99,11 @@
       >
         <div class="projects_card">
           <!-- Main image preview -->
-          <section class="projects_img">
+          <section class="projects_img_container">
             <img
               src="./img/omnifood.png"
               alt="Project 1 preview image"
-              class="omnifood_img"
+              class="preview_img"
             />
           </section>
           <!-- Info bar at the bottom of card -->
@@ -134,11 +134,11 @@
       >
         <div class="projects_card">
           <!-- Main image preview -->
-          <section class="projects_img">
+          <section class="projects_img_container">
             <img
               src="./img/blackjackgame.png"
               alt="Project 2 preview image"
-              class="blackjack_img"
+              class="preview_img"
             />
           </section>
           <!-- Info bar at the bottom of card -->
@@ -169,11 +169,11 @@
       >
         <div class="projects_card">
           <!-- Main image preview -->
-          <section class="projects_img">
+          <section class="projects_img_container">
             <img
               src="./img/guessthenumber.png"
               alt="Project 3 preview image"
-              class="numbers_img"
+              class="preview_img"
             />
           </section>
           <!-- Info bar at the bottom of card -->
@@ -195,6 +195,39 @@
         </div>
       </a>
 
+      <!-- Slide 4 Ruby Terminal App -->
+      <a
+        href="https://github.com/jwsandeman/JasonSandeman_T1A3"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="mySlides fade"
+      >
+        <div class="projects_card">
+          <!-- Main image preview -->
+          <section class="projects_img_container">
+            <img
+              src="./img/recipe_fullscreen.png"
+              alt="Project 4 preview image"
+              class="preview_img"
+            />
+          </section>
+          <!-- Info bar at the bottom of card -->
+          <section class="projects_info">
+            <div class="projects_description">
+              <h1 class="projects_title">Ruby Terminal App</h1>
+              <p class="projects_text">
+                A recipe suggestion app written using Ruby.
+              </p>
+            </div>
+            <!-- Project tags -->
+            <div class="tags projects_tags">
+              <span class="html_tag">Ruby</span>
+              <span class="git_tag">Git</span>
+            </div>
+          </section>
+        </div>
+      </a>
+
       <!-- Prev/Next buttons -->
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -204,6 +237,7 @@
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
       </nav>
     </main>
     <br />
@@ -213,6 +247,7 @@
       <span class="dot" onclick="currentSlide(1)"></span>
       <span class="dot" onclick="currentSlide(2)"></span>
       <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
     </nav>
 
     <!-- Slideshow Script -->

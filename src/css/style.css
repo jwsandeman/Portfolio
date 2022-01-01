@@ -1732,21 +1732,13 @@ article img {
 /* ------------------------ Projects Page ------------------------ */
 
 /* Image styling that takes up the top 80% of the card */
-.projects_img {
+.projects_img_container {
   display: flex;
   height: 80%;
   background-size: contain;
 }
 /* Preview image */
-.omnifood_img {
-  display: flex;
-  width: 100%;
-}
-.blackjack_img {
-  display: flex;
-  width: 100%;
-}
-.numbers_img {
+.preview_img {
   display: flex;
   width: 100%;
 }
@@ -1859,7 +1851,7 @@ article img {
 }
 /* ------------------------ Footer ------------------------ */
 
-/* Postion footer in the centre at the bottom */
+/* Position footer in the centre at the bottom */
 footer {
   display: flex;
   position: fixed;
