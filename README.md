@@ -2,7 +2,7 @@
 
 ## Links
 
-View the Website [here](https://festive-aryabhata-690f3c.netlify.app/index.html) (this website is a work in progress for my @coderacademy portflio assignment and as such some of the blog posts have placeholder text and images).
+View the Website [here](https://festive-aryabhata-690f3c.netlify.app/index.html).
 
 View the source code on GitHub [here](https://github.com/jwsandeman/JasonSandeman_T1A2).
 
